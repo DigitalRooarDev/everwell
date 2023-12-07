@@ -25,6 +25,17 @@ $(document).ready(function () {
     return false;
   });
 
+  $(".homeSlider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    fade: true,
+  });
+
 
   /* mobile-menu */
   $(".menu-icon").click(function () {
