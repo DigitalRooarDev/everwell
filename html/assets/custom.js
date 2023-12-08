@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 400) {
       $(".scrollTop").fadeIn();
       $(".header-main").addClass("has_sticky");
       $("body").addClass("sticky_header");
