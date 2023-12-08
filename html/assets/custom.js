@@ -36,6 +36,39 @@ $(document).ready(function () {
     fade: true,
   });
 
+  $('.latestblog-slider').slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 569,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true
+            }
+        }
+    ]
+});
+
 
   /* mobile-menu */
   $(".menu-icon").click(function () {

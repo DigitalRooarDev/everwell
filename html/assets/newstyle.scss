@@ -1,7 +1,5 @@
 @import 'varible.scss';
 
-.container{max-width: 1300px;}
-
 .btn{display: inline-block;font-weight: 500;line-height: 1.5;color: $white-color;background-color: $green-color;border: 1px solid $green-color;text-align: center;text-decoration: none;
 	vertical-align: middle;cursor: pointer; -webkit-user-select: none;-moz-user-select: none;user-select: none;padding: 13px 20px;min-width: 218px;
     font-size: 1rem;border-radius: 62px;transition: all 0.4s ease-in-out;
@@ -10,27 +8,6 @@
 .btn.btn-outline{background-color: transparent;color: $primary-color;border: 1px solid $green-color;
 	&:hover{color: $white-color;background-color: $green-color;border: 1px solid $green-color;}
 }
-
-.sec-head{
-	width: $width-100;
-	display: block;
-	margin-bottom: 1.25rem;
-}
-.title{
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: $width-100;
-  font-family: $font-stack;
-  color: $primary-color;
-  line-height: 1;
-  font-size: 2.5rem;
-}
-.title-sm{
-	font-size: 40px;
-	font-weight: 600;
-}
-
 
 .our-collection-sec{
 padding: 140px 0;
