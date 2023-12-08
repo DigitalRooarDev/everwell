@@ -12,17 +12,17 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .header-main, .header-main.has_sticky {
-    padding: 15px 10px;
+  .header-main {
+    padding: 0.9375rem 0.625rem;
   }
-  .my-cart {
-    margin-right: 5px;
+  .header-main.has_sticky {
+    padding: 0.9375rem 0.625rem;
   }
-  .menu-icon {
+  .header-main .menu-icon {
     display: inline-block;
     vertical-align: middle;
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
   .navigation-bar.slide-menu {
     left: 0;

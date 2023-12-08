@@ -290,12 +290,22 @@ body {
   padding: 0 0.9375rem;
 }
 
+.container-lg {
+  max-width: 87.25rem;
+  padding: 0 0.9375rem;
+}
+
+.common-sec {
+  padding: 7.375rem 0;
+}
+
 .sec-head {width: $width-100;display: block;margin-bottom: 1.25rem;}
-.title {display: block;margin: 0;padding: 0; font-family: 'Reckless Neue'; font-weight: 600; line-height: 1;font-size: 40px;}
-.title-xxl {font-size:75px;}  
-.title-xl {font-size: 56px;font-weight: 900;}
-.title-lg {font-size: 3.125rem;font-weight: 700;}
-.title-md {font-size: 2.5rem;font-weight: 700;}
+.title {display: block;margin: 0;padding: 0; font-family: 'Reckless Neue'; font-weight: 600; line-height: 1;}
+.title-xxl {font-size:4.6875rem; font-weight: 700;}  
+.title-xl {font-size: 3.5rem;font-weight: 500;}
+.title-lg {font-size: 3rem;font-weight: 700;}
+.title-md {font-size: 2.75rem;font-weight: 700;}
+.title-sm {font-size:2.5rem;}  
 
 .slick-slide{outline:none}
 .slick-dots{display:block;text-align:start;margin-top:0.625rem}
@@ -501,9 +511,9 @@ body {
     text-align: center;
   }
 }
-/* Home slider start */
+/* Home slider end */
 
-/*---footer sec start ---*/
+/* Footer sec start */
 .footerMain {
   display: block;
   width: 100%;
@@ -608,6 +618,10 @@ body {
       color: $white-color;
       font-size: 0.875rem;
       font-weight: 300;
+      span{
+        opacity: 0.4;
+        padding: 0 2px;
+      }  
       a{
         color: $white-color;
         &:hover{
@@ -615,17 +629,53 @@ body {
         }
       }
     }
+
+    .bottom-card {
+      display: inline-block;
+      margin-right: -8px;
+    }
     
   }
 }
 
-/*---footer sec end ---*/
+/* Footer sec end */
 
+/* Join our sec start */
+.join-our-sec{
+  .join-our-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+.join-our-con{
+  height: 100%;
+  border: 1px solid #EAEAEA;
+  background: #F9F9F9;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px;
+  .sec-head{
+    .title-xxl{
+      font-size: 64px;      
+      color: #01390c;
+      span{
+        font-weight: normal;
+      }
+    }
+  }
+  p{
+    color: #01390C;
+    font-size: 20px;
+  }
+}
+}
 
-
-
-
-
-
-
-
+/* Join our sec end */
