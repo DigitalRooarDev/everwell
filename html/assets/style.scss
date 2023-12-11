@@ -620,6 +620,9 @@ body {
   .copyrightsec{
     border-top: 0.0625rem solid #788e67 ;
     padding: 0.9375rem 0;
+    .card-col{
+      text-align: end;
+    }
     .copyright{
       color: $white-color;
       font-size: 0.875rem;

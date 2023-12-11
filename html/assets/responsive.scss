@@ -42,6 +42,10 @@
 		&.has_sticky{
 			padding: 0.9375rem 0.625rem;
 		}
+		.site-logo{
+			display: inline-block;
+			vertical-align: middle;
+		}
 		.menu-icon{
 			display:inline-block;
 			vertical-align:middle;
@@ -135,7 +139,10 @@
 				 }	
 				}
 			}
-		}	
+		}
+		.my-cart {
+			margin-right: 8px;
+		}
 	}	
 
 }
