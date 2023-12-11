@@ -1,0 +1,27 @@
+.best-product-type {
+  .marquee-main {
+    overflow: hidden;
+    border-top: 0.0313rem solid #01390c;
+    border-bottom: 0.0313rem solid #01390c;
+    background-color: #efe5c3;
+    .marquee-animate {
+      display: flex;
+      width: 6250rem;
+      margin-left: 0;
+      animation: 55s linear 0s infinite normal none running myMarquee;
+      animation-direction: reverse;
+      .marquee-inner {
+        display: flex;
+        align-items: center;
+        li{
+            padding: .625rem 1.25rem;
+        }
+      }
+    }
+    @keyframes myMarquee {
+      100% {
+        margin-left: 0px;
+      }
+    }
+  }
+}

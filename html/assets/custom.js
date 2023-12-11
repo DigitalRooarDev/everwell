@@ -69,6 +69,19 @@ $(document).ready(function () {
     ]
 });
 
+$(".marquee-main").each(function () {
+  $(this).append($(this).find(".marquee-inner").clone());
+  $(this).wrapInner('<div class="marquee-animate"></div>');
+
+  $(this)
+    .find(".marquee-animate")
+    .css({
+      "margin-left": -$(this).find(".marquee-inner").outerWidth(),
+      "animation-duration":
+        $(this).find(".marquee-inner").outerWidth() / 100 + "s",
+    });
+});
+
 
   /* mobile-menu */
   $(".menu-icon").click(function () {
