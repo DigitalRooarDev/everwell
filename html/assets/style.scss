@@ -238,7 +238,7 @@ a {
   color: $primary-color;
   transition: all 0.4s ease-in-out;
   &:hover {
-    color: #228ecc;
+    color: $green-color;
     text-decoration: none;
     outline: none !important;
   }
