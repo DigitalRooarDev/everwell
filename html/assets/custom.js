@@ -36,6 +36,16 @@ $(document).ready(function () {
     fade: true,
   });
 
+  $('.immune-vitality-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    fade: true,
+  })
   $('.product-list-slide').slick({
     infinite: true,
     arrows: false,
@@ -106,7 +116,6 @@ $(document).ready(function () {
         }
     ]
 });
-
 
   /* mobile-menu */
   $(".menu-icon").click(function () {
