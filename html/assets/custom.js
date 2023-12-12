@@ -36,6 +36,17 @@ $(document).ready(function () {
     fade: true,
   });
 
+  $('.immune-vitality-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    fade: true,
+  })
+
   $('.latestblog-slider').slick({
     infinite: true,
     arrows: false,
@@ -68,20 +79,6 @@ $(document).ready(function () {
         }
     ]
 });
-
-$(".marquee-main").each(function () {
-  $(this).append($(this).find(".marquee-inner").clone());
-  $(this).wrapInner('<div class="marquee-animate"></div>');
-
-  $(this)
-    .find(".marquee-animate")
-    .css({
-      "margin-left": -$(this).find(".marquee-inner").outerWidth(),
-      "animation-duration":
-        $(this).find(".marquee-inner").outerWidth() / 100 + "s",
-    });
-});
-
 
   /* mobile-menu */
   $(".menu-icon").click(function () {
