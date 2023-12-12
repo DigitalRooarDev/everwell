@@ -2,9 +2,9 @@
   --app-height: $base-height;
 }
 
-.container {
+/*.container {
   max-width: 1300px;
-}
+}*/
 
 .btn {
   display: inline-block;
@@ -43,7 +43,7 @@
   border: 1px solid #01390C;
 }
 
-.sec-head {
+/*.sec-head {
   width: 100%;
   display: block;
   margin-bottom: 1.25rem;
@@ -63,7 +63,7 @@
 .title-sm {
   font-size: 40px;
   font-weight: 600;
-}
+}*/
 
 .our-collection-sec {
   padding: 140px 0;
