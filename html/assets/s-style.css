@@ -35,6 +35,10 @@
   font-size: 0;
   border: none;
   outline-color: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.slick-prev:hover::before {
+  border-color: #01390c;
 }
 
 .slick-prev:before {
@@ -50,6 +54,7 @@
   bottom: 0;
   margin: auto;
   transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
 }
 
 .slick-next {
@@ -65,6 +70,10 @@
   font-size: 0;
   border: none;
   outline-color: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.slick-next:hover::before {
+  border-color: #01390c;
 }
 
 .slick-next:before {
@@ -80,6 +89,7 @@
   bottom: 0;
   margin: auto;
   transform: rotate(-45deg);
+  transition: all 0.4s ease-in-out;
 }
 
 .slick-prev:arrow .slick-next:arrow {
@@ -170,12 +180,9 @@
 
 /* client-review-sec-end */
 /* immune-vitality-sec-start */
-.immune-vitality-sec {
-  margin-bottom: 70px;
-}
 .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box {
   background: linear-gradient(180deg, #f9e58d 15.79%, rgba(253, 248, 225, 0) 100%);
-  padding: 2.8125rem 0;
+  padding: 2.8125rem 0 0;
   width: 100%;
   height: 100%;
 }
@@ -199,19 +206,162 @@
 }
 
 /* immune-vitality-sec-end */
+/* discover-everwell-product-sec-start */
+.discover-everwell-product-sec {
+  padding: 8.75rem 0;
+  position: relative;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap {
+  background-color: #01390c;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 200px 20px 20px;
+  padding: 0 48px;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap {
+  position: relative;
+  overflow: hidden;
+  background: url(../assets/discover-bg-img.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img {
+  padding: 80px 0 67px;
+  width: 100%;
+  height: 100%;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .sec-head {
+  margin-bottom: 3.3125rem;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
+  font-size: 4rem;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .btn.btn-white:hover {
+  background-color: #000;
+}
+
+/* discover-everwell-product-sec-end */
+.success-stories-sec .success-stories-wrap .success-stories-con {
+  margin-bottom: 4.0625rem;
+}
+.success-stories-sec .success-stories-wrap .success-stories-con .sec-head {
+  margin-bottom: 1.25rem;
+}
+.success-stories-sec .success-stories-wrap .success-stories-con .sec-head .title-md {
+  color: #01390c;
+}
+.success-stories-sec .success-stories-wrap .success-stories-con .cms-con {
+  max-width: 34.125rem;
+  margin: auto;
+}
+.success-stories-sec .success-stories-wrap .success-stories-con .cms-con p {
+  font-size: 1.125rem;
+  text-align: center;
+  letter-spacing: 0.54px;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap {
+  width: 25%;
+  height: 100%;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:first-child .success-stories-img-main::before {
+  border-radius: 20px 0 0 20px;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:first-child .success-stories-img-main img {
+  border-radius: 20px 0 0 20px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  -ms-border-radius: 20px 0 0 20px;
+  -o-border-radius: 20px 0 0 20px;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:last-child .success-stories-img-main::before {
+  border-radius: 0 20px 20px 0;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:last-child .success-stories-img-main img {
+  border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main {
+  position: relative;
+  overflow: hidden;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  background: rgba(71, 71, 71, 0.5);
+  transition: height 0.5s ease-in-out;
+  z-index: 1;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn {
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  z-index: 999;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn .btn {
+  opacity: 0;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover::before {
+  height: 100%;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn {
+  transform: translateY(0);
+  bottom: 20px;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn .btn {
+  opacity: 1;
+}
+
 /* resposive */
 @media only screen and (max-width: 1280px) {
+  .title-xxl {
+    font-size: 3.5rem;
+  }
+  .title-xl {
+    font-size: 3rem;
+  }
+  .title-lg {
+    font-size: 2.625rem;
+  }
+  .title-md {
+    font-size: 2.375rem;
+  }
   .client-review-sec {
     padding: 6.375rem 0;
   }
   .client-review-sec .client-review-row .client-review-col .client-review-text-box {
-    padding: 85px 78px 85px 60px;
+    padding: 62px 68px 62px 60px;
+  }
+  .discover-everwell-product-sec {
+    padding: 6.25rem 0;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .title-lg {
-    font-size: 2.5rem;
-  }
   .client-review-sec {
     padding: 4.375rem 0;
   }
@@ -222,18 +372,34 @@
     max-width: 50%;
   }
   .client-review-sec .client-review-row .client-review-col .client-review-text-box {
-    padding: 90px 40px;
-    border-radius: 7.5rem 0.625rem 0.625rem 0.625rem;
-    -webkit-border-radius: 7.5rem 0.625rem 0.625rem 0.625rem;
-    -moz-border-radius: 7.5rem 0.625rem 0.625rem 0.625rem;
-    -ms-border-radius: 7.5rem 0.625rem 0.625rem 0.625rem;
-    -o-border-radius: 7.5rem 0.625rem 0.625rem 0.625rem;
+    padding: 54px 40px;
+    border-radius: 6.5rem 0.625rem 0.625rem 0.625rem;
+    -webkit-border-radius: 6.5rem 0.625rem 0.625rem 0.625rem;
+    -moz-border-radius: 6.5rem 0.625rem 0.625rem 0.625rem;
+    -ms-border-radius: 6.5rem 0.625rem 0.625rem 0.625rem;
+    -o-border-radius: 6.5rem 0.625rem 0.625rem 0.625rem;
   }
   .client-review-sec .client-review-row .client-review-col .client-review-text-box .sec-head {
     margin-bottom: 2.5rem;
   }
   .client-review-sec .client-review-row .client-review-col .client-review-text-box .sec-head .title-lg br {
     display: none;
+  }
+  .discover-everwell-product-sec {
+    padding: 4.375rem 0;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap {
+    border-radius: 20px 100px 20px 20px;
+    padding: 0 35px;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .sec-head {
+    margin-bottom: 1.875rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
+    font-size: 3.125rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img {
+    padding: 3.75rem 0;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -276,10 +442,63 @@
   .marquee-sec .marquee-main .marquee-inner li {
     padding: 0.625rem 0.9375rem;
   }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-box-img {
+    max-width: 80%;
+    margin: auto;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-con .sec-head {
+    margin-bottom: 1.875rem;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-con .cms-con {
+    max-width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .discover-everwell-product-sec {
+    padding: 3.125rem 0;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap {
+    border-radius: 20px 80px 20px 20px;
+    padding: 50px 20px;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .sec-head {
+    margin-bottom: 1.875rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
+    font-size: 2.875rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img {
+    padding: 0 0 1.875rem 0;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-con {
+    margin-bottom: 1.875rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-con .sec-head {
+    margin-bottom: 0.9375rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-con .cms-con p {
+    font-size: 1rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn .btn {
+    min-width: 100px;
+    padding: 8px 20px;
+    font-size: 0.875rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn {
+    bottom: 15px;
+  }
 }
 @media only screen and (max-width: 767px) {
+  .title-xxl {
+    font-size: 3rem;
+  }
+  .title-xl {
+    font-size: 2.625rem;
+  }
   .title-lg {
-    font-size: 2.125rem;
+    font-size: 2.25rem;
+  }
+  .title-md {
+    font-size: 1.875rem;
   }
   .client-review-sec {
     padding: 3.125rem 0;
@@ -290,15 +509,126 @@
   .client-review-sec .client-review-row .client-review-col .client-review-text-box .sec-head {
     margin-bottom: 1.875rem;
   }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-box-img {
+    max-width: 70%;
+    margin: 0 auto 1.25rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
+    font-size: 2.5rem;
+  }
 }
 @media only screen and (max-width: 568px) {
+  .title-xxl {
+    font-size: 2.5rem;
+  }
+  .title-xl {
+    font-size: 2.25rem;
+  }
   .title-lg {
+    font-size: 2rem;
+  }
+  .title-md {
+    font-size: 1.75rem;
+  }
+  .slick-dots {
+    padding-top: 1.5625rem;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box {
+    padding: 1.875rem 0 0;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-box-img {
+    max-width: 100%;
+    margin: 0 auto 1.25rem;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-con .sec-head {
+    margin-bottom: 1.5625rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-con {
+    margin-bottom: 1.875rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box {
+    flex-wrap: wrap;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap {
+    width: 50%;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .success-stories-img {
+    width: 100%;
+    height: 100%;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .success-stories-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:first-child .success-stories-img-main img {
+    border-radius: 20px 0 0 0;
+    -webkit-border-radius: 20px 0 0 0;
+    -moz-border-radius: 20px 0 0 0;
+    -ms-border-radius: 20px 0 0 0;
+    -o-border-radius: 20px 0 0 0;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:first-child .success-stories-img-main::before {
+    border-radius: 20px 0 0 0;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:nth-child(2) .success-stories-img-main img {
+    border-radius: 0 20px 0 0;
+    -webkit-border-radius: 0 20px 0 0;
+    -moz-border-radius: 0 20px 0 0;
+    -ms-border-radius: 0 20px 0 0;
+    -o-border-radius: 0 20px 0 0;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:nth-child(2) .success-stories-img-main::before {
+    border-radius: 0 20px 0 0;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:nth-child(3) .success-stories-img-main img {
+    border-radius: 0 0 0 20px;
+    -webkit-border-radius: 0 0 0 20px;
+    -moz-border-radius: 0 0 0 20px;
+    -ms-border-radius: 0 0 0 20px;
+    -o-border-radius: 0 0 0 20px;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:nth-child(3) .success-stories-img-main::before {
+    border-radius: 0 0 0 20px;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:last-child .success-stories-img-main img {
+    border-radius: 0 0 20px 0;
+    -webkit-border-radius: 0 0 20px 0;
+    -moz-border-radius: 0 0 20px 0;
+    -ms-border-radius: 0 0 20px 0;
+    -o-border-radius: 0 0 20px 0;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:last-child .success-stories-img-main::before {
+    border-radius: 0 0 20px 0;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap {
+    border-radius: 20px 50px 20px 20px;
+    padding: 30px 20px;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .sec-head {
+    margin-bottom: 1.25rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
     font-size: 1.875rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img {
+    padding: 0 0 1.25rem 0;
   }
 }
 @media only screen and (max-width: 350px) {
+  .title-xxl {
+    font-size: 2.25rem;
+  }
+  .title-xl {
+    font-size: 2rem;
+  }
   .title-lg {
     font-size: 1.75rem;
+  }
+  .title-md {
+    font-size: 1.5rem;
+  }
+  .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
+    font-size: 1.625rem;
   }
 }
 /* resposive */

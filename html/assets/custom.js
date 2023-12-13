@@ -45,6 +45,16 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     speed: 500,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows:false,
+        },
+      },
+    ],
   });
   $(".product-list-slide").slick({
     infinite: true,
