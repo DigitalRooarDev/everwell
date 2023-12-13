@@ -24,13 +24,13 @@
 
 .slick-prev {
   background: transparent;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 0.3125rem;
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -1.25rem;
+  margin-top: 0;
   z-index: 9;
   font-size: 0;
   border: none;
@@ -41,8 +41,8 @@
   content: "";
   width: 0.875rem;
   height: 0.875rem;
-  border-bottom: 0.1875rem solid #5B5B5B;
-  border-left: 0.1875rem solid #5B5B5B;
+  border-bottom: 0.1875rem solid #5b5b5b;
+  border-left: 0.1875rem solid #5b5b5b;
   position: absolute;
   left: 0;
   right: 0;
@@ -54,13 +54,13 @@
 
 .slick-next {
   background: transparent;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 0.3125rem;
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -1.25rem;
+  margin-top: 0;
   z-index: 9;
   font-size: 0;
   border: none;
@@ -71,8 +71,8 @@
   content: "";
   width: 0.875rem;
   height: 0.875rem;
-  border-bottom: 0.1875rem solid #5B5B5B;
-  border-right: 0.1875rem solid #5B5B5B;
+  border-bottom: 0.1875rem solid #5b5b5b;
+  border-right: 0.1875rem solid #5b5b5b;
   position: absolute;
   left: 0;
   right: 0;
@@ -87,6 +87,53 @@
 }
 
 /* slick-slider */
+/* marquee-sec-start */
+.marquee-sec .marquee-main {
+  overflow: hidden;
+  border-top: 0.0625rem solid #01390c;
+  border-bottom: 0.0625rem solid #01390c;
+}
+.marquee-sec .marquee-main .marquee-animate {
+  display: flex;
+  width: 6250rem;
+  margin-left: 0;
+  animation: 55s linear 0s infinite normal none running myMarquee;
+  animation-direction: reverse;
+}
+.marquee-sec .marquee-main .marquee-inner {
+  display: flex;
+  align-items: center;
+}
+.marquee-sec .marquee-main .marquee-inner li {
+  padding: 0.625rem 1.25rem;
+}
+
+@keyframes myMarquee {
+  100% {
+    margin-left: 0px;
+  }
+}
+/* marquee-sec-end */
+/* client-review-sec-start */
+.client-review-sec {
+  padding: 9.375rem 0;
+  position: relative;
+}
+.client-review-sec .client-review-text-box {
+  background-color: #89f09c;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 200px 10px 10px 10px;
+  -webkit-border-radius: 200px 10px 10px 10px;
+  -moz-border-radius: 200px 10px 10px 10px;
+  -ms-border-radius: 200px 10px 10px 10px;
+  -o-border-radius: 200px 10px 10px 10px;
+  padding: 112px 60px 112px 89px;
+}
+
+/* client-review-sec-end */
+/* immune-vitality-sec-start */
 .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box {
   background: linear-gradient(180deg, #f9e58d 15.79%, rgba(253, 248, 225, 0) 100%);
   padding: 2.8125rem 0;
@@ -111,5 +158,7 @@
   letter-spacing: -0.0208rem;
   line-height: 1.5;
 }
+
+/* immune-vitality-sec-end */
 
 /*# sourceMappingURL=s-style.css.map */
