@@ -1,7 +1,8 @@
-@media only screen and (max-width: 1440px) {
-.container{max-width: 95%;}
+@media only screen and (max-width: 1199px) {
+  .title-sm {
+    font-size: 2.125rem;
+  }
 }
-
 /* common css for below screen 991 */
 @media only screen and (max-width: 991px) {
   .header-main {
@@ -15,7 +16,9 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .container{max-width: 100%;}
+  .title-sm {
+    font-size: 1.75rem;
+  }
   .header-main {
     padding: 0.9375rem 0.625rem;
   }
