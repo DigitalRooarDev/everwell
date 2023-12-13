@@ -36,7 +36,7 @@ $(document).ready(function () {
     fade: true,
   });
 
-  $('.immune-vitality-slider').slick({
+  $(".immune-vitality-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -45,49 +45,49 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     speed: 500,
     fade: true,
-  })
-  $('.product-list-slide').slick({
+  });
+  $(".product-list-slide").slick({
     infinite: true,
     arrows: false,
     centerMode: true,
-    centerPadding: '0',
+    centerPadding: "0",
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,
     // autoplay: true,
     responsive: [
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                centerMode: false,
-                dots: true,
-            }
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true,
         },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                centerMode: false,
-                dots: true,
-            }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true,
         },
-        {
-            breakpoint: 569,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerMode: false,
-                dots: true,
-                adaptiveHeight: true
-            }
-        }
-    ]
-});
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true,
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
 
-  $('.latestblog-slider').slick({
+  $(".latestblog-slider").slick({
     infinite: true,
     arrows: false,
     slidesToShow: 3,
@@ -95,30 +95,43 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     responsive: [
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
         },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
         },
-        {
-            breakpoint: 569,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                adaptiveHeight: true
-            }
-        }
-    ]
-});
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
+
+  $(".marquee-main").each(function () {
+    $(this).append($(this).find(".marquee-inner").clone());
+    $(this).wrapInner('<div class="marquee-animate"></div>');
+
+    $(this)
+      .find(".marquee-animate")
+      .css({
+        "margin-left": -$(this).find(".marquee-inner").outerWidth(),
+        "animation-duration":
+          $(this).find(".marquee-inner").outerWidth() / 100 + "s",
+      });
+  });
 
   /* mobile-menu */
   $(".menu-icon").click(function () {
@@ -133,6 +146,5 @@ $(document).ready(function () {
     $("body").removeClass("body-fixed");
   });
 
-  $(".menu-main li:has(ul)").prepend('<span class="arrow"></span>');  
-  
+  $(".menu-main li:has(ul)").prepend('<span class="arrow"></span>');
 });
