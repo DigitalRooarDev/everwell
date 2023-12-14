@@ -265,6 +265,10 @@
       }
       .question-box-main-title {
         font-size: 4rem;
+        font-weight: 700;
+        span{
+          font-weight: normal;
+        }
       }
       .btn.btn-white:hover {
         background-color: #000;

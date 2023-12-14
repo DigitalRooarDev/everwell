@@ -242,6 +242,10 @@
 }
 .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
   font-size: 4rem;
+  font-weight: 700;
+}
+.discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title span {
+  font-weight: normal;
 }
 .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .btn.btn-white:hover {
   background-color: #000;
