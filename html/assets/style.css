@@ -447,6 +447,9 @@ body {
 .header-main .navigation-bar .menu-main li a:hover {
   color: #000000;
 }
+.header-main .navigation-bar .menu-main li:first-child {
+  padding-left: 0;
+}
 
 .m-menulogo {
   display: none;
@@ -502,20 +505,107 @@ body {
 
 /* Header end */
 /* Home slider start */
-.homeSlider {
-  text-align: center;
+.slick-slider {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
-.homeSlider .slick-slide img {
+
+.homeBanner .slide {
+  min-height: 56.25rem;
+  padding-top: 200px;
+}
+.homeBanner .slide.blue-bg {
+  background: linear-gradient(180deg, #8DCCFF 15.79%, rgba(217, 238, 255, 0) 100%);
+}
+.homeBanner .slide.pink-bg {
+  background: linear-gradient(180deg, #FFB2FF 15.79%, rgba(255, 207, 255, 0) 100%);
+}
+.homeBanner .slide.yellow-bg {
+  background: linear-gradient(180deg, #F9E58D 15.79%, rgba(253, 248, 225, 0) 100%);
+}
+.homeBanner .slide .banner-left-col {
+  width: 38%;
+  padding: 0;
+}
+.homeBanner .slide .banner-right-col {
+  width: 62%;
+  padding: 0;
+}
+.homeBanner .slide .banner-caption .sec-head .banner-title {
+  font-size: 3.375rem;
+  letter-spacing: -1.08px;
+}
+.homeBanner .slide .banner-caption .btn {
+  margin-top: 34px;
+}
+.homeBanner .slide .big-product {
   display: inline-block;
-  width: 100%;
-  vertical-align: top;
-}
-.homeSlider .slick-dots {
-  position: absolute;
-  bottom: 1.875rem;
-  left: 0px;
-  right: 0;
+  vertical-align: middle;
   text-align: center;
+  max-width: 507px;
+  width: 100%;
+}
+.homeBanner .slide .big-product .product-title {
+  font-size: 1.75rem;
+  letter-spacing: -0.56px;
+  font-weight: 700;
+  color: #01390C;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.homeBanner .slide .big-product .product-price {
+  font-family: "Reckless Neue";
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 15px;
+}
+.homeBanner .slide .big-product .btn {
+  min-width: 142px;
+}
+.homeBanner .slide .side-product {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 320px;
+  margin-top: 158px;
+}
+.homeBanner .slide .small-product {
+  display: inline-block;
+  text-align: center;
+  padding: 0 12px;
+  width: 48%;
+}
+.homeBanner .slide .small-product .small-product-img {
+  text-align: center;
+}
+.homeBanner .slide .small-product .small-product-img img {
+  display: inline-block;
+}
+.homeBanner .slide .small-product .product-title {
+  font-size: 1rem;
+  letter-spacing: -0.32px;
+  font-weight: 700;
+  color: #01390C;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+.homeBanner .slide .small-product .product-price {
+  font-family: "Reckless Neue";
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+.homeBanner .slide .small-product .btn {
+  min-width: 90px;
+  font-size: 10px;
+  padding: 7px 20px;
 }
 
 /* Home slider end */

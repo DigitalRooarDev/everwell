@@ -108,10 +108,10 @@
     font-size: 1.75rem;
   }
   .header-main {
-    padding: 0.9375rem 0.625rem;
+    padding: 0.9375rem 0;
   }
   .header-main.has_sticky {
-    padding: 0.9375rem 0.625rem;
+    padding: 0.9375rem 0;
   }
   .header-main .site-logo {
     display: inline-block;

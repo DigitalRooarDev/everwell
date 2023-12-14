@@ -156,9 +156,9 @@
 	.container{max-width: 100%;}
 	.title-sm {font-size:1.75rem;} 
 	.header-main{
-		padding: 0.9375rem 0.625rem;		  
+		padding: 0.9375rem 0;
 		&.has_sticky{
-			padding: 0.9375rem 0.625rem;
+			padding: 0.9375rem 0;
 		}
 		.site-logo{
 			display: inline-block;
