@@ -34,6 +34,17 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     speed: 500,
     fade: true,
+    responsive: [    
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,          
+          dots: true,
+          arrows: false,
+        },
+      },      
+    ],
   });
 
   $(".immune-vitality-slider").slick({

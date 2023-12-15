@@ -50,3 +50,9 @@
 .icon-search:before {
   content: "\64";
 }
+.icon-arrow:before {
+  content: "\65";
+}
+.icon-cart:before {
+  content: "\66";
+}
