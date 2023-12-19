@@ -34,7 +34,9 @@
 				margin-top: 6.25rem;
 			}
 		}
+		&:after{width: 10.875rem;height: 10.8125rem;}
 	}
+
 
 	/* Home slider end */
 
@@ -256,6 +258,7 @@
 				}
 			}
 		}
+		&:after{display: none;}
 	}
 
 	/* dropper sec end */
@@ -379,6 +382,17 @@
 		}
 	}
 	/* meet-sec end */
+
+	.join-our-sec{
+		.join-our-con{padding: 30px 15px;
+			.sec-head{
+				margin-bottom: 1rem;
+				.title-xxl{font-size: 3rem;}
+			}
+			p{font-size: 1rem;}
+		}
+		.join-box{margin-top: 2rem;}
+	}
 
 }
 
@@ -591,12 +605,12 @@
 	/* Join our sec start */
 	.join-our-sec {
 		.join-our-con {
-			padding: 1.5rem;
+			padding: 25px 15px;
 			display: block;
 
 			.sec-head {
 				.title-xxl {
-					font-size: 3rem;
+					font-size: 2.7rem;
 				}
 			}
 
@@ -804,13 +818,12 @@
 	.join-our-sec {
 		.join-our-con {
 			padding: 1rem;
-
+			margin-top: 1rem;
 			.sec-head {
 				.title-xxl {
 					font-size: 2rem;
 				}
 			}
-
 			p {
 				font-size: 1rem;
 			}

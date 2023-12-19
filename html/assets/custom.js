@@ -76,7 +76,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,
-    // autoplay: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 991,
@@ -107,6 +107,49 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+
+  const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  observeParents: !0,
+  observer: !0,
+  speed: 1800,
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    568: {
+            slidesPerView: 1,
+            centeredSlides: false,
+             pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        },
+    767: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        },
+    991: {
+            slidesPerView: 3,
+            centeredSlides: false,
+            pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        }
+    }
   });
 
   $(".latestblog-slider").slick({
