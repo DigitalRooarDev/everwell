@@ -23,20 +23,20 @@ transition: all 0.4s ease-in-out;}
 
 .slider__pagination{text-align: center;margin-top: 10px;margin-bottom: 30px;
 		    & .swiper-pagination-bullet {
-		    width: 13px;
-		    height: 10px;
+		    width: 0.625rem;
+		    height: 0.625rem;
 		    display: inline-block;
 		    background: $green-color;
 		    opacity: .2;
 		    margin: 0 5px;
-		    -webkit-border-radius: 20px;
-		            border-radius: 20px;
-		    -webkit-transition: opacity .5s, background-color .5s, width .5s;
+		    -webkit-border-radius: 50%;
+		            border-radius: 50%;
+		    /*-webkit-transition: opacity .5s, background-color .5s, width .5s;
 		    -o-transition: opacity .5s, background-color .5s, width .5s;
 		    transition: opacity .5s, background-color .5s, width .5s;
 		    -webkit-transition-delay: .5s, .5s, 0s;
 		         -o-transition-delay: .5s, .5s, 0s;
-		            transition-delay: .5s, .5s, 0s;
+		            transition-delay: .5s, .5s, 0s;*/
 		    }        
 	}
 	.swiper-pagination-clickable .swiper-pagination-bullet {
@@ -45,17 +45,27 @@ transition: all 0.4s ease-in-out;}
 	.slider__pagination .swiper-pagination-bullet-active {
 	    opacity: 1;
 	    background: $green-color;
-	    width: 30px;
-	    -webkit-transition-delay: 0s;
+	    width: 0.625rem;
+	    /*-webkit-transition-delay: 0s;
 	         -o-transition-delay: 0s;
-	            transition-delay: 0s;
+	            transition-delay: 0s;*/
 	}
 
 
 /* Our-Collection-Start */
 .our-collection-sec{
-padding: 140px 0;
+padding: 140px 0;position: relative;padding-top: 108px;
 .sec-head{margin-bottom: 3.0625rem;}
+&:after{content: "";
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background: url(dropper-pattern-right.svg) no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    width: 173px;
+    height: 180px;
+    z-index: -1;}
 }
 .product-list-main{
 	display: flex;
@@ -167,6 +177,17 @@ padding: 140px 0;
 /* Customer-Favorites-Start */
 .our-collection-sec{
 	&.customer-favor-sec{
+		padding-top: 36px;
+		&:after{content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background: url(fav-pattern-right.svg) no-repeat;
+    background-position: top right;
+    background-size: contain;
+    width: 260px;
+    height: 255px;
+    z-index: -1;}
 		.custom-fav-main{position: relative;}
 		.favorites-pro-slider{max-width: 964px;}
 		.product-list-main{
