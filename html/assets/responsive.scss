@@ -138,6 +138,11 @@
 
 	/* Home slider start */
 	.homeBanner {
+		&:after {			
+			width: 10.875rem;
+			height: 10.875rem;
+			
+		  }
 		.slide {	
 			min-height: 40.25rem;		
 			.banner-caption {
@@ -303,6 +308,9 @@
 
 	/* Home slider start */
 	.homeBanner {
+		&:after {
+			display: none;
+		}
 		.slide {			
 			padding-top: 6.3125rem;	
 			.banner-left-col{
@@ -506,7 +514,7 @@
 
 		.my-cart {
 			margin-right: 8px;
-			background: #000; 
+			background: #01390C; 
 			width:40px; 
 			height: 40px; 
 			border-radius: 50%; 
