@@ -67,6 +67,7 @@ $(document).ready(function () {
       },
     ],
   });
+
   $(".product-list-slide").slick({
     infinite: true,
     arrows: false,
@@ -168,4 +169,16 @@ $(document).ready(function () {
   });
 
   $(".menu-main li:has(ul)").prepend('<span class="arrow"></span>');
+
+  // filter 
+  $(".filter").click(function () {
+    $(".product-sidebar").toggleClass("slide-product");
+    $("body").addClass("body-fixed");
+  });
+
+  $(".sidebar-overlay, .filter-close").click(function () {  
+    $(".product-sidebar").removeClass("slide-product");
+    $("body").removeClass("body-fixed");
+  });
+  
 });
