@@ -350,6 +350,7 @@ transition: all 0.4s ease-in-out;}
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main {
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main::before {
   content: "";
@@ -377,15 +378,17 @@ transition: all 0.4s ease-in-out;}
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn .btn {
   opacity: 0;
 }
-.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover::before {
-  height: 100%;
-}
-.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn {
-  transform: translateY(0);
-  bottom: 20px;
-}
-.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn .btn {
-  opacity: 1;
+@media only screen and (min-width: 1199px) {
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover::before {
+    height: 100%;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn {
+    transform: translateY(0);
+    bottom: 20px;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn .btn {
+    opacity: 1;
+  }
 }
 
 /* resposive */
@@ -413,6 +416,9 @@ transition: all 0.4s ease-in-out;}
   }
 }
 @media only screen and (max-width: 1199px) {
+  .title-xxl {
+    font-size: 3rem;
+  }
   .client-review-sec {
     padding: 4.375rem 0;
   }
@@ -451,6 +457,29 @@ transition: all 0.4s ease-in-out;}
   }
   .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img {
     padding: 3.75rem 0;
+    margin-left: 0;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .slick-dots {
+    bottom: 0;
+    position: unset;
+    padding-top: 30px;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col {
+    margin-right: -40px;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-con {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:before {
+    display: none;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn {
+    transform: translateY(0);
+    bottom: 20px;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn .btn {
+    opacity: 1;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -493,9 +522,12 @@ transition: all 0.4s ease-in-out;}
   .marquee-sec .marquee-main .marquee-inner li {
     padding: 0.625rem 0.9375rem;
   }
-  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-box-img {
-    max-width: 80%;
-    margin: auto;
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col {
+    margin-right: -34px;
+    /*.immune-vitality-box-img {
+      max-width: 80%;
+      margin: auto;
+    }*/
   }
   .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-con .sec-head {
     margin-bottom: 1.875rem;
@@ -540,7 +572,7 @@ transition: all 0.4s ease-in-out;}
 }
 @media only screen and (max-width: 767px) {
   .title-xxl {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .title-xl {
     font-size: 2.625rem;
@@ -560,9 +592,11 @@ transition: all 0.4s ease-in-out;}
   .client-review-sec .client-review-row .client-review-col .client-review-text-box .sec-head {
     margin-bottom: 1.875rem;
   }
-  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-box-img {
-    max-width: 70%;
-    margin: 0 auto 1.25rem;
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col {
+    /*.immune-vitality-box-img {
+      max-width: 70%;
+      margin: 0 auto 1.25rem;
+    }*/
   }
   .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
     font-size: 2.5rem;
@@ -585,11 +619,19 @@ transition: all 0.4s ease-in-out;}
     padding-top: 1.5625rem;
   }
   .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box {
-    padding: 1.875rem 0 0;
+    padding: 0 0 0;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row {
+    flex-wrap: wrap;
+  }
+  .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col {
+    margin-right: 0;
+    width: 100%;
   }
   .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-box-img {
     max-width: 100%;
-    margin: 0 auto 1.25rem;
+    margin: 0 -15px auto 1.25rem;
+    padding-left: 0;
   }
   .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-col .immune-vitality-con .sec-head {
     margin-bottom: 1.5625rem;

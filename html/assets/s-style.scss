@@ -354,6 +354,7 @@ transition: all 0.4s ease-in-out;}
         .success-stories-img-main {
           position: relative;
           overflow: hidden;
+          z-index: 2;
           &::before {
             content: "";
             position: absolute;
@@ -380,15 +381,17 @@ transition: all 0.4s ease-in-out;}
               opacity: 0;
             }
           }
-          &:hover {
-            &::before {
-              height: 100%;
-            }
-            .read-more-btn {
-              transform: translateY(0);
-              bottom: 20px;
-              .btn {
-                opacity: 1;
+          @media only screen and (min-width: 1199px) {
+              &:hover {
+              &::before {
+                height: 100%;
+              }
+              .read-more-btn {
+                transform: translateY(0);
+                bottom: 20px;
+                .btn {
+                  opacity: 1;
+                }
               }
             }
           }
@@ -438,6 +441,7 @@ transition: all 0.4s ease-in-out;}
 }
 
 @media only screen and (max-width: 1199px) {
+  .title-xxl{font-size: 3rem;}
   .client-review-sec {
     padding: 4.375rem 0;
     .client-review-row {
@@ -484,10 +488,45 @@ transition: all 0.4s ease-in-out;}
       .question-box-wrap {
         .question-box-img {
           padding: 3.75rem 0;
+          margin-left: 0;
         }
       }
     }
   }
+
+  .immune-vitality-sec{
+    .immune-vitality-wrap{
+      .immune-vitality-slider{
+        .slick-dots{bottom: 0;position: unset;padding-top: 30px;}
+        .immune-vitality-slide{
+          .immune-vitality-box{
+            .immune-vitality-row{
+              .immune-vitality-col{
+                margin-right: -40px;
+              }
+              .immune-vitality-con{padding-left: 0;padding-right: 15px;}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .success-stories-sec{
+    .success-stories-wrap{
+      .success-stories-box{
+        .success-stories-box-wrap{
+          .success-stories-img-main{
+            &:before{display: none;}
+            .read-more-btn{transform: translateY(0);bottom: 20px;
+              .btn{opacity: 1;}
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -547,10 +586,11 @@ transition: all 0.4s ease-in-out;}
           .immune-vitality-box {
             .immune-vitality-row {
               .immune-vitality-col {
-                .immune-vitality-box-img {
+                margin-right: -34px;
+                /*.immune-vitality-box-img {
                   max-width: 80%;
                   margin: auto;
-                }
+                }*/
                 .immune-vitality-con {
                   .sec-head {
                     margin-bottom: 1.875rem;
@@ -626,7 +666,7 @@ transition: all 0.4s ease-in-out;}
 
 @media only screen and (max-width: 767px) {
   .title-xxl {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .title-xl {
     font-size: 2.625rem;
@@ -659,10 +699,10 @@ transition: all 0.4s ease-in-out;}
           .immune-vitality-box {
             .immune-vitality-row {
               .immune-vitality-col {
-                .immune-vitality-box-img {
+                /*.immune-vitality-box-img {
                   max-width: 70%;
                   margin: 0 auto 1.25rem;
-                }
+                }*/
               }
             }
           }
@@ -705,12 +745,17 @@ transition: all 0.4s ease-in-out;}
       .immune-vitality-slider {
         .immune-vitality-slide {
           .immune-vitality-box {
-            padding: 1.875rem 0 0;
+            padding: 0 0 0;
             .immune-vitality-row {
+              flex-wrap: wrap;
               .immune-vitality-col {
+                margin-right: 0;
+                width: 100%;
                 .immune-vitality-box-img {
                   max-width: 100%;
-                  margin: 0 auto 1.25rem;
+                  margin: 0 -15px auto 1.25rem;
+                  padding-left: 0;
+
                 }
                 .immune-vitality-con {
                   .sec-head {

@@ -26,6 +26,10 @@
     width: 10.875rem;
     height: 10.8125rem;
   }
+  .homeBanner:after {
+    width: 10.875rem;
+    height: 10.8125rem;
+  }
   /* Home slider end */
 }
 @media only screen and (max-width: 1280px) {
@@ -184,9 +188,6 @@
     max-width: 239px;
     right: 0px;
   }
-  .dropper-sec:after {
-    display: none;
-  }
   /* dropper sec end */
   /* revolution-sec start */
   .revolution-sec .revolution-wrap .revolution-row {
@@ -285,21 +286,6 @@
     z-index: -1;
   }
   /* meet-sec end */
-  .join-our-sec .join-our-con {
-    padding: 30px 15px;
-  }
-  .join-our-sec .join-our-con .sec-head {
-    margin-bottom: 1rem;
-  }
-  .join-our-sec .join-our-con .sec-head .title-xxl {
-    font-size: 3rem;
-  }
-  .join-our-sec .join-our-con p {
-    font-size: 1rem;
-  }
-  .join-our-sec .join-box {
-    margin-top: 2rem;
-  }
 }
 @media only screen and (max-width: 767px) {
   .container {
@@ -471,11 +457,11 @@
   /* Footer sec end */
   /* Join our sec start */
   .join-our-sec .join-our-con {
-    padding: 25px 15px;
+    padding: 1.5rem;
     display: block;
   }
   .join-our-sec .join-our-con .sec-head .title-xxl {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
   .join-our-sec .join-our-con .join-box {
     margin-top: 2rem;
@@ -631,7 +617,6 @@
   /* Join our sec start */
   .join-our-sec .join-our-con {
     padding: 1rem;
-    margin-top: 1rem;
   }
   .join-our-sec .join-our-con .sec-head .title-xxl {
     font-size: 2rem;
@@ -804,4 +789,4 @@
   /* Home slider end */
 }
 
-/*# sourceMappingURL=responsive.css.map */
+/*# sourceMappingURL=reponsive.css.map */
