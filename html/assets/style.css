@@ -359,6 +359,20 @@ body.home {
 .home .header-main:before {
   display: none;
 }
+.home .header-main .site-logo {
+  display: block;
+  text-align: center;
+}
+.home .header-main .site-logo img {
+  display: inline-block;
+  width: 8.125rem;
+}
+.home .header-main .site-logo img.darklogo {
+  display: inline-block;
+}
+.home .header-main .site-logo img.defaultlogo {
+  display: none;
+}
 
 .header-main {
   display: block;
@@ -386,6 +400,12 @@ body.home {
 .header-main .site-logo img {
   display: inline-block;
   width: 8.125rem;
+}
+.header-main .site-logo img.darklogo {
+  display: none;
+}
+.header-main .site-logo img.defaultlogo {
+  display: inline-block;
 }
 .header-main.has_sticky {
   z-index: 99;

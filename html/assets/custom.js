@@ -109,48 +109,7 @@ $(document).ready(function () {
     ],
   });
 
-  const swiper = new Swiper('.swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  loop: true,
-  slidesPerView: 3,
-  centeredSlides: true,
-  observeParents: !0,
-  observer: !0,
-  speed: 1800,
-  autoplay: {
-    delay: 500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    568: {
-            slidesPerView: 1,
-            centeredSlides: false,
-             pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-          },
-        },
-    767: {
-            slidesPerView: 2,
-            centeredSlides: false,
-            pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-          },
-        },
-    991: {
-            slidesPerView: 3,
-            centeredSlides: false,
-            pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-          },
-        }
-    }
-  });
+ 
 
   $(".latestblog-slider").slick({
     infinite: true,
@@ -184,6 +143,103 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $('.galleryMain').slick({
+    slidesToShow: 1,
+    infinite: true,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    asNavFor: '.galleryThumb',
+    fade: true,
+    autoplaySpeed: 4000,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {              
+              dots:true,
+              arrows: true,
+              autoplay: true
+            }
+        }
+    ]
+
+});
+
+
+$('.galleryThumb').slick({
+    slidesToShow:3,
+    infinite: true,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    autoplay: true,
+   // autoplaySpeed: 5000,
+    asNavFor: '.galleryMain',
+    arrows: false,
+    vertical: true,
+    verticalSwiping: true,
+    responsive: [        
+        {
+            breakpoint: 991,
+            settings: {
+             slidesToShow:4
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+             slidesToShow:4,
+              vertical: false,
+              verticalSwiping: false,
+              dots:false,
+              arrows: false,
+            }
+        },
+        {
+            breakpoint: 666,
+            settings: {
+             slidesToShow:4,
+              vertical: false,
+              verticalSwiping: false,
+              dots:false,
+              arrows: false,
+            }
+        },
+    {
+      breakpoint: 479, 
+      settings: {
+        slidesToShow:4,
+        vertical: false,
+        verticalSwiping: false,
+        dots:false,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 350, 
+      settings: {
+        slidesToShow:3,
+        vertical: false,
+        verticalSwiping: false,
+        dots:false,
+        arrows: false,
+      }
+    }
+    ]
+});
+
+// Quantity
+    $(document).on("click", ".qtyplus", function (e) {
+        e.preventDefault();
+        var currentVal = parseInt($(".qv-quantity").val());
+        isNaN(currentVal) ? $(".qv-quantity").val(1) : $(".qv-quantity").val(currentVal + 1)
+    }), $(document).on("click", ".qtyminus", function (e) {
+        e.preventDefault();
+        var currentVal = parseInt($(".qv-quantity").val());
+        !isNaN(currentVal) && currentVal > 1 ? $(".qv-quantity").val(currentVal - 1) : $(".qv-quantity").val(1)
+    });
 
   $(".marquee-main").each(function () {
     $(this).append($(this).find(".marquee-inner").clone());
@@ -225,3 +281,46 @@ $(document).ready(function () {
   });
   
 });
+
+ const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  observeParents: !0,
+  observer: !0,
+  speed: 1800,
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    568: {
+            slidesPerView: 1,
+            centeredSlides: false,
+             pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        },
+    767: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        },
+    991: {
+            slidesPerView: 3,
+            centeredSlides: false,
+            pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        }
+    }
+  });
