@@ -286,20 +286,16 @@ transition: all 0.4s ease-in-out;}
 }
 .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img .question-boxs-img img.img-one {
   margin-left: auto;
-  margin-right: 36px;
   margin-right: 5.5%;
   max-width: 69%;
 }
 .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img .question-boxs-img img.img-two {
-  margin-top: -65px;
   margin-top: -10.1%;
   max-width: 66%;
 }
 .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img .question-boxs-img img.img-three {
   margin-left: auto;
-  margin-top: -122px;
   margin-top: -19%;
-  margin-right: 22px;
   margin-right: 3.4%;
   max-width: 57%;
 }
