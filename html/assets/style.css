@@ -1368,15 +1368,27 @@ body.shop-page {
   display: block;
   width: 100%;
   position: relative;
-  padding-top: 1.125rem;
-  height: 236px;
+  padding-bottom: 96%;
 }
 .product-list-item .products .product-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 100%;
+  padding: 1.125rem 0.9375rem 0 0.9375rem;
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+}
+.product-list-item .products .product-img .hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 .product-list-item .products .product-text {
   padding: 0.625rem 0.9375rem 0.9375rem;
@@ -1448,12 +1460,31 @@ body.shop-page {
   border-radius: 3.9375rem;
   background: rgba(255, 51, 51, 0.1);
   color: #FF3333;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   font-weight: 500;
   text-align: center;
   line-height: 1;
-  padding: 0.5rem;
-  min-width: 3.6875rem;
+  padding: 0.3rem;
+  min-width: 2.3125rem;
+}
+@media only screen and (min-width: 991px) {
+  .product-list-item .products:hover .product-img img {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .product-list-item .products:hover .product-img .hidden {
+    visibility: visible;
+    opacity: 1;
+  }
+  .product-list-item .products.body-blue:hover {
+    background: linear-gradient(180deg, #8DCCFF 0.02%, #FFF 99.98%);
+  }
+  .product-list-item .products.mind-pink:hover {
+    background: linear-gradient(180deg, #FFB2FF 0%, #FFF 100%);
+  }
+  .product-list-item .products.spirit-orange:hover {
+    background: linear-gradient(180deg, #F9E58D 28.48%, #FFF 99.99%);
+  }
 }
 .product-list-item .btn.btn-outline {
   min-width: 7.875rem;

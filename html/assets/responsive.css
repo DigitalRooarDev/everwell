@@ -1,3 +1,7 @@
+:root {
+  --app-height: $base-height;
+}
+
 @media only screen and (max-width: 1440px) {
   .container {
     max-width: 95%;
@@ -116,6 +120,9 @@
   }
   .homeBanner .slide .side-product {
     margin-top: 3.25rem;
+  }
+  .join-our-sec .join-box .btn:hover {
+    color: #fff;
   }
   /* Home slider end */
   /* meet-sec start */
@@ -910,6 +917,23 @@
   }
   .shop-main .product-sidebar.slide-product {
     right: 0;
+  }
+  .product-list-item .products .product-img img {
+    padding: 8px 5px 0 5px;
+  }
+  .product-list-item .products .product-text {
+    padding: 10px 12px;
+  }
+  .product-list-item .products .product-text .product-title {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .product-list-item .products .product-text .product-price-btn .product-price span {
+    font-size: 16px;
+    margin-right: 0.3rem;
+  }
+  .product-list-item .btn.btn-outline {
+    margin-bottom: 12px;
   }
   .benefits-sec {
     padding: 2.375rem 0;
