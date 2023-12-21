@@ -68,46 +68,47 @@ $(document).ready(function () {
     ],
   });
 
-  // $(".product-list-slide").slick({
-  //   infinite: true,
-  //   arrows: false,
-  //   centerMode: true,
-  //   centerPadding: "0",
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   dots: false,
-  //   autoplay: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 991,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         centerMode: false,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         centerMode: false,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 569,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         centerMode: false,
-  //         dots: true,
-  //         adaptiveHeight: true,
-  //       },
-  //     },
-  //   ],
-  // });
+  $(".product-list-slide").slick({
+    infinite: true,
+    arrows: false,
+    centerMode: true,
+    centerPadding: "0",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          dots: true,
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
+
  
 
   $(".latestblog-slider").slick({
@@ -159,7 +160,7 @@ $(document).ready(function () {
             breakpoint: 767,
             settings: {              
               dots:true,
-              arrows: true,
+              arrows: false,
               autoplay: true
             }
         }
@@ -180,12 +181,6 @@ $('.galleryThumb').slick({
     vertical: true,
     verticalSwiping: true,
     responsive: [        
-        {
-            breakpoint: 991,
-            settings: {
-             slidesToShow:4
-            }
-        },
         {
             breakpoint: 767,
             settings: {
@@ -281,51 +276,45 @@ $('.galleryThumb').slick({
   
 });
 
-
-const swiper = new Swiper('.favorites-pro-slider', {
-  pagination: {
-    el: '.slider-pagination',
-    clickable: true,
+ const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   loop: true,
-  slidesPerView: 1,
-  centeredSlides: false,
-  speed: 1080,
-  effect: "cards",
-  grabCursor: true,
-  cardsEffect: {
-    perSlideOffset: 73,
-    perSlideRotate: 2,
-  },
+  slidesPerView: 3,
+  centeredSlides: true,
+  observeParents: !0,
+  observer: !0,
+  speed: 1800,
   autoplay: {
     delay: 500,
     disableOnInteraction: false,
   },
   breakpoints: {
     568: {
-          pagination: {
-                el: '.slider-pagination',
-                clickable: true,
-              },
-            loop: true,
-            slidesPerView: 2,
-            centeredSlides: true,
-            effect: "cards",
-            grabCursor: true,
-            cardsEffect: {
-              perSlideOffset: 50,
-              perSlideRotate: 2,
-            },
+            slidesPerView: 1,
+            centeredSlides: false,
+             pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
         },
-    768: {
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
+    767: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
+        },
+    991: {
             slidesPerView: 3,
-            centeredSlides: true,
-            // observeParents: !0,
-            // observer: !0,
+            centeredSlides: false,
+            pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+          },
         }
     }
   });
