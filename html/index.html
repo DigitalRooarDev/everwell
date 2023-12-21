@@ -14,12 +14,13 @@
   <link rel="stylesheet" type="text/css" href="assets/animate.min.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.css">
   <link rel="stylesheet" type="text/css" href="assets/fancybox.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.css'>
+  <link rel="stylesheet" type="text/css" href="assets/swiper-bundle.css">
   <link rel="stylesheet" type="text/css" href="assets/theme-icon.css">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <link rel="stylesheet" type="text/css" href="assets/responsive.css">
   <link rel="stylesheet" type="text/css" href="assets/newstyle.css">
   <link rel="stylesheet" type="text/css" href="assets/s-style.css">
+  <link rel="stylesheet" type="text/css" href="assets/m-style.css">
 </head>
 
 <body class="home">
@@ -214,16 +215,17 @@
     <!-- home-banner-sec-end -->
 
     <!-- Our Collection Start -->
-    <section class="our-collection-sec">
+    <section class="our-collection-sec collection-sec">
       <div class="container">
         <div class="sec-head">
           <h2 class="title title-sm text-center">Wellness Wonders: Explore Our Collection</h2>
         </div>
-        <div class="product-list-main product-list-slide">
+        <div class="product-list-main">
           <div class="product-item">
-            <div class="product-box" style="background: linear-gradient(180deg, #8DCCFF 0.02%, #FFF 99.98%);">
+            <div class="product-box body-blue">
               <a href="#" class="product-img">
                 <img src="assets/product-img-1.png" alt="product-img">
+                <img class="hidden" src="assets/product-img-1-hov.png" alt="product-img">
               </a>
               <div class="product-text">
                 <h3 class="product-title"><a href="#"> Lung Detox: "Lung Cleanser" </a></h3>
@@ -247,9 +249,10 @@
             </div>
           </div>
           <div class="product-item">
-            <div class="product-box" style="background: linear-gradient(180deg, #FFB2FF 0%, #FFF 100%);">
+            <div class="product-box mind-pink">
               <a href="#" class="product-img">
                 <img src="assets/product-img-2.png" alt="product-img">
+                <img class="hidden" src="assets/product-img-2-hov.png" alt="product-img">
               </a>
               <div class="product-text">
                 <h3 class="product-title"><a href="#"> Focus: "Mind Sharpen"</a></h3>
@@ -271,38 +274,14 @@
             </div>
           </div>
           <div class="product-item">
-            <div class="product-box" style="background: linear-gradient(180deg, #F9E58D 28.48%, #FFF 99.99%);">
+            <div class="product-box spirit-orange">
               <span class="product-new">New</span>
               <a href="#" class="product-img">
                 <img src="assets/product-img-3.png" alt="product-img">
+                <img class="hidden" src="assets/product-img-3-hov.png" alt="product-img">
               </a>
               <div class="product-text">
                 <h3 class="product-title"><a href="#"> Immunity: “Immune Vitality” </a></h3>
-                <div class="product-rating">
-                  <div class="review-star">
-                    <div class="start-icon" style="width:90%;">
-                      <span class="stars"></span>
-                    </div>
-                  </div>
-                  <span class="rating-num">4.5/<small>5</small></span>
-                </div>
-                <div class="product-price-btn">
-                  <div class="product-price">
-                    <span class="price-sale">$80</span>
-                  </div>
-                  <button class="btn btn-outline">Add to Cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="product-box" style="background: linear-gradient(180deg, #8DCCFF 0.02%, #FFF 99.98%);">
-              <span class="product-new">New</span>
-              <a href="#" class="product-img">
-                <img src="assets/product-img-3.png" alt="product-img">
-              </a>
-              <div class="product-text">
-                <h3 class="product-title"><a href="#"> Immunity: “Immune Vitality”</a></h3>
                 <div class="product-rating">
                   <div class="review-star">
                     <div class="start-icon" style="width:90%;">
@@ -492,7 +471,11 @@
                         <div class="col-lg-6">
                             <div class="question-box-wrap">
                                 <div class="question-box-img wow fadeInUp" data-wow-delay="0.2s">
-                                    <img src="./assets/question-box-img.png" alt="">
+                                  <div class="question-boxs-img">
+                                    <img class="img-one wow animate__zoomIn" data-wow-duration="1.5s" data-wow-delay="0.2s" src="./assets/question-box-img1.png" alt="">
+                                    <img class="img-two wow animate__zoomIn" data-wow-duration="1.6s" data-wow-delay="0.3s" src="./assets/question-box-img2.png" alt="">
+                                    <img class="img-three wow animate__zoomIn" data-wow-duration="1.7s" data-wow-delay="0.4s" src="./assets/question-box-img3.png" alt="">
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -520,7 +503,7 @@
                 <div class="favorites-pro-slider swiper">
                   <div class="product-list-main swiper-wrapper">
                       <div class="product-item swiper-slide">
-                        <div class="product-box" style="background: linear-gradient(180deg, #8DCCFF 0.02%, #FFF 99.98%);">
+                        <div class="product-box body-blue">
                           <a href="#" class="product-img">
                             <img src="assets/fav-pro-img1.png" alt="product-img">
                           </a>
@@ -545,7 +528,7 @@
                         </div>
                       </div>
                       <div class="product-item swiper-slide">
-                        <div class="product-box" style="background: linear-gradient(180deg, #FFB2FF 0%, #FFF 100%);">
+                        <div class="product-box mind-pink">
                           <a href="#" class="product-img">
                             <img src="assets/fav-pro-img2.png" alt="product-img">
                           </a>
@@ -568,7 +551,7 @@
                         </div>
                       </div>
                       <div class="product-item swiper-slide">
-                        <div class="product-box" style="background: linear-gradient(180deg, #F9E58D 28.48%, #FFF 99.99%);">
+                        <div class="product-box spirit-orange">
                           <a href="#" class="product-img">
                             <img src="assets/fav-pro-img3.png" alt="product-img">
                           </a>
@@ -591,7 +574,7 @@
                         </div>
                       </div>
                       <div class="product-item swiper-slide">
-                        <div class="product-box" style="background: linear-gradient(180deg, #8DCCFF 0.02%, #FFF 99.98%);">
+                        <div class="product-box body-blue">
                           <a href="#" class="product-img">
                             <img src="assets/fav-pro-img1.png" alt="product-img">
                           </a>
@@ -615,9 +598,8 @@
                       </div>
                   </div>  
                 </div>
-                <div class="slider__controls">
-                <div class="slider__pagination"></div>
-                </div>
+                
+                <div class="slider-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
               </div>
@@ -941,12 +923,12 @@
   <script type="text/javascript" src="assets/jquery.min.js"></script>
   <script type="text/javascript" src="assets/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="assets/slick.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+  <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="assets/fancybox.umd.js"></script>
   <script type="text/javascript" src="assets/custom.js"></script>
   <script type="text/javascript" src="assets/wow.min.js"></script>
   <script>new WOW().init();</script>
+
 
 </body>
 

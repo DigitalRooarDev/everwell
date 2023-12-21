@@ -269,10 +269,15 @@ transition: all 0.4s ease-in-out;}
         /*width: 100%;
         height: 100%;*/
         margin-left: -53px;
-        img {
-          /*width: 100%;
-          height: 100%;
-          object-fit: cover;*/
+        .question-boxs-img{
+          img {
+            /*width: 100%;
+            height: 100%;
+            object-fit: cover;*/
+            &.img-one{margin-left: auto;margin-right: 36px;margin-right: 5.5%;max-width: 69%;}
+            &.img-two{margin-top: -65px;margin-top: -10.1%;max-width: 66%;}
+            &.img-three{margin-left: auto;margin-top: -122px;margin-top: -19%; margin-right: 22px;margin-right: 3.4%;max-width: 57%;}
+          }
         }
       }
     }
