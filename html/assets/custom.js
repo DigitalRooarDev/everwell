@@ -67,6 +67,7 @@ $(document).ready(function () {
       },
     ],
   });
+
   // $(".product-list-slide").slick({
   //   infinite: true,
   //   arrows: false,
