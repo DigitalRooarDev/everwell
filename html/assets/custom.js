@@ -276,6 +276,7 @@ $('.galleryThumb').slick({
   
 });
 
+if ($('.favorites-pro-slider').length > 0) {
  const swiper = new Swiper('.favorites-pro-slider', {
   pagination: {
     el: '.slider-pagination',
@@ -323,3 +324,4 @@ $('.galleryThumb').slick({
         }
     }
   });
+}
