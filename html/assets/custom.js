@@ -108,8 +108,181 @@ $(document).ready(function () {
   //     },
   //   ],
   // });
+ 
 
-  const swiper = new Swiper('.favorites-pro-slider', {
+  $(".latestblog-slider").slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
+
+  $('.galleryMain').slick({
+    slidesToShow: 1,
+    infinite: true,
+    slidesToScroll: 1,
+    fade: false,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    asNavFor: '.galleryThumb',
+    fade: true,
+    autoplaySpeed: 4000,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {              
+              dots:true,
+              arrows: true,
+              autoplay: true
+            }
+        }
+    ]
+
+});
+
+
+$('.galleryThumb').slick({
+    slidesToShow:3,
+    infinite: true,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    autoplay: true,
+   // autoplaySpeed: 5000,
+    asNavFor: '.galleryMain',
+    arrows: false,
+    vertical: true,
+    verticalSwiping: true,
+    responsive: [        
+        {
+            breakpoint: 991,
+            settings: {
+             slidesToShow:4
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+             slidesToShow:4,
+              vertical: false,
+              verticalSwiping: false,
+              dots:false,
+              arrows: false,
+            }
+        },
+        {
+            breakpoint: 666,
+            settings: {
+             slidesToShow:4,
+              vertical: false,
+              verticalSwiping: false,
+              dots:false,
+              arrows: false,
+            }
+        },
+    {
+      breakpoint: 479, 
+      settings: {
+        slidesToShow:4,
+        vertical: false,
+        verticalSwiping: false,
+        dots:false,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 350, 
+      settings: {
+        slidesToShow:3,
+        vertical: false,
+        verticalSwiping: false,
+        dots:false,
+        arrows: false,
+      }
+    }
+    ]
+});
+
+// Quantity
+    $(document).on("click", ".qtyplus", function (e) {
+        e.preventDefault();
+        var currentVal = parseInt($(".qv-quantity").val());
+        isNaN(currentVal) ? $(".qv-quantity").val(1) : $(".qv-quantity").val(currentVal + 1)
+    }), $(document).on("click", ".qtyminus", function (e) {
+        e.preventDefault();
+        var currentVal = parseInt($(".qv-quantity").val());
+        !isNaN(currentVal) && currentVal > 1 ? $(".qv-quantity").val(currentVal - 1) : $(".qv-quantity").val(1)
+    });
+
+  $(".marquee-main").each(function () {
+    $(this).append($(this).find(".marquee-inner").clone());
+    $(this).wrapInner('<div class="marquee-animate"></div>');
+
+    $(this)
+      .find(".marquee-animate")
+      .css({
+        "margin-left": -$(this).find(".marquee-inner").outerWidth(),
+        "animation-duration":
+          $(this).find(".marquee-inner").outerWidth() / 100 + "s",
+      });
+  });
+
+  /* mobile-menu */
+  $(".menu-icon").click(function () {
+    $(this).toggleClass("menu-close");
+    $(".navigation-bar").toggleClass("slide-menu");
+    $("body").addClass("body-fixed");
+  });
+
+  $(".sidebar-overlay, .close-menu, .menu-main ul li a").click(function () {
+    $(".menu-icon").removeClass("menu-close");
+    $(".navigation-bar").removeClass("slide-menu");
+    $("body").removeClass("body-fixed");
+  });
+
+  $(".menu-main li:has(ul)").prepend('<span class="arrow"></span>');
+
+  // filter 
+  $(".filter").click(function () {
+    $(".product-sidebar").toggleClass("slide-product");
+    $("body").addClass("body-fixed");
+  });
+
+  $(".sidebar-overlay, .filter-close").click(function () {  
+    $(".product-sidebar").removeClass("slide-product");
+    $("body").removeClass("body-fixed");
+  });
+  
+});
+
+
+const swiper = new Swiper('.favorites-pro-slider', {
   pagination: {
     el: '.slider-pagination',
     clickable: true,
@@ -156,78 +329,3 @@ $(document).ready(function () {
         }
     }
   });
-
-
-  $(".latestblog-slider").slick({
-    infinite: true,
-    arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 569,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-        },
-      },
-    ],
-  });
-
-  $(".marquee-main").each(function () {
-    $(this).append($(this).find(".marquee-inner").clone());
-    $(this).wrapInner('<div class="marquee-animate"></div>');
-
-    $(this)
-      .find(".marquee-animate")
-      .css({
-        "margin-left": -$(this).find(".marquee-inner").outerWidth(),
-        "animation-duration":
-          $(this).find(".marquee-inner").outerWidth() / 100 + "s",
-      });
-  });
-
-  /* mobile-menu */
-  $(".menu-icon").click(function () {
-    $(this).toggleClass("menu-close");
-    $(".navigation-bar").toggleClass("slide-menu");
-    $("body").addClass("body-fixed");
-  });
-
-  $(".sidebar-overlay, .close-menu, .menu-main ul li a").click(function () {
-    $(".menu-icon").removeClass("menu-close");
-    $(".navigation-bar").removeClass("slide-menu");
-    $("body").removeClass("body-fixed");
-  });
-
-  $(".menu-main li:has(ul)").prepend('<span class="arrow"></span>');
-
-  // filter 
-  $(".filter").click(function () {
-    $(".product-sidebar").toggleClass("slide-product");
-    $("body").addClass("body-fixed");
-  });
-
-  $(".sidebar-overlay, .filter-close").click(function () {  
-    $(".product-sidebar").removeClass("slide-product");
-    $("body").removeClass("body-fixed");
-  });
-  
-});
