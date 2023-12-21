@@ -72,7 +72,7 @@
     <div class="breadcrumbmain">
       <div class="container-lg">
         <ul class="breadcrumbList">
-          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
           <li><a href="#">All</a></li>
           <li><span class="current">Product Details</span></li>
         </ul>
@@ -171,7 +171,7 @@
     <section class="products-detils-wrapper">
             <div class="container-lg">
               <div class="product-tab-main">
-                <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+                <ul class="nav nav-tabs d-none d-md-flex" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="details-tab-pane" aria-selected="true">Product Details</button>
                     </li>
@@ -185,33 +185,118 @@
               </div>
             
             <div class="tab-content accordion rounded-0" id="myTabContent">
-                <div class="tab-pane fade accordion-item show active" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
-                    <h2 class="accordion-header d-lg-none" id="detailsHead">
+                <div class="tab-pane product-tab-pane fade accordion-item show active" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
+                    <h2 class="accordion-header d-md-none" id="detailsHead">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetails" aria-expanded="true" aria-controls="collapseDetails">Product Details</button>
                     </h2>
-                    <div id="collapseDetails" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="detailsHead" data-bs-parent="#myTabContent">
+                    <div id="collapseDetails" class="accordion-collapse collapse show  d-md-block" aria-labelledby="detailsHead" data-bs-parent="#myTabContent">
                         <div class="accordion-body">
-                            Product Details
+                            <div class="product-details-inner-desc">
+                                <div class="product-details-desc-box">
+                                  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">Ingredients</button>
+                                    <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">How to Use</button>
+                                    <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#three" type="button" role="tab" aria-controls="three" aria-selected="false">Additional Information</button>
+                                  </div>
+                                  <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+                                      <div class="cmsCon">
+                                        <p>Unlock the secret to 'Immune Vitality' with our carefully curated blend of natural and powerful ingredients. Our immune-boosting elixir is enriched with a synergy of vitamins, antioxidants, and botanical extracts, including vitamin C for that added punch, echinacea to bolster your defenses, and a touch of elderberry for a soothing twist. </p>
+                                        <p>You'll also find zinc to support cellular health and a dash of ginger to invigorate your senses. These ingredients work harmoniously to fortify your immune system and keep you at your best. Discover the wholesome goodness of 'Immune Vitality' and help your body stay resilient year-round.</p>
+                                      </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+                                      <div class="cmsCon">
+                                        <p>Unlock the secret to 'Immune Vitality' with our carefully curated blend of natural and powerful ingredients. Our immune-boosting elixir is enriched with a synergy of vitamins, antioxidants, and botanical extracts, including vitamin C for that added punch, echinacea to bolster your defenses, and a touch of elderberry for a soothing twist. </p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt voluptatibus aliquid? Nostrum modi vitae eveniet libero aut, praesentium officia asperiores. Quo in amet excepturi totam maiores deserunt repudiandae? Incidunt?</p>
+                                      </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="v-pills-three-tab">
+                                      <div class="cmsCon">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt voluptatibus aliquid? Nostrum modi vitae eveniet libero aut, praesentium officia asperiores. Quo in amet excepturi totam maiores deserunt repudiandae? Incidunt?</p>
+                                        <p>You'll also find zinc to support cellular health and a dash of ginger to invigorate your senses. These ingredients work harmoniously to fortify your immune system and keep you at your best. Discover the wholesome goodness of 'Immune Vitality' and help your body stay resilient year-round.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade accordion-item" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
-                    <h2 class="accordion-header d-lg-none" id="headingReviews">
+                <div class="tab-pane product-tab-pane fade accordion-item" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+                    <h2 class="accordion-header d-md-none" id="headingReviews">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsReviews" aria-expanded="false" aria-controls="collapsReviews">Rating & Reviews</button>
                     </h2>
-                    <div id="collapsReviews" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingReviews" data-bs-parent="#myTabContent">
+                    <div id="collapsReviews" class="accordion-collapse collapse d-md-block" aria-labelledby="headingReviews" data-bs-parent="#myTabContent">
                         <div class="accordion-body">
                             Product rating
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade accordion-item" id="faq-tab-pane" role="tabpanel" aria-labelledby="faq-tab" tabindex="0">
-                    <h2 class="accordion-header d-lg-none" id="headingFaq">
+                <div class="tab-pane product-tab-pane fade accordion-item" id="faq-tab-pane" role="tabpanel" aria-labelledby="faq-tab" tabindex="0">
+                    <h2 class="accordion-header d-md-none" id="headingFaq">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsFaq" aria-expanded="false" aria-controls="collapsFaq">FAQs</button>
                     </h2>
-                    <div id="collapsFaq" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingFaq" data-bs-parent="#myTabContent">
+                    <div id="collapsFaq" class="accordion-collapse collapse d-md-block" aria-labelledby="headingFaq" data-bs-parent="#myTabContent">
                         <div class="accordion-body">
-                            FAQs
+                            <div class="accordion faq" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                What sets EverWell products apart from others on the market?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="cms-con">
+                                                    <p>Finding the perfect EverWell product is easy with our wellness quiz! Simply answer a few questions about your health and well-being goals, and we'll recommend products tailored to your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                How do I choose the right EverWell product for me?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="cms-con">
+                                                    <p>Finding the perfect EverWell product is easy with our wellness quiz! Simply answer a few questions about your health and well-being goals, and we'll recommend products tailored to your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                What is the return policy for EverWell products?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="cms-con">
+                                                    <p>Finding the perfect EverWell product is easy with our wellness quiz! Simply answer a few questions about your health and well-being goals, and we'll recommend products tailored to your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Do you offer international shipping?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="cms-con">
+                                                    <p>Finding the perfect EverWell product is easy with our wellness quiz! Simply answer a few questions about your health and well-being goals, and we'll recommend products tailored to your needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

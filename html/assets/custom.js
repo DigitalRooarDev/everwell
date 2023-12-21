@@ -276,45 +276,50 @@ $('.galleryThumb').slick({
   
 });
 
- const swiper = new Swiper('.swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+ const swiper = new Swiper('.favorites-pro-slider', {
+  pagination: {
+    el: '.slider-pagination',
+    clickable: true,
   },
   loop: true,
-  slidesPerView: 3,
-  centeredSlides: true,
-  observeParents: !0,
-  observer: !0,
-  speed: 1800,
+  slidesPerView: 1,
+  centeredSlides: false,
+  speed: 1080,
+  effect: "cards",
+  grabCursor: true,
+  cardsEffect: {
+    perSlideOffset: 73,
+    perSlideRotate: 2,
+  },
   autoplay: {
     delay: 500,
     disableOnInteraction: false,
   },
   breakpoints: {
     568: {
-            slidesPerView: 1,
-            centeredSlides: false,
-             pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-          },
-        },
-    767: {
+          pagination: {
+                el: '.slider-pagination',
+                clickable: true,
+              },
+            loop: true,
             slidesPerView: 2,
-            centeredSlides: false,
-            pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-          },
+            centeredSlides: true,
+            effect: "cards",
+            grabCursor: true,
+            cardsEffect: {
+              perSlideOffset: 50,
+              perSlideRotate: 2,
+            },
         },
-    991: {
+    768: {
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
             slidesPerView: 3,
-            centeredSlides: false,
-            pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-          },
+            centeredSlides: true,
+            // observeParents: !0,
+            // observer: !0,
         }
     }
   });
