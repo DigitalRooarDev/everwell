@@ -24,23 +24,6 @@
     }
   }
 }
-
-
-/*.slick-prev, .slick-next{margin-top: 0px;position: absolute;top: 50%;width: 45px;height: 45px;transform: translateY(-50%);font-size: 0;
-border: none;background: transparent;transition: all 0.4s ease-in-out;z-index: 2;
-  &:hover {
-    &::before {
-      border-color: #01390c;
-    }
-  }
-}
-.slick-next{right: 0;}
-.slick-prev{left: 0px;}
-.slick-prev::before, .slick-next::before {content: "";position: absolute;width: 28px;height: 28px;transform: rotate(-45deg);top: 9px;left: 16px;
-transition: all 0.4s ease-in-out;}
-.slick-prev::before{border-top: 0.1875rem solid #5B5B5B;border-left: 0.1875rem solid #5B5B5B;}
-.slick-next::before{border-bottom: 0.1875rem solid #5B5B5B;border-right: 0.1875rem solid #5B5B5B;left: 1px;}*/
-
 .slick-prev {
   background: transparent;
   width: 3.5rem;
@@ -64,7 +47,8 @@ transition: all 0.4s ease-in-out;}
 
 .slick-prev:before {
   content: "";
-  width: 28px;height: 28px;
+  width: 28px;
+  height: 28px;
   border-bottom: 0.1875rem solid #5b5b5b;
   border-left: 0.1875rem solid #5b5b5b;
   position: absolute;
@@ -100,7 +84,8 @@ transition: all 0.4s ease-in-out;}
 
 .slick-next:before {
   content: "";
-  width: 28px;height: 28px;
+  width: 28px;
+  height: 28px;
   border-bottom: 0.1875rem solid #5b5b5b;
   border-right: 0.1875rem solid #5b5b5b;
   position: absolute;
@@ -204,13 +189,31 @@ transition: all 0.4s ease-in-out;}
 
 /* immune-vitality-sec-start */
 .immune-vitality-sec {
-  background: linear-gradient(180deg,#f9e58d 15.79%,rgba(253, 248, 225, 0) 100%);padding: 2.8125rem 0 0;
-  .slick-next{right: -8px;}
-  .slick-prev{left: -8px;}
+  background: linear-gradient(
+    180deg,
+    #f9e58d 15.79%,
+    rgba(253, 248, 225, 0) 100%
+  );
+  padding: 2.8125rem 0 0;
+  .slick-next {
+    right: -8px;
+  }
+  .slick-prev {
+    left: -8px;
+  }
   .immune-vitality-wrap {
     .immune-vitality-slider {
-      .slick-dots{padding-top: 0;bottom: 40px;position: absolute;left: 0;right: 0;margin: auto;}
-      .slick-list{overflow: visible;}
+      .slick-dots {
+        padding-top: 0;
+        bottom: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .slick-list {
+        overflow: visible;
+      }
       .immune-vitality-slide {
         .immune-vitality-box {
           width: 100%;
@@ -219,8 +222,13 @@ transition: all 0.4s ease-in-out;}
             flex-direction: row-reverse;
             align-items: center;
             display: flex;
-            .immune-vitality-col{width: 93%;margin-right: -71px;}
-            .immune-vitality-col ~ .immune-vitality-col{width: 100%;}
+            .immune-vitality-col {
+              width: 93%;
+              margin-right: -71px;
+            }
+            .immune-vitality-col ~ .immune-vitality-col {
+              width: 100%;
+            }
             .immune-vitality-con {
               padding-left: 94px;
               .sec-head {
@@ -230,7 +238,9 @@ transition: all 0.4s ease-in-out;}
                 }
               }
             }
-            .immune-vitality-box-img{padding-left: 20px;}
+            .immune-vitality-box-img {
+              padding-left: 20px;
+            }
             .cms-con {
               max-width: 36.25rem;
               margin-bottom: 5.25rem;
@@ -269,14 +279,26 @@ transition: all 0.4s ease-in-out;}
         /*width: 100%;
         height: 100%;*/
         margin-left: -53px;
-        .question-boxs-img{
+        .question-boxs-img {
           img {
             /*width: 100%;
             height: 100%;
             object-fit: cover;*/
-            &.img-one{margin-left: auto;margin-right: 5.5%;max-width: 69%;}
-            &.img-two{margin-top: -10.1%;max-width: 66%;}
-            &.img-three{margin-left: auto;margin-top: -19%;margin-right: 3.4%;max-width: 57%;}
+            &.img-one {
+              margin-left: auto;
+              margin-right: 5.5%;
+              max-width: 69%;
+            }
+            &.img-two {
+              margin-top: -10.1%;
+              max-width: 66%;
+            }
+            &.img-three {
+              margin-left: auto;
+              margin-top: -19%;
+              margin-right: 3.4%;
+              max-width: 57%;
+            }
           }
         }
       }
@@ -288,7 +310,7 @@ transition: all 0.4s ease-in-out;}
       .question-box-main-title {
         font-size: 4rem;
         font-weight: 700;
-        span{
+        span {
           font-weight: normal;
         }
       }
@@ -387,7 +409,7 @@ transition: all 0.4s ease-in-out;}
             }
           }
           @media only screen and (min-width: 1199px) {
-              &:hover {
+            &:hover {
               &::before {
                 height: 100%;
               }
@@ -399,6 +421,75 @@ transition: all 0.4s ease-in-out;}
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-details-inner-desc {
+  .product-details-desc-box {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    border: none;
+    .nav {
+      width: 35%;
+      .nav-link {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 7px;
+        color: #1e1e1e;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.3;
+        display: block;
+        background-color: transparent;
+        text-align: start;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: inherit;
+          top: 0;
+          bottom: 3px;
+          right: 14px;
+          margin: auto;
+          display: inline-block;
+          background-image: url(../assets/accordion-cricle-plus.svg);
+          background-size: 29px;
+          background-repeat: no-repeat;
+          width: 29px;
+          height: 29px;
+          transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          -moz-transition: all .4s ease-in-out;
+          -ms-transition: all .4s ease-in-out;
+          -o-transition: all .4s ease-in-out;
+}
+        &.active {
+          &::after {
+            background-image: url(../assets/accordion-cricle-minus.svg);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+    .tab-content {
+      width: 65%;
+      padding-left: 165px;
+      .tab-pane {
+        padding: 4px 20px;
+        max-width: 89%;
+        .cmsCon {
+          p {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            letter-spacing: -0.32px;
           }
         }
       }
@@ -446,7 +537,9 @@ transition: all 0.4s ease-in-out;}
 }
 
 @media only screen and (max-width: 1199px) {
-  .title-xxl{font-size: 3rem;}
+  .title-xxl {
+    font-size: 3rem;
+  }
   .client-review-sec {
     padding: 4.375rem 0;
     .client-review-row {
@@ -499,17 +592,24 @@ transition: all 0.4s ease-in-out;}
     }
   }
 
-  .immune-vitality-sec{
-    .immune-vitality-wrap{
-      .immune-vitality-slider{
-        .slick-dots{bottom: 0;position: unset;padding-top: 30px;}
-        .immune-vitality-slide{
-          .immune-vitality-box{
-            .immune-vitality-row{
-              .immune-vitality-col{
+  .immune-vitality-sec {
+    .immune-vitality-wrap {
+      .immune-vitality-slider {
+        .slick-dots {
+          bottom: 0;
+          position: unset;
+          padding-top: 30px;
+        }
+        .immune-vitality-slide {
+          .immune-vitality-box {
+            .immune-vitality-row {
+              .immune-vitality-col {
                 margin-right: -40px;
               }
-              .immune-vitality-con{padding-left: 0;padding-right: 15px;}
+              .immune-vitality-con {
+                padding-left: 0;
+                padding-right: 15px;
+              }
             }
           }
         }
@@ -517,21 +617,26 @@ transition: all 0.4s ease-in-out;}
     }
   }
 
-  .success-stories-sec{
-    .success-stories-wrap{
-      .success-stories-box{
-        .success-stories-box-wrap{
-          .success-stories-img-main{
-            &:before{display: none;}
-            .read-more-btn{transform: translateY(0);bottom: 20px;
-              .btn{opacity: 1;}
+  .success-stories-sec {
+    .success-stories-wrap {
+      .success-stories-box {
+        .success-stories-box-wrap {
+          .success-stories-img-main {
+            &:before {
+              display: none;
+            }
+            .read-more-btn {
+              transform: translateY(0);
+              bottom: 20px;
+              .btn {
+                opacity: 1;
+              }
             }
           }
         }
       }
     }
   }
-
 }
 
 @media only screen and (max-width: 991px) {
@@ -638,8 +743,8 @@ transition: all 0.4s ease-in-out;}
     .success-stories-wrap {
       .success-stories-con {
         margin-bottom: 1.875rem;
-        .sec-head{
-          margin-bottom: .9375rem;
+        .sec-head {
+          margin-bottom: 0.9375rem;
         }
         .cms-con {
           p {
@@ -760,7 +865,6 @@ transition: all 0.4s ease-in-out;}
                   max-width: 100%;
                   margin: 0 -15px auto 1.25rem;
                   padding-left: 0;
-
                 }
                 .immune-vitality-con {
                   .sec-head {
