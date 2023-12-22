@@ -483,6 +483,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{-webkit-appea
       height: 100%;
       object-fit: cover;
     }
+    .video-icon{  
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      position:absolute;  
+      margin:auto;
+      color: #ffffff;
+      font-size: 75px;
+      margin-top: 10px;
+    }
   }
   .blog-video-con {
     height: 100%;
@@ -511,16 +521,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{-webkit-appea
   }
 }
 
-.video-icon{  
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  position:absolute;  
-  margin:auto;
-  color: #ffffff;
-  font-size: 75px;
-  margin-top: 10px;
-}
+
 
 
 /* Blog page end */
