@@ -56,3 +56,12 @@
 .icon-cart:before {
   content: "\66";
 }
+.icon-user:before {
+  content: "\67";
+}
+.icon-share:before {
+  content: "\68";
+}
+.icon-video:before {
+  content: "\69";
+}

@@ -273,6 +273,42 @@ $('.galleryThumb').slick({
     $(".product-sidebar").removeClass("slide-product");
     $("body").removeClass("body-fixed");
   });
+
+  $('.related-product-slider').slick({
+    slidesToShow:4,
+    infinite: true,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    autoplay: true,
+   // autoplaySpeed: 5000,    
+    arrows: false,    
+    responsive: [      
+        {
+            breakpoint: 991,
+            settings: {
+             slidesToShow:3,              
+              dots:true,
+              arrows: false,
+            }
+        },  
+        {
+            breakpoint: 767,
+            settings: {
+             slidesToShow:2,              
+              dots:true,
+              arrows: false,
+            }
+        },        
+      {
+        breakpoint: 479, 
+        settings: {
+          slidesToShow:1,
+          dots:true,
+          arrows: false,
+        }
+      }
+    ]
+});
   
 });
 
