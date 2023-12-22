@@ -3,18 +3,24 @@
 .btn{display: inline-block;font-weight: 500;line-height: 1.5;color: $white-color;background-color: $green-color;border: 0.0625rem solid $green-color;text-align: center;text-decoration: none;
 	vertical-align: middle;cursor: pointer; -webkit-user-select: none;-moz-user-select: none;user-select: none;padding: 0.8125rem 1.25rem;min-width: 13.625rem;
     font-size: 1rem;border-radius: 3.875rem;transition: all 0.4s ease-in-out;
+    background: $green-color;
+    background-image: url(./bg-fill-white.png);
+    background-repeat: repeat-x !important;
+    background-position: 0 -100% !important;
+    transition: 1.5s ease;
     @media only screen and (min-width: 1199px) {
-    &:hover{background-color: transparent;color: $primary-color;border: 0.0625rem solid $green-color;}
+    &:hover{background-color: transparent;color: $primary-color;border: 0.0625rem solid $green-color;background-position: center !important;}
  		}
 }
-.btn.btn-outline{background-color: transparent;color: $primary-color;border: 0.0625rem solid $green-color;
+
+.btn.btn-outline{background-color: transparent;color: $primary-color;border: 0.0625rem solid $green-color;background-image: url(./bg-fill-green.png);
 	@media only screen and (min-width: 1199px) {
-	&:hover{color: $white-color;background-color: $green-color;border: 0.0625rem solid $green-color;}
+	&:hover{color: $white-color;background-color: transparent;border: 0.0625rem solid $green-color;}
 	}
 }
-.btn.btn-white{background-color: $white-color;color: $green-color;border: 0.0625rem solid $white-color;
+.btn.btn-white{background-color: $white-color;color: $green-color;border: 0.0625rem solid $white-color;background-image: url(./bg-fill-green.png);
 	@media only screen and (min-width: 1199px) {
-	&:hover{color: $white-color;background-color: $green-color;border: 0.0625rem solid $green-color;}
+	&:hover{color: $white-color;background-color: transparent;border: 0.0625rem solid $green-color;}
 	}
 }
 .btn-check:focus+.btn, .btn:focus{box-shadow:none;}
@@ -308,6 +314,49 @@ padding: 8.75rem 0;position: relative;padding-top: 6.75rem;
 }
 
 /* Customer-Favorites-End */
+
+/* Article-Start */
+
+
+
+.article{
+	background: url(article-bg.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+	.header-main{
+		&:before{display: none;}
+	}
+}
+
+.article-sec{
+	.article-row{
+		display: flex;
+		align-items: center;
+		.article-col{
+			width: 100%;
+			&:last-child{width: 86%;}
+		}
+	}
+	.article-img{border-radius: 15.99px;overflow: hidden;
+		img{width: 100%;}
+	}
+	.article-text{
+		color: $green-color;
+		padding: 0 15px;
+		max-width: 410px;
+		margin: auto;
+		text-align: center;
+		.sec-head{
+			margin-bottom: 50px;
+			.title{font-size: 1.75rem;text-transform: uppercase;}
+		}
+		hr{}
+		.article-date{font-size: 24px;font-family: "Reckless Neue";line-height: 1;margin-top: 24px;display: block;}
+	}
+
+}
+
+/* Article-End */
 
 
 @media only screen and (max-width: 1599px) {}

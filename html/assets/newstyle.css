@@ -21,12 +21,18 @@
   font-size: 1rem;
   border-radius: 3.875rem;
   transition: all 0.4s ease-in-out;
+  background: #01390C;
+  background-image: url(./bg-fill-white.png);
+  background-repeat: repeat-x !important;
+  background-position: 0 -100% !important;
+  transition: 1.5s ease;
 }
 @media only screen and (min-width: 1199px) {
   .btn:hover {
     background-color: transparent;
     color: #000;
     border: 0.0625rem solid #01390C;
+    background-position: center !important;
   }
 }
 
@@ -34,11 +40,12 @@
   background-color: transparent;
   color: #000;
   border: 0.0625rem solid #01390C;
+  background-image: url(./bg-fill-green.png);
 }
 @media only screen and (min-width: 1199px) {
   .btn.btn-outline:hover {
     color: #fff;
-    background-color: #01390C;
+    background-color: transparent;
     border: 0.0625rem solid #01390C;
   }
 }
@@ -47,11 +54,12 @@
   background-color: #fff;
   color: #01390C;
   border: 0.0625rem solid #fff;
+  background-image: url(./bg-fill-green.png);
 }
 @media only screen and (min-width: 1199px) {
   .btn.btn-white:hover {
     color: #fff;
-    background-color: #01390C;
+    background-color: transparent;
     border: 0.0625rem solid #01390C;
   }
 }
@@ -539,6 +547,56 @@
 }
 
 /* Customer-Favorites-End */
+/* Article-Start */
+.article {
+  background: url(article-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.article .header-main:before {
+  display: none;
+}
+
+.article-sec .article-row {
+  display: flex;
+  align-items: center;
+}
+.article-sec .article-row .article-col {
+  width: 100%;
+}
+.article-sec .article-row .article-col:last-child {
+  width: 86%;
+}
+.article-sec .article-img {
+  border-radius: 15.99px;
+  overflow: hidden;
+}
+.article-sec .article-img img {
+  width: 100%;
+}
+.article-sec .article-text {
+  color: #01390C;
+  padding: 0 15px;
+  max-width: 410px;
+  margin: auto;
+  text-align: center;
+}
+.article-sec .article-text .sec-head {
+  margin-bottom: 50px;
+}
+.article-sec .article-text .sec-head .title {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.article-sec .article-text .article-date {
+  font-size: 24px;
+  font-family: "Reckless Neue";
+  line-height: 1;
+  margin-top: 24px;
+  display: block;
+}
+
+/* Article-End */
 @media only screen and (max-width: 1440px) {
   .our-collection-sec:after {
     width: 6rem;
