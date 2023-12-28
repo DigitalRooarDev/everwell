@@ -626,10 +626,11 @@ body.blog-page {
   background-size: cover;
 }
 .explore-sec .explorecon {
-  max-width: 530px;
+  max-width: 33.125rem;
+  margin-left: 2.5rem;
 }
 .explore-sec .explorecon .sec-head {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .explore-sec .explorecon .sec-head .title {
   font-size: 4.5rem;
@@ -814,7 +815,8 @@ body.blog-page {
     padding: 4.875rem 0;
   }
   .explore-sec .explorecon {
-    max-width: 466px;
+    max-width: 26.875rem;
+    margin-left: 0;
   }
   .explore-sec .explorecon .sec-head .title {
     font-size: 3.5rem;
@@ -900,6 +902,16 @@ body.blog-page {
   }
   .blog-category ul li {
     padding: 0 0.9375rem;
+  }
+  .explore-sec {
+    padding: 3rem 0;
+  }
+  .explore-sec .explorecon {
+    max-width: 21.875rem;
+    margin-left: 0;
+  }
+  .explore-sec .explorecon .sec-head .title {
+    font-size: 3.2rem;
   }
   .successstories-sec .story-list-main {
     max-width: 90%;
@@ -1028,7 +1040,6 @@ body.blog-page {
     line-height: 1.2;
   }
   .faq.accordion .accordion-item .accordion-button:after {
-    background-image: url(accordion-up-arrow.svg);
     width: 1.5rem;
     height: 1.5rem;
     background-size: 1.5rem;
@@ -1156,10 +1167,10 @@ body.blog-page {
     padding: 1.875rem 0;
   }
   .explore-sec .explorecon {
-    max-width: 320px;
+    max-width: 20rem;
   }
   .explore-sec .explorecon .sec-head .title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .explore-sec .explorecon .btn {
     margin-top: 0;
