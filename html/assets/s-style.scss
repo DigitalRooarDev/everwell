@@ -238,21 +238,27 @@
           padding: 2.8125rem 0 0;
 
           &.spirit-orange {
-            background: linear-gradient(180deg,
-                #f9e58d 15.79%,
-                rgba(253, 248, 225, 0) 100%);
+            background: linear-gradient(
+              180deg,
+              #f9e58d 15.79%,
+              rgba(253, 248, 225, 0) 100%
+            );
           }
 
           &.body-blue {
-            background: linear-gradient(180deg,
-                #8dccff 15.79%,
-                rgba(217, 238, 255, 0) 100%);
+            background: linear-gradient(
+              180deg,
+              #8dccff 15.79%,
+              rgba(217, 238, 255, 0) 100%
+            );
           }
 
           &.mind-pink {
-            background: linear-gradient(180deg,
-                #ffb2ff 15.79%,
-                rgba(255, 207, 255, 0) 100%);
+            background: linear-gradient(
+              180deg,
+              #ffb2ff 15.79%,
+              rgba(255, 207, 255, 0) 100%
+            );
           }
 
           .immune-vitality-row {
@@ -265,7 +271,7 @@
               margin-right: -71px;
             }
 
-            .immune-vitality-col~.immune-vitality-col {
+            .immune-vitality-col ~ .immune-vitality-col {
               width: 100%;
             }
 
@@ -331,7 +337,6 @@
 
         .question-boxs-img {
           img {
-
             /*width: 100%;
             height: 100%;
             object-fit: cover;*/
@@ -380,6 +385,7 @@
 
 /* discover-everwell-product-sec-end */
 
+/* about-us-start */
 .success-stories-sec {
   .success-stories-wrap {
     .success-stories-con {
@@ -679,13 +685,11 @@
 
   .meet-team-box-wrap {
     .meet-team-list {
-      display: flex;
-      align-items: center;
       width: 100%;
       padding-top: 82px;
 
       .meet-team-item {
-        width: 33.33%;
+        padding: 0 15px;
 
         .meet-team-main {
           text-align: center;
@@ -758,6 +762,7 @@
         right: 185px;
         width: 32px;
         height: 32px;
+        background-size: 32px;
         background-repeat: no-repeat;
       }
 
@@ -790,6 +795,10 @@
         width: 33.33%;
         display: flex;
         align-items: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #000;
 
         img {
           width: 24px;
@@ -801,12 +810,164 @@
   }
 }
 
+.about-slider-sec {
+  padding: 80px 0;
+  display: block;
+
+  .about-slider {
+    margin: 0 -30px;
+
+    .about-slide {
+      padding: 0 30px;
+
+      .about-slide-box {
+        text-align: center;
+        display: block;
+
+        .about-slide-box-img {
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 19px;
+            -webkit-border-radius: 19px;
+            -moz-border-radius: 19px;
+            -ms-border-radius: 19px;
+            -o-border-radius: 19px;
+          }
+        }
+
+        .about-slide-con {
+          padding-top: 25px;
+          display: block;
+
+          .about-slide-con-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -0.64px;
+            display: block;
+            color: #01390c;
+            padding-bottom: 20px;
+          }
+
+          .about-slide-desc {
+            color: #000;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1;
+            display: block;
+            padding-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-faq-sec {
+  .about-faq-main {
+    max-width: 1170px;
+    margin: auto;
+
+    .sec-Head {
+      margin-bottom: 50px;
+
+      .title-sm {
+        font-size: 38px;
+        font-weight: 500;
+        color: #01390c;
+        display: block;
+      }
+    }
+
+    .about-faq-wrap {
+      .faq.accordion {
+        max-width: 100%;
+        padding-top: 0;
+
+        .accordion-item {
+          .accordion-body {
+            max-width: 70%;
+
+            .cms-con {
+              p {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.latest-blog-sec {
+  .wellness-insights-main {
+    max-width: 1170px;
+    margin: auto;
+
+    .sec-Head {
+      margin-bottom: 20px;
+
+      .title-lg {
+        font-size: 46px;
+        font-weight: 400;
+        color: #01390c;
+        display: block;
+      }
+    }
+
+    .cms-con {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+  }
+
+  .latestblog-slider {
+    margin: 0 -0.9375rem;
+  }
+
+  &.common-sec {
+    padding: 80px 0;
+  }
+}
+
+.about-us-feed {
+  &.common-sec {
+    padding: 70px 0;
+  }
+}
+
+body.about-us-page {
+  background: url(about-us-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+/* about-us-end */
+
+/* help-center-start */
+
+
+
+/* help-center-end */
+
+
 /* resposive */
-@media only screen and (max-width: 1660px) {}
+@media only screen and (max-width: 1660px) {
+}
 
-@media only screen and (max-width: 1599px) {}
+@media only screen and (max-width: 1599px) {
+}
 
-@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1366px) {
+}
 
 @media only screen and (max-width: 1280px) {
   .title-xxl {
@@ -839,6 +1000,78 @@
 
   .discover-everwell-product-sec {
     padding: 6.25rem 0;
+  }
+
+  .purity-sec {
+    .purity-desc {
+      max-width: 43.125rem;
+    }
+  }
+
+  .our-mission-sec {
+    max-width: 100%;
+  }
+
+  .meet-team-sec {
+    max-width: 100%;
+
+    .sec-Head {
+      .title-lg {
+        font-size: 2.625rem;
+      }
+    }
+  }
+
+  .latest-blog-sec {
+    .wellness-insights-main {
+      .sec-Head {
+        .title-lg {
+          font-size: 2.625rem;
+        }
+      }
+
+      .cms-con {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .our-unwavering-sec {
+    .our-unwavering-box {
+      .our-unwavering-item {
+        max-width: 46.875rem;
+
+        .sec-head {
+          margin-bottom: 1.875rem;
+
+          .title-lg {
+            font-size: 2.625rem;
+          }
+        }
+
+        .cmsCon {
+          max-width: 43.75rem;
+        }
+      }
+    }
+  }
+
+  .our-mission-sec {
+    .our-missio-tab {
+      .tab-content {
+        .tab-pane {
+          .story-tab-desc {
+            .tab-desc {
+              .sec-Head {
+                .title-lg {
+                  font-size: 2.625rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -985,9 +1218,115 @@
       }
     }
   }
+
+  .our-unwavering-sec {
+    margin-top: -150px;
+
+    .our-unwavering-box {
+      max-width: 100%;
+      padding: 35px 20px;
+
+      .our-unwavering-item {
+        max-width: 100%;
+
+        .cmsCon {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+
+  .meet-team-sec {
+    .meet-team-box-wrap {
+      .meet-team-list {
+        padding-top: 50px;
+
+        .meet-team-item {
+          .meet-team-main {
+            .meet-team-con {
+              .meet-team-title {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .cmsCon {
+      max-width: 100%;
+    }
+  }
+
+  .purity-sec {
+    background-position: 130%;
+
+    .purity-desc {
+      max-width: 36.125rem;
+      padding: 70px 0 80px;
+      .sec-Head {
+        &::before {
+          right: 85px;
+        }
+      }
+    }
+
+    .purity-bottom {
+      ul {
+        max-width: 450px;
+      }
+    }
+  }
+
+  .about-slider-sec {
+    padding: 60px 0;
+
+    .about-slider {
+      margin: 0 -20px;
+
+      .about-slide {
+        padding: 0 20px;
+
+        .about-slide-box {
+          .about-slide-con {
+            .about-slide-con-title {
+              font-size: 28px;
+              padding-bottom: 15px;
+            }
+
+            .about-slide-desc {
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .latest-blog-sec {
+    &.common-sec {
+      padding: 60px 0;
+    }
+  }
+
+  .latest-slide {
+    .blogbox {
+      .blogcon {
+        bottom: -4.875rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  .title-lg {
+    font-size: 2.375rem;
+  }
+
+  .title-md {
+    font-size: 2.125rem;
+  }
+
   .client-review-sec {
     .client-review-row {
       flex-wrap: wrap;
@@ -1137,6 +1476,152 @@
       }
     }
   }
+
+  .our-unwavering-sec {
+    .our-unwavering-box {
+      .our-unwavering-item {
+        .sec-head {
+          .title-lg {
+            font-size: 2.375rem;
+          }
+        }
+
+        .cmsCon {
+          max-width: 100%;
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .our-mission-sec {
+    padding: 50px 0;
+
+    .our-missio-tab {
+      .tab-content {
+        .tab-pane {
+          .story-tab-desc {
+            .tab-desc {
+              .sec-Head {
+                .title-lg {
+                  font-size: 2.375rem;
+                }
+              }
+            }
+
+            .cmsCon {
+              p {
+                font-size: 16px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meet-team-sec {
+    .sec-Head {
+      .title-lg {
+        font-size: 2.375rem;
+      }
+    }
+
+    .cmsCon {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .meet-team-box-wrap {
+      .meet-team-list {
+        padding-top: 40px;
+
+        .meet-team-item {
+          .meet-team-main {
+            .meet-team-img {
+              width: 200px;
+              height: 200px;
+            }
+
+            .meet-team-con {
+              .meet-team-title {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-slider-sec {
+    .about-slider {
+      margin: 0 -15px;
+
+      .about-slide {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .about-faq-sec {
+    .about-faq-main {
+      .sec-Head {
+        margin-bottom: 30px;
+
+        .title-sm {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+
+  .latest-blog-sec {
+    &.common-sec {
+      padding: 50px 0;
+    }
+
+    .wellness-insights-main {
+      .sec-Head {
+        .title-lg {
+          font-size: 2.375rem;
+        }
+      }
+    }
+  }
+
+  .purity-sec {
+    .purity-desc {
+      max-width: 30.125rem;
+      padding: 2.5rem 0;
+      .sec-Head {
+        margin-bottom: 1.25rem;
+        .title-md {
+          line-height: 1.2;
+        }
+        &::before {
+          width: 1.375rem;
+          height: 1.375rem;
+          background-size: 1.375rem;
+          right: 2.75rem;
+        }
+      }
+      .cmsCon {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .purity-bottom {
+      ul {
+        padding: 0.625rem 0;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1196,6 +1681,167 @@
       .question-box-con {
         .question-box-main-title {
           font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .our-unwavering-sec {
+    .our-unwavering-box {
+      padding: 25px 15px;
+
+      .our-unwavering-item {
+        .sec-head {
+          margin-bottom: 0.9375rem;
+
+          .title-lg {
+            font-size: 2.125rem;
+          }
+        }
+      }
+    }
+  }
+
+  .our-mission-sec {
+    .our-missio-tab {
+      .nav-tabs {
+        .nav-item {
+          .nav-link {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .tab-content {
+        .tab-pane {
+          .story-tab-desc {
+            .tab-desc {
+              .sec-Head {
+                .title-lg {
+                  font-size: 2.125rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meet-team-sec {
+    .sec-Head {
+      .title-lg {
+        font-size: 2.125rem;
+      }
+    }
+
+    .meet-team-box-wrap {
+      .meet-team-list {
+        .meet-team-item {
+          .meet-team-main {
+            .meet-team-img {
+              width: 180px;
+              height: 180px;
+            }
+
+            .meet-team-con {
+              .meet-team-title {
+                font-size: 22px;
+                padding: 15px 6px;
+              }
+
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-slider-sec {
+    .about-slider {
+      .about-slide {
+        .about-slide-box {
+          .about-slide-con {
+            padding-top: 15px;
+
+            .about-slide-con-title {
+              font-size: 24px;
+            }
+
+            .about-slide-desc {
+              padding-bottom: 20px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-faq-sec {
+    .about-faq-main {
+      .about-faq-wrap {
+        .faq.accordion {
+          .accordion-item {
+            .accordion-body {
+              max-width: 90%;
+
+              .cms-con {
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-faq-sec {
+    .about-faq-main {
+      .sec-Head {
+        margin-bottom: 20px;
+
+        .title-sm {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+
+  .purity-sec {
+    background: #ececea;
+    .purity-desc {
+      max-width: 100%;
+      .sec-Head {
+        .title-md {
+          br {
+            display: none;
+          }
+        }
+        &::before {
+          content: none;
+        }
+      }
+    }
+    .purity-bottom {
+      padding-bottom: 10px;
+    }
+  }
+
+  .meet-team-sec {
+    padding-bottom: 3.125rem;
+  }
+
+  .latest-blog-sec {
+    .wellness-insights-main {
+      .sec-Head {
+        .title-lg {
+          font-size: 2.25rem;
         }
       }
     }
@@ -1370,11 +2016,104 @@
       }
     }
   }
+
+  .our-unwavering-sec {
+    .our-unwavering-box {
+      .our-unwavering-item {
+        .sec-head {
+          .title-lg {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .our-mission-sec {
+    .our-missio-tab {
+      .nav-tabs {
+        .nav-item {
+          .nav-link {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .tab-content {
+        .tab-pane {
+          .story-tab-desc {
+            .tab-desc {
+              .sec-Head {
+                .title-lg {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meet-team-sec {
+    .sec-Head {
+      .title-lg {
+        font-size: 2rem;
+      }
+    }
+
+    .meet-team-box-wrap {
+      .meet-team-list {
+        margin: 0;
+
+        .meet-team-item {
+          padding: 0;
+
+          .meet-team-main {
+            .meet-team-img {
+              width: 240px;
+              height: 240px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .latest-blog-sec {
+    .wellness-insights-main {
+      .sec-Head {
+        .title-lg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .our-unwavering-sec {
+    margin-top: -200px;
+  }
+
+  .purity-sec {
+    .purity-bottom {
+      ul {
+        li {
+          font-size: 14px;
+          img{
+            width: 1.25rem;
+            height: 1.25rem;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 489px) {}
+@media only screen and (max-width: 489px) {
+}
 
-@media only screen and (max-width: 395px) {}
+@media only screen and (max-width: 395px) {
+}
 
 @media only screen and (max-width: 350px) {
   .title-xxl {
