@@ -1,0 +1,5 @@
+.not-a-shape {
+    &::after {
+        content: none !important;
+    }
+}
