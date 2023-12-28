@@ -823,7 +823,7 @@
   .latest-blog-sec .slick-dots {
     padding-top: 0;
   }
-  .latest-blog-sec .latest-slide .blogbox .blogcon {
+  .latest-blog-sec .blogbox .blogcon {
     position: relative;
     bottom: 40px;
     max-width: 85%;
