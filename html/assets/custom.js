@@ -224,6 +224,53 @@ $('.galleryThumb').slick({
     ]
 });
 
+$(".blog-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    speed: 800,
+    fade: true, 
+    responsive: [   
+        {
+            breakpoint: 991,
+            settings: {
+             slidesToShow:1,
+             arrows: false,
+             dots: true,
+            }
+        }
+    ]   
+  });
+
+$('.story-slider').slick({
+    slidesToShow:1,
+    infinite: false,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 800,
+    arrows: true,
+    responsive: [        
+        {
+            breakpoint: 569,
+            settings: {
+             slidesToShow:1,
+             arrows: false,
+             dots: true,
+            }
+        }
+    ]    
+});
+
+$(".blog-category span").click(function () {
+    $(".menu-dropdown-con").slideToggle();
+    $("span").toggleClass("show");
+});
+
 // Quantity
     $(document).on("click", ".qtyplus", function (e) {
         e.preventDefault();
@@ -282,7 +329,7 @@ $('.galleryThumb').slick({
     autoplay: true,
    // autoplaySpeed: 5000,    
     arrows: false,    
-    responsive: [      
+    responsive: [
         {
             breakpoint: 991,
             settings: {
