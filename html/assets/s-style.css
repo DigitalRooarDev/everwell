@@ -108,8 +108,36 @@
   font-weight: 500;
   line-height: 1;
   display: block;
-  margin-bottom: 0.375rem;
+  margin-bottom: 0.5rem;
 }
+.form-group .form-control {
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #bebebe;
+  background: #fff;
+  position: relative;
+  padding: 0.75rem 0.9375rem;
+  width: 100%;
+  min-height: 3.125rem;
+  vertical-align: middle;
+  transition: border 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  resize: none;
+}
+.form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form-group .form-control ::placeholder {
+  color: #bdbdbd;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-group textarea {
+  height: 7.5625rem;
+}
+
 /* form */
 /* marquee-sec-start */
 .marquee-sec .marquee-main {
@@ -337,7 +365,7 @@
 .success-stories-sec .success-stories-wrap .success-stories-con .cms-con p {
   font-size: 1.125rem;
   text-align: center;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.5408px;
 }
 .success-stories-sec .success-stories-wrap .success-stories-box {
   position: relative;
@@ -864,11 +892,16 @@ body.help-center-page {
   object-fit: cover;
 }
 
+.get-in-touch-sec {
+  position: relative;
+  margin-top: -12.5rem;
+}
 .get-in-touch-sec .get-in-touch-wrap {
   border-radius: 20px;
   border: 1px solid #eaeaea;
   background: #fff;
   padding: 3.125rem 7.625rem;
+  overflow: hidden;
 }
 .get-in-touch-sec .get-in-touch-wrap .sec-Head {
   margin-bottom: 0.625rem;
