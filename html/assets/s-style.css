@@ -97,6 +97,20 @@
 }
 
 /* slick-slider */
+/* form */
+.form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-group .form-label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.375rem;
+}
+/* form */
 /* marquee-sec-start */
 .marquee-sec .marquee-main {
   overflow: hidden;
@@ -306,6 +320,7 @@
 }
 
 /* discover-everwell-product-sec-end */
+/* about-us-start */
 .success-stories-sec .success-stories-wrap .success-stories-con {
   margin-bottom: 4.0625rem;
 }
@@ -541,13 +556,11 @@
   text-align: center;
 }
 .meet-team-sec .meet-team-box-wrap .meet-team-list {
-  display: flex;
-  align-items: center;
   width: 100%;
   padding-top: 82px;
 }
 .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item {
-  width: 33.33%;
+  padding: 0 15px;
 }
 .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main {
   text-align: center;
@@ -610,6 +623,7 @@
   right: 185px;
   width: 32px;
   height: 32px;
+  background-size: 32px;
   background-repeat: no-repeat;
 }
 .purity-sec .purity-desc .sec-Head .title-md {
@@ -635,11 +649,296 @@
   width: 33.33%;
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
 }
 .purity-sec .purity-bottom ul li img {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+
+.about-slider-sec {
+  padding: 80px 0;
+  display: block;
+}
+.about-slider-sec .about-slider {
+  margin: 0 -30px;
+}
+.about-slider-sec .about-slider .about-slide {
+  padding: 0 30px;
+}
+.about-slider-sec .about-slider .about-slide .about-slide-box {
+  text-align: center;
+  display: block;
+}
+.about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-box-img {
+  width: 100%;
+  height: 100%;
+}
+.about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 19px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+}
+.about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con {
+  padding-top: 25px;
+  display: block;
+}
+.about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con .about-slide-con-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.64px;
+  display: block;
+  color: #01390c;
+  padding-bottom: 20px;
+}
+.about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con .about-slide-desc {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.about-faq-sec .about-faq-main {
+  max-width: 1170px;
+  margin: auto;
+}
+.about-faq-sec .about-faq-main .sec-Head {
+  margin-bottom: 50px;
+}
+.about-faq-sec .about-faq-main .sec-Head .title-sm {
+  font-size: 38px;
+  font-weight: 500;
+  color: #01390c;
+  display: block;
+}
+.about-faq-sec .about-faq-main .about-faq-wrap .faq.accordion {
+  max-width: 100%;
+  padding-top: 0;
+}
+.about-faq-sec .about-faq-main .about-faq-wrap .faq.accordion .accordion-item .accordion-body {
+  max-width: 70%;
+}
+.about-faq-sec .about-faq-main .about-faq-wrap .faq.accordion .accordion-item .accordion-body .cms-con p {
+  font-size: 18px;
+}
+
+.latest-blog-sec .wellness-insights-main {
+  max-width: 1170px;
+  margin: auto;
+}
+.latest-blog-sec .wellness-insights-main .sec-Head {
+  margin-bottom: 20px;
+}
+.latest-blog-sec .wellness-insights-main .sec-Head .title-lg {
+  font-size: 46px;
+  font-weight: 400;
+  color: #01390c;
+  display: block;
+}
+.latest-blog-sec .wellness-insights-main .cms-con {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.latest-blog-sec .latestblog-slider {
+  margin: 0 -0.9375rem;
+}
+.latest-blog-sec.common-sec {
+  padding: 80px 0;
+}
+
+.about-us-feed.common-sec {
+  padding: 70px 0;
+}
+
+body.about-us-page {
+  background: url(about-us-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+/* about-us-end */
+/* help-center-start */
+body.help-center-page {
+  background: url(help-center-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.help-center-banner-sec .help-center-banner-box .help-center-banner-img {
+  width: 100%;
+  height: 427px;
+  position: relative;
+}
+.help-center-banner-sec .help-center-banner-box .help-center-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.help-center-warranty-sec {
+  margin-top: -160px;
+  position: relative;
+}
+.help-center-warranty-sec .help-center-warranty-box {
+  border-radius: 20px;
+  border: 0.0625rem solid #eaeaea;
+  background: #fff;
+  padding: 3.75rem 3.25rem;
+  width: 100%;
+  height: 100%;
+}
+.help-center-warranty-sec .help-center-warranty-box .sec-Head .title-sm {
+  font-size: 2.375rem;
+  font-weight: 600;
+  color: #01390c;
+  line-height: 1.2;
+  letter-spacing: -0.0475rem;
+  display: block;
+  margin-bottom: 1.5625rem;
+}
+.help-center-warranty-sec .help-center-warranty-box .cms-con {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.help-center-warranty-sec .help-center-warranty-box .cms-con p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
+  display: block;
+}
+.help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn {
+  display: block;
+  text-align: center;
+}
+.help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
+  padding-right: 1.25rem;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg) translateY(-50%);
+  right: 0;
+  top: 50%;
+}
+.help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span:hover {
+  color: #01390c;
+}
+.help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span:hover::before {
+  border-color: #01390c;
+}
+
+/* help-center-end */
+.contact-us-banner-sec .contact-us-banner-box .contact-us-banner-img {
+  width: 100%;
+  height: 427px;
+  position: relative;
+}
+.contact-us-banner-sec .contact-us-banner-box .contact-us-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.get-in-touch-sec .get-in-touch-wrap {
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  padding: 3.125rem 7.625rem;
+}
+.get-in-touch-sec .get-in-touch-wrap .sec-Head {
+  margin-bottom: 0.625rem;
+}
+.get-in-touch-sec .get-in-touch-wrap .sec-Head .title-md {
+  color: #01390c;
+}
+.get-in-touch-sec .get-in-touch-wrap .cms-con {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.get-in-touch-sec .get-in-touch-wrap .cms-con p {
+  font-size: 1rem;
+  color: #9f9f9f;
+  font-weight: 400;
+  line-height: 1.3;
+  display: block;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom {
+  margin-top: 4.375rem;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+  display: block;
+  margin-bottom: 45px;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding-left: 3rem;
+  max-width: 20.25rem;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner b {
+  color: #01390c;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  padding-bottom: 0.375rem;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner .phone {
+  padding-bottom: 4px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner .time {
+  padding-bottom: 4px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 /* resposive */
@@ -664,6 +963,39 @@
   }
   .discover-everwell-product-sec {
     padding: 6.25rem 0;
+  }
+  .purity-sec .purity-desc {
+    max-width: 43.125rem;
+  }
+  .our-mission-sec {
+    max-width: 100%;
+  }
+  .meet-team-sec {
+    max-width: 100%;
+  }
+  .meet-team-sec .sec-Head .title-lg {
+    font-size: 2.625rem;
+  }
+  .latest-blog-sec .wellness-insights-main .sec-Head .title-lg {
+    font-size: 2.625rem;
+  }
+  .latest-blog-sec .wellness-insights-main .cms-con {
+    margin-bottom: 2.5rem;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item {
+    max-width: 46.875rem;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .sec-head {
+    margin-bottom: 1.875rem;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .sec-head .title-lg {
+    font-size: 2.625rem;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .cmsCon {
+    max-width: 43.75rem;
+  }
+  .our-mission-sec .our-missio-tab .tab-content .tab-pane .story-tab-desc .tab-desc .sec-Head .title-lg {
+    font-size: 2.625rem;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -751,8 +1083,80 @@
     max-width: 100%;
     padding: 4px 0;
   }
+  .our-unwavering-sec {
+    margin-top: -150px;
+  }
+  .our-unwavering-sec .our-unwavering-box {
+    max-width: 100%;
+    padding: 35px 20px;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item {
+    max-width: 100%;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .cmsCon {
+    max-width: 90%;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list {
+    padding-top: 50px;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-con .meet-team-title {
+    font-size: 28px;
+  }
+  .meet-team-sec .cmsCon {
+    max-width: 100%;
+  }
+  .purity-sec {
+    background-position: 130%;
+  }
+  .purity-sec .purity-desc {
+    max-width: 36.125rem;
+    padding: 70px 0 80px;
+  }
+  .purity-sec .purity-desc .sec-Head::before {
+    right: 85px;
+  }
+  .purity-sec .purity-bottom ul {
+    max-width: 450px;
+  }
+  .about-slider-sec {
+    padding: 60px 0;
+  }
+  .about-slider-sec .about-slider {
+    margin: 0 -20px;
+  }
+  .about-slider-sec .about-slider .about-slide {
+    padding: 0 20px;
+  }
+  .about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con .about-slide-con-title {
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+  .about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con .about-slide-desc {
+    padding-bottom: 30px;
+  }
+  .latest-blog-sec.common-sec {
+    padding: 60px 0;
+  }
+  .help-center-banner-sec .help-center-banner-box .help-center-banner-img {
+    height: 18.75rem;
+  }
+  .help-center-warranty-sec {
+    margin-top: -8.125rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box {
+    padding: 1.875rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box .sec-Head .title-sm {
+    font-size: 2.125rem;
+  }
 }
 @media only screen and (max-width: 991px) {
+  .title-lg {
+    font-size: 2.375rem;
+  }
+  .title-md {
+    font-size: 2.125rem;
+  }
   .client-review-sec .client-review-row {
     flex-wrap: wrap;
     margin: 0;
@@ -839,6 +1243,94 @@
   .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:hover .read-more-btn {
     bottom: 15px;
   }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .sec-head .title-lg {
+    font-size: 2.375rem;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .cmsCon {
+    max-width: 100%;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .cmsCon p {
+    font-size: 16px;
+  }
+  .our-mission-sec {
+    padding: 50px 0;
+  }
+  .our-mission-sec .our-missio-tab .tab-content .tab-pane .story-tab-desc .tab-desc .sec-Head .title-lg {
+    font-size: 2.375rem;
+  }
+  .our-mission-sec .our-missio-tab .tab-content .tab-pane .story-tab-desc .cmsCon p {
+    font-size: 16px !important;
+  }
+  .meet-team-sec .sec-Head .title-lg {
+    font-size: 2.375rem;
+  }
+  .meet-team-sec .cmsCon p {
+    font-size: 1rem;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list {
+    padding-top: 40px;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-img {
+    width: 200px;
+    height: 200px;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-con .meet-team-title {
+    font-size: 24px;
+  }
+  .about-slider-sec .about-slider {
+    margin: 0 -15px;
+  }
+  .about-slider-sec .about-slider .about-slide {
+    padding: 0 15px;
+  }
+  .about-faq-sec .about-faq-main .sec-Head {
+    margin-bottom: 30px;
+  }
+  .about-faq-sec .about-faq-main .sec-Head .title-sm {
+    font-size: 34px;
+  }
+  .latest-blog-sec.common-sec {
+    padding: 50px 0;
+  }
+  .latest-blog-sec .wellness-insights-main .sec-Head .title-lg {
+    font-size: 2.375rem;
+  }
+  .purity-sec .purity-desc {
+    max-width: 30.125rem;
+    padding: 2.5rem 0;
+  }
+  .purity-sec .purity-desc .sec-Head {
+    margin-bottom: 1.25rem;
+  }
+  .purity-sec .purity-desc .sec-Head .title-md {
+    line-height: 1.2;
+  }
+  .purity-sec .purity-desc .sec-Head::before {
+    width: 1.375rem;
+    height: 1.375rem;
+    background-size: 1.375rem;
+    right: 2.75rem;
+  }
+  .purity-sec .purity-desc .cmsCon p {
+    font-size: 1rem;
+  }
+  .purity-sec .purity-bottom ul {
+    padding: 0.625rem 0;
+  }
+  .help-center-warranty-sec .help-center-warranty-box {
+    padding: 1.25rem 0.9375rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box .sec-Head .title-sm {
+    margin-bottom: 0.9375rem;
+    font-size: 1.875rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box .cms-con p {
+    font-size: 1rem;
+    min-height: 230px;
+  }
+  .help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span {
+    font-size: 1.125rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   .title-xxl {
@@ -870,6 +1362,88 @@
   }
   .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-con .question-box-main-title {
     font-size: 2.5rem;
+  }
+  .our-unwavering-sec .our-unwavering-box {
+    padding: 25px 15px;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .sec-head {
+    margin-bottom: 0.9375rem;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .sec-head .title-lg {
+    font-size: 2.125rem;
+  }
+  .our-mission-sec .our-missio-tab .nav-tabs .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  .our-mission-sec .our-missio-tab .tab-content .tab-pane .story-tab-desc .tab-desc .sec-Head .title-lg {
+    font-size: 2.125rem;
+  }
+  .meet-team-sec .sec-Head .title-lg {
+    font-size: 2.125rem;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-img {
+    width: 180px;
+    height: 180px;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-con .meet-team-title {
+    font-size: 22px;
+    padding: 15px 6px;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-con span {
+    font-size: 16px;
+  }
+  .about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con {
+    padding-top: 15px;
+  }
+  .about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con .about-slide-con-title {
+    font-size: 24px;
+  }
+  .about-slider-sec .about-slider .about-slide .about-slide-box .about-slide-con .about-slide-desc {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .about-faq-sec .about-faq-main .about-faq-wrap .faq.accordion .accordion-item .accordion-body {
+    max-width: 90%;
+  }
+  .about-faq-sec .about-faq-main .about-faq-wrap .faq.accordion .accordion-item .accordion-body .cms-con p {
+    font-size: 16px;
+  }
+  .about-faq-sec .about-faq-main .sec-Head {
+    margin-bottom: 20px;
+  }
+  .about-faq-sec .about-faq-main .sec-Head .title-sm {
+    font-size: 1.75rem;
+  }
+  .purity-sec {
+    background: #ececea;
+  }
+  .purity-sec .purity-desc {
+    max-width: 100%;
+  }
+  .purity-sec .purity-desc .sec-Head .title-md br {
+    display: none;
+  }
+  .purity-sec .purity-desc .sec-Head::before {
+    content: none;
+  }
+  .purity-sec .purity-bottom {
+    padding-bottom: 10px;
+  }
+  .meet-team-sec {
+    padding-bottom: 3.125rem;
+  }
+  .latest-blog-sec .wellness-insights-main .sec-Head .title-lg {
+    font-size: 2.25rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box {
+    padding: 1.25rem 0.9375rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box .sec-Head .title-sm {
+    margin-bottom: 0.9375rem;
+    font-size: 1.75rem;
+  }
+  .help-center-warranty-sec .help-center-warranty-box .cms-con p {
+    min-height: 16.875rem;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -975,6 +1549,60 @@
   }
   .discover-everwell-product-sec .discover-everwell-product-wrap .question-box-wrap .question-box-img {
     padding: 0 0 1.25rem 0;
+  }
+  .our-unwavering-sec .our-unwavering-box .our-unwavering-item .sec-head .title-lg {
+    font-size: 2rem;
+  }
+  .our-mission-sec .our-missio-tab .nav-tabs .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  .our-mission-sec .our-missio-tab .tab-content .tab-pane .story-tab-desc .tab-desc .sec-Head .title-lg {
+    font-size: 2rem;
+  }
+  .meet-team-sec .sec-Head .title-lg {
+    font-size: 2rem;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list {
+    margin: 0;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item {
+    padding: 0;
+  }
+  .meet-team-sec .meet-team-box-wrap .meet-team-list .meet-team-item .meet-team-main .meet-team-img {
+    width: 240px;
+    height: 240px;
+  }
+  .latest-blog-sec .wellness-insights-main .sec-Head .title-lg {
+    font-size: 2rem;
+  }
+  .our-unwavering-sec {
+    margin-top: -200px;
+  }
+  .purity-sec .purity-bottom ul li {
+    font-size: 14px;
+  }
+  .purity-sec .purity-bottom ul li img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .help-center-banner-sec .help-center-banner-box .help-center-banner-img {
+    height: 10.75rem;
+  }
+  .help-center-warranty-sec {
+    margin-top: 0;
+  }
+  .help-center-warranty-sec .help-center-warranty-col .help-center-warranty-box {
+    border: none;
+    border-radius: 0;
+  }
+  .help-center-warranty-sec .help-center-warranty-col .help-center-warranty-box .cms-con p {
+    min-height: auto;
+  }
+  .help-center-warranty-sec .help-center-warranty-col:first-child {
+    border-bottom: 0.0625rem solid #eaeaea;
+  }
+  .help-center-warranty-sec .container {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 350px) {

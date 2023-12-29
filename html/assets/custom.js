@@ -34,16 +34,72 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     speed: 500,
     fade: true,
-    responsive: [    
+    responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,          
+          slidesToScroll: 1,
           dots: true,
           arrows: false,
         },
-      },      
+      },
+    ],
+  });
+
+  $(".about-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
+  });
+
+  $(".meet-team-list").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
     ],
   });
 
@@ -62,7 +118,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows:false,
+          arrows: false,
         },
       },
     ],
@@ -109,8 +165,6 @@ $(document).ready(function () {
     ],
   });
 
- 
-
   $(".latestblog-slider").slick({
     infinite: true,
     arrows: false,
@@ -144,7 +198,7 @@ $(document).ready(function () {
     ],
   });
 
-  $('.galleryMain').slick({
+  $(".galleryMain").slick({
     slidesToShow: 1,
     infinite: true,
     slidesToScroll: 1,
@@ -152,76 +206,121 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     autoplay: true,
-    asNavFor: '.galleryThumb',
+    asNavFor: ".galleryThumb",
     fade: true,
     autoplaySpeed: 4000,
     responsive: [
-        {
-            breakpoint: 767,
-            settings: {              
-              dots:true,
-              arrows: false,
-              autoplay: true
-            }
-        }
-    ]
+      {
+        breakpoint: 767,
+        settings: {
+          dots: true,
+          arrows: false,
+          autoplay: true,
+        },
+      },
+    ],
+  });
 
-});
-
-
-$('.galleryThumb').slick({
-    slidesToShow:3,
+  $(".galleryThumb").slick({
+    slidesToShow: 3,
     infinite: true,
     slidesToScroll: 1,
     focusOnSelect: true,
     autoplay: true,
-   // autoplaySpeed: 5000,
-    asNavFor: '.galleryMain',
+    // autoplaySpeed: 5000,
+    asNavFor: ".galleryMain",
     arrows: false,
     vertical: true,
     verticalSwiping: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+          vertical: false,
+          verticalSwiping: false,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 666,
+        settings: {
+          slidesToShow: 4,
+          vertical: false,
+          verticalSwiping: false,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 479,
+        settings: {
+          slidesToShow: 4,
+          vertical: false,
+          verticalSwiping: false,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 3,
+          vertical: false,
+          verticalSwiping: false,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
+  });
+
+$(".blog-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    speed: 800,
+    fade: true, 
+    responsive: [   
+        {
+            breakpoint: 991,
+            settings: {
+             slidesToShow:1,
+             arrows: false,
+             dots: true,
+            }
+        }
+    ]   
+  });
+
+$('.story-slider').slick({
+    slidesToShow:1,
+    infinite: false,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 800,
+    arrows: true,
     responsive: [        
         {
-            breakpoint: 767,
+            breakpoint: 569,
             settings: {
-             slidesToShow:4,
-              vertical: false,
-              verticalSwiping: false,
-              dots:false,
-              arrows: false,
+             slidesToShow:1,
+             arrows: false,
+             dots: true,
             }
-        },
-        {
-            breakpoint: 666,
-            settings: {
-             slidesToShow:4,
-              vertical: false,
-              verticalSwiping: false,
-              dots:false,
-              arrows: false,
-            }
-        },
-    {
-      breakpoint: 479, 
-      settings: {
-        slidesToShow:4,
-        vertical: false,
-        verticalSwiping: false,
-        dots:false,
-        arrows: false,
-      }
-    },
-    {
-      breakpoint: 350, 
-      settings: {
-        slidesToShow:3,
-        vertical: false,
-        verticalSwiping: false,
-        dots:false,
-        arrows: false,
-      }
-    }
-    ]
+        }
+    ]    
+});
+
+$(".blog-category span").click(function () {
+    $(".menu-dropdown-con").slideToggle();
+    $("span").toggleClass("show");
 });
 
 // Quantity
@@ -263,26 +362,25 @@ $('.galleryThumb').slick({
 
   $(".menu-main li:has(ul)").prepend('<span class="arrow"></span>');
 
-  // filter 
+  // filter
   $(".filter").click(function () {
     $(".product-sidebar").toggleClass("slide-product");
     $("body").addClass("body-fixed");
   });
 
-  $(".sidebar-overlay, .filter-close").click(function () {  
+  $(".sidebar-overlay, .filter-close").click(function () {
     $(".product-sidebar").removeClass("slide-product");
     $("body").removeClass("body-fixed");
   });
 
-  $('.related-product-slider').slick({
-    slidesToShow:4,
+  $(".related-product-slider").slick({
+    slidesToShow: 4,
     infinite: true,
     slidesToScroll: 1,
     focusOnSelect: true,
-    autoplay: true,
-   // autoplaySpeed: 5000,    
+    autoplay: true,   
     arrows: false,    
-    responsive: [      
+    responsive: [
         {
             breakpoint: 991,
             settings: {
@@ -300,64 +398,79 @@ $('.galleryThumb').slick({
             }
         },        
       {
-        breakpoint: 479, 
+        breakpoint: 991,
         settings: {
-          slidesToShow:1,
-          dots:true,
+          slidesToShow: 3,
+          dots: true,
           arrows: false,
-        }
-      }
-    ]
-});
-  
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 479,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  });
 });
 
-if ($('.favorites-pro-slider').length > 0) {
- const swiper = new Swiper('.favorites-pro-slider', {
-  pagination: {
-    el: '.slider-pagination',
-    clickable: true,
-  },
-  loop: true,
-  slidesPerView: 1,
-  centeredSlides: false,
-  speed: 1080,
-  effect: "cards",
-  grabCursor: true,
-  cardsEffect: {
-    perSlideOffset: 73,
-    perSlideRotate: 2,
-  },
-  autoplay: {
-    delay: 500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    568: {
-          pagination: {
-                el: '.slider-pagination',
-                clickable: true,
-              },
-            loop: true,
-            slidesPerView: 2,
-            centeredSlides: true,
-            effect: "cards",
-            grabCursor: true,
-            cardsEffect: {
-              perSlideOffset: 50,
-              perSlideRotate: 2,
-            },
+if ($(".favorites-pro-slider").length > 0) {
+  const swiper = new Swiper(".favorites-pro-slider", {
+    pagination: {
+      el: ".slider-pagination",
+      clickable: true,
+    },
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: false,
+    speed: 1080,
+    effect: "cards",
+    grabCursor: true,
+    cardsEffect: {
+      perSlideOffset: 73,
+      perSlideRotate: 2,
+    },
+    autoplay: {
+      delay: 500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      568: {
+        pagination: {
+          el: ".slider-pagination",
+          clickable: true,
         },
-    768: {
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-            slidesPerView: 3,
-            centeredSlides: true,
-            // observeParents: !0,
-            // observer: !0,
-        }
-    }
+        loop: true,
+        slidesPerView: 2,
+        centeredSlides: true,
+        effect: "cards",
+        grabCursor: true,
+        cardsEffect: {
+          perSlideOffset: 50,
+          perSlideRotate: 2,
+        },
+      },
+      768: {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 3,
+        centeredSlides: true,
+        // observeParents: !0,
+        // observer: !0,
+      },
+    },
   });
 }
