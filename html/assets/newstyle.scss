@@ -356,6 +356,17 @@ padding: 8.75rem 0;position: relative;padding-top: 6.75rem;
 
 }
 
+.article-con-row{
+	display: flex;
+	.article-con-col{
+		width: 100%;
+		&:last-child{width: 40%}
+	}
+}
+.latestblog-main{
+	.latest-slide{margin-bottom: 84px;}
+}
+
 /* Article-End */
 
 

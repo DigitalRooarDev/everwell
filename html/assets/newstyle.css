@@ -596,6 +596,20 @@
   display: block;
 }
 
+.article-con-row {
+  display: flex;
+}
+.article-con-row .article-con-col {
+  width: 100%;
+}
+.article-con-row .article-con-col:last-child {
+  width: 40%;
+}
+
+.latestblog-main .latest-slide {
+  margin-bottom: 84px;
+}
+
 /* Article-End */
 @media only screen and (max-width: 1440px) {
   .our-collection-sec:after {
