@@ -337,7 +337,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{-webkit-appea
       font-weight: normal;
       color: #000000;
       opacity: 1;
-      padding: 1.875rem 0;
+      padding: 1.875rem 1.25rem 1.875rem 0;
       font-family: 'Reckless Neue';
       font-size: 1.625rem;
       box-shadow: none;
@@ -775,6 +775,99 @@ body.blog-page {
 
 /* Blog page end */
 
+/* FAQ page start */
+.faq-banner-sec {
+  .faq-banner-box {
+    .faq-banner-img {
+      width: 100%;
+      height: 356px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.faq-banner-top-sec {
+  margin-top: -17.1875rem;
+  margin-bottom: 4rem;
+  position: relative;
+  .faq-banner-top-box {
+    background-color: #fff;
+    max-width: 995px;
+    margin: auto;
+    padding: 6.5625rem 1.25rem 9rem 1.25rem;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    .faq-banner-top-item {
+      max-width: 640px;
+      margin: auto;
+      .sec-head {
+        margin-bottom: 1.25rem;
+        .title {
+          font-size: 1.875rem;
+          text-align: center;
+          font-weight: 400;
+          color: #01390c;
+          display: block;
+          letter-spacing: -0.6px;
+        }
+      }
+      .cmsCon {
+        max-width: 510px;
+        margin: auto;
+        p {
+          font-size: 1.125rem;
+          text-align: center;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}
+
+.all-category {
+  padding-bottom: 5.375rem;
+  span{
+    display: none;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      font-size: 1.5rem;
+      letter-spacing: -0.4px;
+      padding: 0 1.75rem;
+      a{
+        color: #01390C;
+        &:hover{
+          color: #01390C;
+        }
+        &.active{
+          color: #01390C;
+          font-weight: 800;
+        }
+      }            
+    }
+  }
+}
+
+.other-customer-fav-sec{
+  &:after{
+    display: none;
+  }
+}
+
+.faq-view-more {
+  margin-top: 4.1875rem;
+  margin-bottom: 3.125rem;
+}
+
+/* FAQ page end */
+
 
 @media only screen and (max-width:1660px) {}
 
@@ -948,6 +1041,17 @@ body.blog-page {
 
 /* Blog page end */
 
+/* FAQ page start */
+.all-category{
+  padding-bottom: 3.125rem;
+  ul{
+    li{
+      padding: 0 0.9375rem;
+    }
+  }
+}
+/* FAQ page end */
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -994,7 +1098,7 @@ body.blog-page {
   max-width: 95%;
   .accordion-item{
     .accordion-button{
-      padding: 1.5rem 0;
+      padding: 1.5rem 1.5rem 1.5rem 0;
       font-size: 1.5rem;
     }
     .accordion-body {      
@@ -1081,6 +1185,32 @@ body.blog-page {
 }
 
 /* Blog page end */
+
+/* FAQ page start */
+.faq-banner-sec{
+  .faq-banner-box{
+    .faq-banner-img{
+      height: 268px;
+    }
+  }
+}
+
+.faq-banner-top-sec{
+  margin-top: -12.1875rem;
+  .faq-banner-top-box{
+    padding: 4.375rem 1.25rem;
+  }
+}
+
+.all-category{
+  ul{
+    li{
+      padding: 0 0.75rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+/* FAQ page end */
 
 }
 
@@ -1302,10 +1432,10 @@ body.blog-page {
     display:block;
     background-color:#01390C;
     color:#fff;
-    padding:30px 40px;
+    padding:1.5625rem 1.5625rem;
     position:relative;
     border-radius:50px;
-    font-size:16px;
+    font-size:1rem;
     line-height:1;
     font-weight:700;
     border:1px solid #fff;
@@ -1315,11 +1445,11 @@ body.blog-page {
     &:after{
       content:"";
       position:absolute;
-      right:39px;
-      top:-3px;
+      right:1.5625rem;
+      top:-0.1875rem;
       bottom:0;
-      width:15px;
-      height:15px;
+      width:0.9375rem;
+      height:0.9375rem;
       border-bottom:3px solid #fff;
       border-right:3px solid #fff;
       transform:rotate(45deg);
@@ -1337,22 +1467,22 @@ body.blog-page {
     background-color:#01390C;
     border-radius:0;
     z-index:2;
-    top:75px;    
+    top:3.6875rem;    
     border:0;
     border-radius:30px;
     overflow:hidden;
-    margin-top:-55px; 
-    padding-top:60px;
+    margin-top:-3.4375rem; 
+    padding-top:3.75rem;
     li{
       padding: 0;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 18px;
+      font-size: 1.125rem;
       &:first-child{
         border: 0;
       }
       a{
         color: #ffffff;
-        padding: 10px;
+        padding: 18px 1.5625rem;
         display: block;
       }
     }
@@ -1361,7 +1491,7 @@ body.blog-page {
 
 .blog-listing-inner{
   .blogbox{
-    margin-bottom: 75px;
+    margin-bottom: 4.6875rem;
   }
 }  
 
@@ -1407,6 +1537,71 @@ body.blog-page {
 
 /* Blog page end */
 
+/* FAQ page start */
+.all-category{
+  position: relative;
+  padding-bottom: 1.75rem;
+  span{
+    display:block;
+    background-color:#01390C;
+    color:#fff;
+    padding:1.5625rem 1.5625rem;
+    position:relative;
+    border-radius:50px;
+    font-size:1rem;
+    line-height:1;
+    font-weight:700;
+    border:1px solid #fff;
+    width:100%;
+    max-width:100%;
+    z-index:3;
+    &:after{
+      content:"";
+      position:absolute;
+      right:1.5625rem;
+      top:-0.1875rem;
+      bottom:0;
+      width:0.9375rem;
+      height:0.9375rem;
+      border-bottom:3px solid #fff;
+      border-right:3px solid #fff;
+      transform:rotate(45deg);
+      margin:auto;
+      transition:border .4s ease-in-out,transform .4s ease-in-out;
+    }
+    &.show{
+      &:after{transform:rotate(225deg);transition:border .4s ease-in-out,transform .4s ease-in-out}
+    }
+  }
+  ul.menu-dropdown-con{
+    display:none;
+    width:100%;
+    position:absolute;
+    background-color:#01390C;
+    border-radius:0;
+    z-index:2;
+    top:3.6875rem;    
+    border:0;
+    border-radius:30px;
+    overflow:hidden;
+    margin-top:-3.4375rem; 
+    padding-top:3.75rem;
+    li{
+      padding: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 1.125rem;
+      &:first-child{
+        border: 0;
+      }
+      a{
+        color: #ffffff;
+        padding: 18px 1.5625rem;
+        display: block;
+      }
+    }
+  }
+}
+/* FAQ page end */
 
 }
 
@@ -1448,7 +1643,6 @@ body.blog-page {
   /* Product Detail page end */
 
   /* Blog page start */
-
   .blog-video-sec{
     .blog-video-con{
       .sec-head{
@@ -1465,6 +1659,28 @@ body.blog-page {
     }
   }
   /* Blog page end */
+
+  /* FAQ page start */
+  .faq-banner-top-sec{
+    margin-top: -9.1875rem;
+    margin-bottom: 2.5rem;
+    .faq-banner-top-box{
+      padding: 1.625rem 1.25rem;
+      .faq-banner-top-item{
+        .sec-head{
+          .title{
+            font-size: 28px;
+          }
+        }
+        .cmsCon{
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  /* FAQ page end */
 
 }
 

@@ -323,6 +323,11 @@ $(".blog-category span").click(function () {
     $("span").toggleClass("show");
 });
 
+$(".all-category span").click(function () {
+    $(".menu-dropdown-con").slideToggle();
+    $("span").toggleClass("show");
+});
+
 // Quantity
     $(document).on("click", ".qtyplus", function (e) {
         e.preventDefault();
