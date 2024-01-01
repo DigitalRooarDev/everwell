@@ -110,7 +110,7 @@
 
 /* form */
 
-.form-group{
+.form-group {
   display: block;
   margin-bottom: 20px;
   .form-label {
@@ -119,13 +119,36 @@
     font-weight: 500;
     line-height: 1;
     display: block;
-    margin-bottom: .375rem;
+    margin-bottom: 0.5rem;
   }
-  .form-control{
-    
+  .form-control {
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #bebebe;
+    background: #fff;
+    position: relative;
+    padding: 0.75rem 0.9375rem;
+    width: 100%;
+    min-height: 3.125rem;
+    vertical-align: middle;
+    transition: border 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    resize: none;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    ::placeholder {
+      color: #bdbdbd;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+  textarea {
+    height: 7.5625rem;
   }
 }
-
 
 /* form */
 
@@ -427,7 +450,7 @@
         p {
           font-size: 1.125rem;
           text-align: center;
-          letter-spacing: 0.54px;
+          letter-spacing: 0.5408px;
         }
       }
     }
@@ -1060,6 +1083,11 @@ body.help-center-page {
   }
 }
 /* help-center-end */
+body.contact-us-page {
+  background: url(contact-us-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 
 .contact-us-banner-sec {
   .contact-us-banner-box {
@@ -1077,11 +1105,14 @@ body.help-center-page {
 }
 
 .get-in-touch-sec {
+  position: relative;
+  margin-top: -12.5rem;
   .get-in-touch-wrap {
     border-radius: 20px;
     border: 1px solid #eaeaea;
     background: #fff;
     padding: 3.125rem 7.625rem;
+    overflow: hidden;
     .sec-Head {
       margin-bottom: 0.625rem;
       .title-md {
@@ -1156,6 +1187,135 @@ body.help-center-page {
     }
   }
 }
+
+/* warranty-page-start */
+
+body.warranty-page {
+  background: url(warranty-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.warranty-banner-sec {
+  .warranty-banner-box {
+    .warranty-banner-img {
+      width: 100%;
+      height: 557px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.warranty-con-sec {
+  position: relative;
+  margin-top: -13.75rem;
+  .warranty-con-inner {
+    border-radius: 20px;
+    border: 0.0625rem solid #eaeaea;
+    background: #fff;
+    padding: 3.4375rem 2.5rem 7.5rem;
+    .sec-head {
+      .title-sm {
+        font-size: 2.375rem;
+        text-align: center;
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      max-width: 51.4375rem;
+      margin: auto;
+      text-align: center;
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+/* warranty-page-end */
+
+/* Community Page start */
+.community-page {
+  .header-main {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+body.community-page {
+  background: url(community-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.community-banner-sec {
+  .community-banner-box {
+    .community-banner-img {
+      width: 100%;
+      height: 427px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.everwell-oasis-sec {
+  position: relative;
+  margin-top: -220px;
+  .everwell-oasis-inner {
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    width: 100%;
+    padding: 98px 15px;
+    .sec-head {
+      margin-bottom: 10px;
+      .title-sm {
+        font-size: 38px;
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      text-align: center;
+      max-width: 768px;
+      margin: auto;
+      p {
+        font-size: 20px;
+      }
+    }
+    .everwell-oasis-box {
+      border-radius: 1.8791rem;
+      border: 0.0625rem solid #cdcdcd;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      max-width: 570px;
+      margin: 3.125rem auto 0;
+      .inputfield {
+        background: none;
+        padding: 0.625rem 1.375rem;
+        font-size: 0.875rem;
+        width: 100%;
+      }
+      .btn {
+        margin: 0.25rem;
+        min-width: 7rem;
+        padding: 0.5rem 1.25rem;
+      }
+    }
+  }
+}
+/* Community Page end */
 
 /* resposive */
 @media only screen and (max-width: 1660px) {
@@ -1526,6 +1686,15 @@ body.help-center-page {
       }
     }
   }
+
+  .get-in-touch-sec {
+    .get-in-touch-wrap {
+      padding: 2.1875rem;
+      .get-in-touch-bottom {
+        margin-top: 3.375rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -1855,6 +2024,42 @@ body.help-center-page {
       }
     }
   }
+
+  .get-in-touch-sec {
+    margin-top: -8.5rem;
+    .get-in-touch-wrap {
+      padding: 1.25rem;
+      .cms-con {
+        max-width: 100%;
+      }
+      .get-in-touch-bottom {
+        margin-top: 2.375rem;
+        .contact-details-main {
+          .contact-details-box {
+            margin-bottom: 1.875rem;
+            .contact-details-inner {
+              padding-left: 2rem;
+              b {
+                font-size: 1.125rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-group textarea {
+    height: 6.5625rem;
+  }
+
+  .contact-us-banner-sec {
+    .contact-us-banner-box {
+      .contact-us-banner-img {
+        height: 18.75rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2092,6 +2297,27 @@ body.help-center-page {
       .cms-con {
         p {
           min-height: 16.875rem;
+        }
+      }
+    }
+  }
+
+  .get-in-touch-sec {
+    .get-in-touch-wrap {
+      .get-in-touch-bottom {
+        .contact-details-main {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: start;
+          width: 100%;
+          .contact-details-box {
+            width: 50%;
+            .contact-details-inner {
+              br {
+                display: none;
+              }
+            }
+          }
         }
       }
     }
@@ -2384,6 +2610,49 @@ body.help-center-page {
     }
     .container {
       padding: 0;
+    }
+  }
+
+  .get-in-touch-sec {
+    .get-in-touch-wrap {
+      .cms-con {
+        p {
+          font-size: 0.875rem;
+        }
+      }
+      .get-in-touch-bottom {
+        .contact-details-main {
+          .contact-details-box {
+            width: 100%;
+            margin-bottom: 1.5625rem;
+            .contact-details-inner {
+              max-width: 100%;
+              font-size: 0.875rem;
+              .phone {
+                font-size: 0.875rem;
+              }
+              .time {
+                font-size: 0.875rem;
+              }
+              img {
+                width: 1.125rem;
+                height: 1.125rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-group {
+    .form-control {
+      padding: 10px;
+      min-height: auto;
+      font-size: 14px;
+    }
+    textarea {
+      height: 4.5625rem;
     }
   }
 }
