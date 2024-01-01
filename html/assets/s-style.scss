@@ -1083,6 +1083,11 @@ body.help-center-page {
   }
 }
 /* help-center-end */
+body.contact-us-page {
+  background: url(contact-us-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 
 .contact-us-banner-sec {
   .contact-us-banner-box {
@@ -1182,6 +1187,135 @@ body.help-center-page {
     }
   }
 }
+
+/* warranty-page-start */
+
+body.warranty-page {
+  background: url(warranty-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.warranty-banner-sec {
+  .warranty-banner-box {
+    .warranty-banner-img {
+      width: 100%;
+      height: 557px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.warranty-con-sec {
+  position: relative;
+  margin-top: -13.75rem;
+  .warranty-con-inner {
+    border-radius: 20px;
+    border: 0.0625rem solid #eaeaea;
+    background: #fff;
+    padding: 3.4375rem 2.5rem 7.5rem;
+    .sec-head {
+      .title-sm {
+        font-size: 2.375rem;
+        text-align: center;
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      max-width: 51.4375rem;
+      margin: auto;
+      text-align: center;
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+/* warranty-page-end */
+
+/* Community Page start */
+.community-page {
+  .header-main {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+body.community-page {
+  background: url(community-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.community-banner-sec {
+  .community-banner-box {
+    .community-banner-img {
+      width: 100%;
+      height: 427px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.everwell-oasis-sec {
+  position: relative;
+  margin-top: -220px;
+  .everwell-oasis-inner {
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    width: 100%;
+    padding: 98px 15px;
+    .sec-head {
+      margin-bottom: 10px;
+      .title-sm {
+        font-size: 38px;
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      text-align: center;
+      max-width: 768px;
+      margin: auto;
+      p {
+        font-size: 20px;
+      }
+    }
+    .everwell-oasis-box {
+      border-radius: 1.8791rem;
+      border: 0.0625rem solid #cdcdcd;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      max-width: 570px;
+      margin: 3.125rem auto 0;
+      .inputfield {
+        background: none;
+        padding: 0.625rem 1.375rem;
+        font-size: 0.875rem;
+        width: 100%;
+      }
+      .btn {
+        margin: 0.25rem;
+        min-width: 7rem;
+        padding: 0.5rem 1.25rem;
+      }
+    }
+  }
+}
+/* Community Page end */
 
 /* resposive */
 @media only screen and (max-width: 1660px) {
@@ -2481,9 +2615,9 @@ body.help-center-page {
 
   .get-in-touch-sec {
     .get-in-touch-wrap {
-      .cms-con{
-        p{
-          font-size: .875rem;
+      .cms-con {
+        p {
+          font-size: 0.875rem;
         }
       }
       .get-in-touch-bottom {
@@ -2493,14 +2627,14 @@ body.help-center-page {
             margin-bottom: 1.5625rem;
             .contact-details-inner {
               max-width: 100%;
-              font-size: .875rem;
-              .phone{
-                font-size: .875rem;
+              font-size: 0.875rem;
+              .phone {
+                font-size: 0.875rem;
               }
-              .time{
-                font-size: .875rem;
+              .time {
+                font-size: 0.875rem;
               }
-              img{
+              img {
                 width: 1.125rem;
                 height: 1.125rem;
               }
