@@ -1182,6 +1182,12 @@ body.help-center-page {
   .help-center-warranty-sec .help-center-warranty-box .sec-Head .title-sm {
     font-size: 2.125rem;
   }
+  .get-in-touch-sec .get-in-touch-wrap {
+    padding: 2.1875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom {
+    margin-top: 3.375rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .title-lg {
@@ -1364,6 +1370,33 @@ body.help-center-page {
   .help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span {
     font-size: 1.125rem;
   }
+  .get-in-touch-sec {
+    margin-top: -8.5rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap {
+    padding: 1.25rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .cms-con {
+    max-width: 100%;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom {
+    margin-top: 2.375rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+    margin-bottom: 1.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner {
+    padding-left: 2rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner b {
+    font-size: 1.125rem;
+  }
+  .form-group textarea {
+    height: 6.5625rem;
+  }
+  .contact-us-banner-sec .contact-us-banner-box .contact-us-banner-img {
+    height: 18.75rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   .title-xxl {
@@ -1477,6 +1510,18 @@ body.help-center-page {
   }
   .help-center-warranty-sec .help-center-warranty-box .cms-con p {
     min-height: 16.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100%;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+    width: 50%;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner br {
+    display: none;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -1636,6 +1681,35 @@ body.help-center-page {
   }
   .help-center-warranty-sec .container {
     padding: 0;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .cms-con p {
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+    width: 100%;
+    margin-bottom: 1.5625rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner {
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner .phone {
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner .time {
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+  .form-group .form-control {
+    padding: 10px;
+    min-height: auto;
+    font-size: 14px;
+  }
+  .form-group textarea {
+    height: 4.5625rem;
   }
 }
 @media only screen and (max-width: 350px) {
