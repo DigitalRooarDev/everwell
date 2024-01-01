@@ -868,6 +868,36 @@ body.blog-page {
 
 /* FAQ page end */
 
+/* Shipping & returning page start */
+.common-sm-sec {
+  padding: 4.375rem 0;
+}
+.shipping-return-sec{
+  margin-top: -13.5rem;
+  .help-center-warranty-box{
+    max-width: 74.5rem;
+    margin: auto;
+    padding: 4.0625rem 3.25rem;
+    .help-center-inner {
+      max-width: 48.125rem;
+      margin: auto;
+      .sec-Head{
+        .title-sm{
+          margin-bottom: 2.8125rem;
+        }
+      }
+    }
+  }
+}
+
+.track-order-sec{
+  .track-order-inner{
+    max-width: 76.375rem;
+    margin: auto;
+  }
+}
+/* Shipping & returning page end */
+
 
 @media only screen and (max-width:1660px) {}
 
@@ -1052,6 +1082,12 @@ body.blog-page {
 }
 /* FAQ page end */
 
+/* Shipping & returning page start */
+.shipping-return-sec{
+  margin-top: -9.5rem; 
+}
+/* Shipping & returning page end */
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -1211,6 +1247,28 @@ body.blog-page {
   }
 }
 /* FAQ page end */
+
+/* Shipping & returning page start */
+.shipping-return-sec {
+  margin-top: -9.5rem; 
+  .help-center-warranty-box {
+    .help-center-inner {
+      .sec-Head {
+        .title-sm{
+          margin-bottom: 1.875rem; 
+        }
+      }
+    }
+    .cms-con {
+      margin-bottom: 0;
+      p{
+        min-height: inherit;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+/* Shipping & returning page end */
 
 }
 
@@ -1603,6 +1661,32 @@ body.blog-page {
 }
 /* FAQ page end */
 
+/* Shipping & returning page start */
+.common-sm-sec {
+  padding: 3.125rem 0;
+}
+.shipping-return-sec {
+  margin-top: -12.5rem; 
+  .help-center-warranty-box {
+    padding: 3.0625rem 1.25rem;
+    .help-center-inner {
+      .sec-Head {
+        .title-sm{
+          margin-bottom: 1.25rem; 
+        }
+      }
+    }
+    .cms-con {
+      margin-bottom: 0;
+      p{
+        min-height: inherit;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+/* Shipping & returning page end */
+
 }
 
 @media only screen and (max-width: 568px) {
@@ -1681,6 +1765,15 @@ body.blog-page {
     }
   }
   /* FAQ page end */
+
+/* Shipping & returning page start */
+.shipping-return-sec {
+  margin-top:0; 
+  .help-center-warranty-box {
+    padding: 1.875rem 0.9375rem;
+  }
+}
+/* Shipping & returning page end */
 
 }
 

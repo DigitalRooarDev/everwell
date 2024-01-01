@@ -831,6 +831,33 @@ body.blog-page {
 }
 
 /* FAQ page end */
+/* Shipping & returning page start */
+.common-sm-sec {
+  padding: 4.375rem 0;
+}
+
+.shipping-return-sec {
+  margin-top: -13.5rem;
+}
+.shipping-return-sec .help-center-warranty-box {
+  max-width: 74.5rem;
+  margin: auto;
+  padding: 4.0625rem 3.25rem;
+}
+.shipping-return-sec .help-center-warranty-box .help-center-inner {
+  max-width: 48.125rem;
+  margin: auto;
+}
+.shipping-return-sec .help-center-warranty-box .help-center-inner .sec-Head .title-sm {
+  margin-bottom: 2.8125rem;
+}
+
+.track-order-sec .track-order-inner {
+  max-width: 76.375rem;
+  margin: auto;
+}
+
+/* Shipping & returning page end */
 @media only screen and (max-width: 1366px) {
   /* Product Detail page start */
   .prodetail-sec .product-row .product-detail .product-bottom-btn .addtocart-btn {
@@ -925,6 +952,11 @@ body.blog-page {
     padding: 0 0.9375rem;
   }
   /* FAQ page end */
+  /* Shipping & returning page start */
+  .shipping-return-sec {
+    margin-top: -9.5rem;
+  }
+  /* Shipping & returning page end */
 }
 @media only screen and (max-width: 991px) {
   /* Product Detail page start */
@@ -1028,6 +1060,21 @@ body.blog-page {
     font-size: 1.25rem;
   }
   /* FAQ page end */
+  /* Shipping & returning page start */
+  .shipping-return-sec {
+    margin-top: -9.5rem;
+  }
+  .shipping-return-sec .help-center-warranty-box .help-center-inner .sec-Head .title-sm {
+    margin-bottom: 1.875rem;
+  }
+  .shipping-return-sec .help-center-warranty-box .cms-con {
+    margin-bottom: 0;
+  }
+  .shipping-return-sec .help-center-warranty-box .cms-con p {
+    min-height: inherit;
+    line-height: 1.4;
+  }
+  /* Shipping & returning page end */
 }
 @media only screen and (max-width: 767px) {
   /* Product Detail page start */
@@ -1373,6 +1420,27 @@ body.blog-page {
     display: block;
   }
   /* FAQ page end */
+  /* Shipping & returning page start */
+  .common-sm-sec {
+    padding: 3.125rem 0;
+  }
+  .shipping-return-sec {
+    margin-top: -12.5rem;
+  }
+  .shipping-return-sec .help-center-warranty-box {
+    padding: 3.0625rem 1.25rem;
+  }
+  .shipping-return-sec .help-center-warranty-box .help-center-inner .sec-Head .title-sm {
+    margin-bottom: 1.25rem;
+  }
+  .shipping-return-sec .help-center-warranty-box .cms-con {
+    margin-bottom: 0;
+  }
+  .shipping-return-sec .help-center-warranty-box .cms-con p {
+    min-height: inherit;
+    line-height: 1.4;
+  }
+  /* Shipping & returning page end */
 }
 @media only screen and (max-width: 568px) {
   /* Product Detail page start */
@@ -1416,6 +1484,14 @@ body.blog-page {
     font-size: 16px;
   }
   /* FAQ page end */
+  /* Shipping & returning page start */
+  .shipping-return-sec {
+    margin-top: 0;
+  }
+  .shipping-return-sec .help-center-warranty-box {
+    padding: 1.875rem 0.9375rem;
+  }
+  /* Shipping & returning page end */
 }
 
 /*# sourceMappingURL=m-style.css.map */
