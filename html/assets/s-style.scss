@@ -108,6 +108,50 @@
 
 /* slick-slider */
 
+/* form */
+
+.form-group {
+  display: block;
+  margin-bottom: 20px;
+  .form-label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .form-control {
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #bebebe;
+    background: #fff;
+    position: relative;
+    padding: 0.75rem 0.9375rem;
+    width: 100%;
+    min-height: 3.125rem;
+    vertical-align: middle;
+    transition: border 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    resize: none;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    ::placeholder {
+      color: #bdbdbd;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+  textarea {
+    height: 7.5625rem;
+  }
+}
+
+/* form */
+
 /* marquee-sec-start */
 .marquee-sec {
   .marquee-main {
@@ -406,7 +450,7 @@
         p {
           font-size: 1.125rem;
           text-align: center;
-          letter-spacing: 0.54px;
+          letter-spacing: 0.5408px;
         }
       }
     }
@@ -953,11 +997,325 @@ body.about-us-page {
 /* about-us-end */
 
 /* help-center-start */
+body.help-center-page {
+  background: url(help-center-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 
+.help-center-banner-sec {
+  .help-center-banner-box {
+    .help-center-banner-img {
+      width: 100%;
+      height: 427px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
 
-
+.help-center-warranty-sec {
+  margin-top: -160px;
+  position: relative;
+  .help-center-warranty-box {
+    border-radius: 20px;
+    border: 0.0625rem solid #eaeaea;
+    background: #fff;
+    padding: 3.75rem 3.25rem;
+    width: 100%;
+    height: 100%;
+    .sec-Head {
+      .title-sm {
+        font-size: 2.375rem;
+        font-weight: 600;
+        color: #01390c;
+        line-height: 1.2;
+        letter-spacing: -0.0475rem;
+        display: block;
+        margin-bottom: 1.5625rem;
+      }
+    }
+    .cms-con {
+      text-align: center;
+      margin-bottom: 1.875rem;
+      p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.2;
+        display: block;
+      }
+    }
+    .help-center-warranty-btn {
+      display: block;
+      text-align: center;
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        line-height: 1.2;
+        padding-right: 1.25rem;
+        position: relative;
+        transition: all 0.4s ease-in-out;
+        &::before {
+          content: "";
+          position: absolute;
+          border-bottom: 1px solid #000;
+          border-right: 1px solid #000;
+          width: 8px;
+          height: 8px;
+          transform: rotate(-45deg) translateY(-50%);
+          right: 0;
+          top: 50%;
+        }
+        &:hover {
+          color: #01390c;
+          &::before {
+            border-color: #01390c;
+          }
+        }
+      }
+    }
+  }
+}
 /* help-center-end */
+body.contact-us-page {
+  background: url(contact-us-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 
+.contact-us-banner-sec {
+  .contact-us-banner-box {
+    .contact-us-banner-img {
+      width: 100%;
+      height: 427px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.get-in-touch-sec {
+  position: relative;
+  margin-top: -12.5rem;
+  .get-in-touch-wrap {
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    padding: 3.125rem 7.625rem;
+    overflow: hidden;
+    .sec-Head {
+      margin-bottom: 0.625rem;
+      .title-md {
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      p {
+        font-size: 1rem;
+        color: #9f9f9f;
+        font-weight: 400;
+        line-height: 1.3;
+        display: block;
+      }
+    }
+    .get-in-touch-bottom {
+      margin-top: 4.375rem;
+      .contact-details-main {
+        .contact-details-box {
+          display: block;
+          margin-bottom: 45px;
+          .contact-details-inner {
+            color: #000;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.2;
+            display: block;
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            padding-left: 3rem;
+            max-width: 20.25rem;
+            b {
+              color: #01390c;
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 1;
+              font-family: "Poppins", sans-serif;
+              display: block;
+              padding-bottom: 0.375rem;
+            }
+            img {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 1.375rem;
+              height: 1.375rem;
+            }
+            .phone {
+              padding-bottom: 4px;
+              display: block;
+              font-size: 1rem;
+              font-weight: 400;
+              line-height: 1.2;
+              font-family: "Poppins", sans-serif;
+              position: relative;
+            }
+            .time {
+              padding-bottom: 4px;
+              display: block;
+              font-size: 1rem;
+              font-weight: 400;
+              line-height: 1.2;
+              font-family: "Poppins", sans-serif;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* warranty-page-start */
+
+body.warranty-page {
+  background: url(warranty-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.warranty-banner-sec {
+  .warranty-banner-box {
+    .warranty-banner-img {
+      width: 100%;
+      height: 557px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.warranty-con-sec {
+  position: relative;
+  margin-top: -13.75rem;
+  .warranty-con-inner {
+    border-radius: 20px;
+    border: 0.0625rem solid #eaeaea;
+    background: #fff;
+    padding: 3.4375rem 2.5rem 7.5rem;
+    .sec-head {
+      .title-sm {
+        font-size: 2.375rem;
+        text-align: center;
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      max-width: 51.4375rem;
+      margin: auto;
+      text-align: center;
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+/* warranty-page-end */
+
+/* Community Page start */
+.community-page {
+  .header-main {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+body.community-page {
+  background: url(community-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.community-banner-sec {
+  .community-banner-box {
+    .community-banner-img {
+      width: 100%;
+      height: 427px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.everwell-oasis-sec {
+  position: relative;
+  margin-top: -220px;
+  .everwell-oasis-inner {
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    width: 100%;
+    padding: 98px 15px;
+    .sec-head {
+      margin-bottom: 10px;
+      .title-sm {
+        font-size: 38px;
+        color: #01390c;
+      }
+    }
+    .cms-con {
+      text-align: center;
+      max-width: 768px;
+      margin: auto;
+      p {
+        font-size: 20px;
+      }
+    }
+    .everwell-oasis-box {
+      border-radius: 1.8791rem;
+      border: 0.0625rem solid #cdcdcd;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      max-width: 570px;
+      margin: 3.125rem auto 0;
+      .inputfield {
+        background: none;
+        padding: 0.625rem 1.375rem;
+        font-size: 0.875rem;
+        width: 100%;
+      }
+      .btn {
+        margin: 0.25rem;
+        min-width: 7rem;
+        padding: 0.5rem 1.25rem;
+      }
+    }
+  }
+}
+/* Community Page end */
 
 /* resposive */
 @media only screen and (max-width: 1660px) {
@@ -1309,10 +1667,31 @@ body.about-us-page {
     }
   }
 
-  .latest-slide {
-    .blogbox {
-      .blogcon {
-        bottom: -4.875rem;
+  .help-center-banner-sec {
+    .help-center-banner-box {
+      .help-center-banner-img {
+        height: 18.75rem;
+      }
+    }
+  }
+
+  .help-center-warranty-sec {
+    margin-top: -8.125rem;
+    .help-center-warranty-box {
+      padding: 1.875rem;
+      .sec-Head {
+        .title-sm {
+          font-size: 2.125rem;
+        }
+      }
+    }
+  }
+
+  .get-in-touch-sec {
+    .get-in-touch-wrap {
+      padding: 2.1875rem;
+      .get-in-touch-bottom {
+        margin-top: 3.375rem;
       }
     }
   }
@@ -1622,6 +2001,65 @@ body.about-us-page {
       }
     }
   }
+
+  .help-center-warranty-sec {
+    .help-center-warranty-box {
+      padding: 1.25rem 0.9375rem;
+      .sec-Head {
+        .title-sm {
+          margin-bottom: 0.9375rem;
+          font-size: 1.875rem;
+        }
+      }
+      .cms-con {
+        p {
+          font-size: 1rem;
+          min-height: 230px;
+        }
+      }
+      .help-center-warranty-btn {
+        span {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+
+  .get-in-touch-sec {
+    margin-top: -8.5rem;
+    .get-in-touch-wrap {
+      padding: 1.25rem;
+      .cms-con {
+        max-width: 100%;
+      }
+      .get-in-touch-bottom {
+        margin-top: 2.375rem;
+        .contact-details-main {
+          .contact-details-box {
+            margin-bottom: 1.875rem;
+            .contact-details-inner {
+              padding-left: 2rem;
+              b {
+                font-size: 1.125rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-group textarea {
+    height: 6.5625rem;
+  }
+
+  .contact-us-banner-sec {
+    .contact-us-banner-box {
+      .contact-us-banner-img {
+        height: 18.75rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1842,6 +2280,44 @@ body.about-us-page {
       .sec-Head {
         .title-lg {
           font-size: 2.25rem;
+        }
+      }
+    }
+  }
+
+  .help-center-warranty-sec {
+    .help-center-warranty-box {
+      padding: 1.25rem 0.9375rem;
+      .sec-Head {
+        .title-sm {
+          margin-bottom: 0.9375rem;
+          font-size: 1.75rem;
+        }
+      }
+      .cms-con {
+        p {
+          min-height: 16.875rem;
+        }
+      }
+    }
+  }
+
+  .get-in-touch-sec {
+    .get-in-touch-wrap {
+      .get-in-touch-bottom {
+        .contact-details-main {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: start;
+          width: 100%;
+          .contact-details-box {
+            width: 50%;
+            .contact-details-inner {
+              br {
+                display: none;
+              }
+            }
+          }
         }
       }
     }
@@ -2099,12 +2575,84 @@ body.about-us-page {
       ul {
         li {
           font-size: 14px;
-          img{
+          img {
             width: 1.25rem;
             height: 1.25rem;
           }
         }
       }
+    }
+  }
+
+  .help-center-banner-sec {
+    .help-center-banner-box {
+      .help-center-banner-img {
+        height: 10.75rem;
+      }
+    }
+  }
+
+  .help-center-warranty-sec {
+    margin-top: 0;
+    .help-center-warranty-col {
+      .help-center-warranty-box {
+        border: none;
+        border-radius: 0;
+        .cms-con {
+          p {
+            min-height: auto;
+          }
+        }
+      }
+      &:first-child {
+        border-bottom: 0.0625rem solid #eaeaea;
+      }
+    }
+    .container {
+      padding: 0;
+    }
+  }
+
+  .get-in-touch-sec {
+    .get-in-touch-wrap {
+      .cms-con {
+        p {
+          font-size: 0.875rem;
+        }
+      }
+      .get-in-touch-bottom {
+        .contact-details-main {
+          .contact-details-box {
+            width: 100%;
+            margin-bottom: 1.5625rem;
+            .contact-details-inner {
+              max-width: 100%;
+              font-size: 0.875rem;
+              .phone {
+                font-size: 0.875rem;
+              }
+              .time {
+                font-size: 0.875rem;
+              }
+              img {
+                width: 1.125rem;
+                height: 1.125rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-group {
+    .form-control {
+      padding: 10px;
+      min-height: auto;
+      font-size: 14px;
+    }
+    textarea {
+      height: 4.5625rem;
     }
   }
 }
