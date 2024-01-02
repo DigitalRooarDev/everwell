@@ -323,6 +323,71 @@ $(".blog-category span").click(function () {
     $("span").toggleClass("show");
 });
 
+  if ($(window).width() < 767) {
+      $('.related-slide').slick({
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          dots: true,
+          responsive: [
+              {
+                  breakpoint: 767,
+                  settings: {
+                      infinite: true,
+                      speed: 500,
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      fade: false
+                  }
+              },
+              {
+                  breakpoint: 568,
+                  settings: {
+                      infinite: true,
+                      speed: 500,
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      fade: false
+                  }
+              }
+          ]
+      });
+  }
+
+  $(".more-enjoy-main").slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+        },
+      },
+    ],
+  });
+
 // Quantity
     $(document).on("click", ".qtyplus", function (e) {
         e.preventDefault();
