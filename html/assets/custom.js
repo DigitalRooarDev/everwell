@@ -364,25 +364,40 @@ $(".blog-category span").click(function () {
     autoplay: true,
     responsive: [
       {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
+          dots: true,
+          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
+          dots: true,
+          arrows: false,
         },
       },
       {
         breakpoint: 569,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           adaptiveHeight: true,
+          dots: true,
+          arrows: false,
         },
       },
     ],
