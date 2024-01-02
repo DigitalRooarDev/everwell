@@ -276,7 +276,7 @@ $(document).ready(function () {
     ],
   });
 
-$(".blog-slider").slick({
+  $(".blog-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -284,21 +284,21 @@ $(".blog-slider").slick({
     autoplay: true,
     autoplaySpeed: 7000,
     speed: 800,
-    fade: true, 
-    responsive: [   
-        {
-            breakpoint: 991,
-            settings: {
-             slidesToShow:1,
-             arrows: false,
-             dots: true,
-            }
-        }
-    ]   
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
 
-$('.story-slider').slick({
-    slidesToShow:1,
+  $(".story-slider").slick({
+    slidesToShow: 1,
     infinite: false,
     slidesToScroll: 1,
     focusOnSelect: true,
@@ -306,22 +306,22 @@ $('.story-slider').slick({
     autoplaySpeed: 5000,
     speed: 800,
     arrows: true,
-    responsive: [        
-        {
-            breakpoint: 569,
-            settings: {
-             slidesToShow:1,
-             arrows: false,
-             dots: true,
-            }
-        }
-    ]    
-});
+    responsive: [
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
 
-$(".blog-category span").click(function () {
+  $(".blog-category span").click(function () {
     $(".menu-dropdown-con").slideToggle();
     $("span").toggleClass("show");
-});
+  });
 
   if ($(window).width() < 767) {
       $('.related-slide').slick({
@@ -406,17 +406,28 @@ $(".blog-category span").click(function () {
 $(".all-category span").click(function () {
     $(".menu-dropdown-con").slideToggle();
     $("span").toggleClass("show");
-});
+  });
 
-// Quantity
-    $(document).on("click", ".qtyplus", function (e) {
-        e.preventDefault();
-        var currentVal = parseInt($(".qv-quantity").val());
-        isNaN(currentVal) ? $(".qv-quantity").val(1) : $(".qv-quantity").val(currentVal + 1)
-    }), $(document).on("click", ".qtyminus", function (e) {
-        e.preventDefault();
-        var currentVal = parseInt($(".qv-quantity").val());
-        !isNaN(currentVal) && currentVal > 1 ? $(".qv-quantity").val(currentVal - 1) : $(".qv-quantity").val(1)
+  $(".phonenumber").keypress(function (event) {
+    if (event.which != 8 && isNaN(String.fromCharCode(event.which))) {
+      event.preventDefault();
+    }
+  });
+
+  // Quantity
+  $(document).on("click", ".qtyplus", function (e) {
+    e.preventDefault();
+    var currentVal = parseInt($(".qv-quantity").val());
+    isNaN(currentVal)
+      ? $(".qv-quantity").val(1)
+      : $(".qv-quantity").val(currentVal + 1);
+  }),
+    $(document).on("click", ".qtyminus", function (e) {
+      e.preventDefault();
+      var currentVal = parseInt($(".qv-quantity").val());
+      !isNaN(currentVal) && currentVal > 1
+        ? $(".qv-quantity").val(currentVal - 1)
+        : $(".qv-quantity").val(1);
     });
 
   $(".marquee-main").each(function () {
@@ -463,25 +474,25 @@ $(".all-category span").click(function () {
     infinite: true,
     slidesToScroll: 1,
     focusOnSelect: true,
-    autoplay: true,   
-    arrows: false,    
+    autoplay: true,
+    arrows: false,
     responsive: [
-        {
-            breakpoint: 991,
-            settings: {
-             slidesToShow:3,              
-              dots:true,
-              arrows: false,
-            }
-        },  
-        {
-            breakpoint: 767,
-            settings: {
-             slidesToShow:2,              
-              dots:true,
-              arrows: false,
-            }
-        },        
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
       {
         breakpoint: 991,
         settings: {

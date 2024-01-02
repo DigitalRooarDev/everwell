@@ -1237,6 +1237,51 @@ body.warranty-page {
   }
 }
 
+.warranty-return-form-sec {
+  .warranty-return-form-inner {
+    .warranty-return-left {
+      .sec-head {
+        .warranty-return-title {
+          font-size: 28px;
+          font-weight: 700;
+          color: #000;
+          line-height: 1.2;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding-bottom: 5px;
+          font-family: Manrope;
+        }
+      }
+      .wrranty-return-form{
+        .sec-head{
+          margin-top: 2.625rem;
+        }
+      }
+    }
+    .warranty-return-right {
+      padding-left: 4.5rem;
+      margin-top: 4.0625rem;
+      .warranty-return-img-box {
+        width: 28.5rem;
+        height: auto;
+        margin-bottom: 2.25rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 1.125rem;
+          -webkit-border-radius: 1.125rem;
+          -moz-border-radius: 1.125rem;
+          -ms-border-radius: 1.125rem;
+          -o-border-radius: 1.125rem;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
 /* warranty-page-end */
 
 /* Community Page start */
