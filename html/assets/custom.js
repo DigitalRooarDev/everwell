@@ -523,13 +523,13 @@ if ($(".favorites-pro-slider").length > 0) {
     effect: "cards",
     grabCursor: true,
     cardsEffect: {
-      perSlideOffset: 73,
+      perSlideOffset: 77,
       perSlideRotate: 2,
     },
-    autoplay: {
-      delay: 500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       568: {
         pagination: {

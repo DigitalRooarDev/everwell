@@ -206,14 +206,14 @@
 }
 @media only screen and (min-width: 1199px) {
   .our-collection-sec.collection-sec .product-box:hover .product-text {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 2.25rem;
+    padding-bottom: 1.8rem;
   }
   .our-collection-sec.collection-sec .product-box:hover .product-text .product-title {
     font-size: 1.375rem;
   }
   .our-collection-sec.collection-sec .product-box:hover .product-text .product-rating {
-    margin-bottom: 1.125rem;
+    margin-bottom: 1.7rem;
   }
   .our-collection-sec.collection-sec .product-box:hover .product-text .product-price-btn .product-price span {
     margin-right: 0.3125rem;
@@ -274,7 +274,7 @@
 .product-list-main .product-item {
   padding: 0 1.125rem;
   display: inline-flex !important;
-  min-height: 38.75rem;
+  min-height: 36.75rem;
   width: 33.33%;
 }
 
@@ -442,7 +442,7 @@
   padding-top: 2.25rem;
 }
 .our-collection-sec.customer-favor-sec .sec-head {
-  margin-bottom: 0.625rem;
+  margin-bottom: 2.625rem;
 }
 .our-collection-sec.customer-favor-sec:after {
   content: "";
@@ -487,21 +487,21 @@
 .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide-active {
   z-index: 2;
   width: 24.5rem !important;
-  min-height: 35.8125rem;
+  min-height: auto;
   visibility: visible;
   opacity: 1;
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide-active .product-box {
   transform: unset;
   box-shadow: 0 0 0.625rem 0.125rem rgba(0, 0, 0, 0.1);
-  margin: 1.25rem;
+  margin-bottom: 0;
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide-active .product-box .product-img {
   padding-bottom: 93%;
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide-active .product-box .product-text {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+  padding-top: 3.8rem;
+  padding-bottom: 2rem;
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide-active .product-box .product-text .product-title {
   font-size: 1.375rem;
@@ -526,7 +526,7 @@
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item .product-box .product-img {
   height: auto;
-  padding-bottom: 77%;
+  padding-bottom: 95%;
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item .product-box .product-img img {
   position: absolute;
