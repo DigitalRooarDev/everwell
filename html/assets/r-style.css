@@ -2,4 +2,34 @@
   content: none !important;
 }
 
+.review-banner {
+  height: calc(100svh - 135px);
+  max-height: 900px;
+  position: relative;
+  max-width: 1920px;
+  margin: auto !important;
+  z-index: 1;
+}
+.review-banner .img-box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.review-banner .img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.review-banner .content-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
 /*# sourceMappingURL=r-style.css.map */
