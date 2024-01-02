@@ -337,6 +337,12 @@ body.home {
   background-size: cover;
 }
 
+body.review {
+  background: url(reviews-bg.jpg) no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
 /* Header start */
 .headtop {
   background: #01390C;
