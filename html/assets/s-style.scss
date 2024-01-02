@@ -260,6 +260,8 @@
     left: 40px;
   }
 
+
+
   .immune-vitality-wrap {
     .immune-vitality-slider {
       .slick-dots {
@@ -269,6 +271,18 @@
         left: 0;
         right: 0;
         margin: auto;
+        li{
+          &:nth-child(2){
+            &.slick-active{
+              button{background: #1B4B79;}
+            }
+          }
+          &:nth-child(3){
+            &.slick-active{
+              button{background: #A458A0;}
+            }
+          }
+        }
       }
 
       .slick-list {
@@ -1316,17 +1330,19 @@ body.community-page {
 
 .everwell-oasis-sec {
   position: relative;
-  margin-top: -220px;
+  margin-top: -13.75rem;
   .everwell-oasis-inner {
     border-radius: 20px;
     border: 1px solid #eaeaea;
     background: #fff;
     width: 100%;
-    padding: 98px 15px;
+    padding: 6.125rem 0.9375rem;
+    max-width: 74.5rem;
+    margin: auto;
     .sec-head {
-      margin-bottom: 10px;
+      margin-bottom: 1.625rem;
       .title-sm {
-        font-size: 38px;
+        font-size: 2.375rem;
         color: #01390c;
       }
     }
@@ -1335,7 +1351,7 @@ body.community-page {
       max-width: 768px;
       margin: auto;
       p {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
     }
     .everwell-oasis-box {
@@ -1345,7 +1361,7 @@ body.community-page {
       display: flex;
       justify-content: space-between;
       max-width: 570px;
-      margin: 3.125rem auto 0;
+      margin: 2.5rem auto 0;
       .inputfield {
         background: none;
         padding: 0.625rem 1.375rem;
@@ -1740,6 +1756,16 @@ body.community-page {
       }
     }
   }
+
+  /* Community Page start */
+  .everwell-oasis-sec{
+    .everwell-oasis-inner{
+      padding: 3.125rem 0.9375rem;
+    }
+  }
+  /* Community Page end */
+
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -2105,6 +2131,9 @@ body.community-page {
       }
     }
   }
+
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -2367,6 +2396,20 @@ body.community-page {
       }
     }
   }
+
+  /* Community Page start */
+  .community-banner-sec{
+    .community-banner-box{
+      .community-banner-img{
+        height: 300px;
+      }
+    }
+  }
+  .everwell-oasis-sec{
+    margin-top: -6.75rem;
+  }
+  /* Community Page end */
+
 }
 
 @media only screen and (max-width: 568px) {

@@ -236,6 +236,12 @@
   right: 0;
   margin: auto;
 }
+.immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .slick-dots li:nth-child(2).slick-active button {
+  background: #1B4B79;
+}
+.immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .slick-dots li:nth-child(3).slick-active button {
+  background: #A458A0;
+}
 .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .slick-list {
   overflow: visible;
 }
@@ -1082,20 +1088,22 @@ body.community-page {
 
 .everwell-oasis-sec {
   position: relative;
-  margin-top: -220px;
+  margin-top: -13.75rem;
 }
 .everwell-oasis-sec .everwell-oasis-inner {
   border-radius: 20px;
   border: 1px solid #eaeaea;
   background: #fff;
   width: 100%;
-  padding: 98px 15px;
+  padding: 6.125rem 0.9375rem;
+  max-width: 74.5rem;
+  margin: auto;
 }
 .everwell-oasis-sec .everwell-oasis-inner .sec-head {
-  margin-bottom: 10px;
+  margin-bottom: 1.625rem;
 }
 .everwell-oasis-sec .everwell-oasis-inner .sec-head .title-sm {
-  font-size: 38px;
+  font-size: 2.375rem;
   color: #01390c;
 }
 .everwell-oasis-sec .everwell-oasis-inner .cms-con {
@@ -1104,7 +1112,7 @@ body.community-page {
   margin: auto;
 }
 .everwell-oasis-sec .everwell-oasis-inner .cms-con p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .everwell-oasis-sec .everwell-oasis-inner .everwell-oasis-box {
   border-radius: 1.8791rem;
@@ -1113,7 +1121,7 @@ body.community-page {
   display: flex;
   justify-content: space-between;
   max-width: 570px;
-  margin: 3.125rem auto 0;
+  margin: 2.5rem auto 0;
 }
 .everwell-oasis-sec .everwell-oasis-inner .everwell-oasis-box .inputfield {
   background: none;
@@ -1342,6 +1350,11 @@ body.community-page {
   .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom {
     margin-top: 3.375rem;
   }
+  /* Community Page start */
+  .everwell-oasis-sec .everwell-oasis-inner {
+    padding: 3.125rem 0.9375rem;
+  }
+  /* Community Page end */
 }
 @media only screen and (max-width: 991px) {
   .title-lg {
@@ -1677,6 +1690,14 @@ body.community-page {
   .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner br {
     display: none;
   }
+  /* Community Page start */
+  .community-banner-sec .community-banner-box .community-banner-img {
+    height: 300px;
+  }
+  .everwell-oasis-sec {
+    margin-top: -6.75rem;
+  }
+  /* Community Page end */
 }
 @media only screen and (max-width: 568px) {
   .title-xxl {
