@@ -388,6 +388,11 @@ $(".blog-category span").click(function () {
     ],
   });
 
+$(".all-category span").click(function () {
+    $(".menu-dropdown-con").slideToggle();
+    $("span").toggleClass("show");
+});
+
 // Quantity
     $(document).on("click", ".qtyplus", function (e) {
         e.preventDefault();

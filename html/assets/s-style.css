@@ -108,8 +108,36 @@
   font-weight: 500;
   line-height: 1;
   display: block;
-  margin-bottom: 0.375rem;
+  margin-bottom: 0.5rem;
 }
+.form-group .form-control {
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #bebebe;
+  background: #fff;
+  position: relative;
+  padding: 0.75rem 0.9375rem;
+  width: 100%;
+  min-height: 3.125rem;
+  vertical-align: middle;
+  transition: border 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  resize: none;
+}
+.form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form-group .form-control ::placeholder {
+  color: #bdbdbd;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-group textarea {
+  height: 7.5625rem;
+}
+
 /* form */
 /* marquee-sec-start */
 .marquee-sec .marquee-main {
@@ -337,7 +365,7 @@
 .success-stories-sec .success-stories-wrap .success-stories-con .cms-con p {
   font-size: 1.125rem;
   text-align: center;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.5408px;
 }
 .success-stories-sec .success-stories-wrap .success-stories-box {
   position: relative;
@@ -853,6 +881,12 @@ body.help-center-page {
 }
 
 /* help-center-end */
+body.contact-us-page {
+  background: url(contact-us-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
 .contact-us-banner-sec .contact-us-banner-box .contact-us-banner-img {
   width: 100%;
   height: 427px;
@@ -864,11 +898,16 @@ body.help-center-page {
   object-fit: cover;
 }
 
+.get-in-touch-sec {
+  position: relative;
+  margin-top: -12.5rem;
+}
 .get-in-touch-sec .get-in-touch-wrap {
   border-radius: 20px;
   border: 1px solid #eaeaea;
   background: #fff;
   padding: 3.125rem 7.625rem;
+  overflow: hidden;
 }
 .get-in-touch-sec .get-in-touch-wrap .sec-Head {
   margin-bottom: 0.625rem;
@@ -941,6 +980,119 @@ body.help-center-page {
   position: relative;
 }
 
+/* warranty-page-start */
+body.warranty-page {
+  background: url(warranty-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.warranty-banner-sec .warranty-banner-box .warranty-banner-img {
+  width: 100%;
+  height: 557px;
+  position: relative;
+}
+.warranty-banner-sec .warranty-banner-box .warranty-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.warranty-con-sec {
+  position: relative;
+  margin-top: -13.75rem;
+}
+.warranty-con-sec .warranty-con-inner {
+  border-radius: 20px;
+  border: 0.0625rem solid #eaeaea;
+  background: #fff;
+  padding: 3.4375rem 2.5rem 7.5rem;
+}
+.warranty-con-sec .warranty-con-inner .sec-head .title-sm {
+  font-size: 2.375rem;
+  text-align: center;
+  color: #01390c;
+}
+.warranty-con-sec .warranty-con-inner .cms-con {
+  max-width: 51.4375rem;
+  margin: auto;
+  text-align: center;
+}
+.warranty-con-sec .warranty-con-inner .cms-con p {
+  font-size: 1.25rem;
+}
+
+/* warranty-page-end */
+/* Community Page start */
+.community-page .header-main::before {
+  content: none;
+}
+
+body.community-page {
+  background: url(community-bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.community-banner-sec .community-banner-box .community-banner-img {
+  width: 100%;
+  height: 427px;
+  position: relative;
+}
+.community-banner-sec .community-banner-box .community-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.everwell-oasis-sec {
+  position: relative;
+  margin-top: -220px;
+}
+.everwell-oasis-sec .everwell-oasis-inner {
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  width: 100%;
+  padding: 98px 15px;
+}
+.everwell-oasis-sec .everwell-oasis-inner .sec-head {
+  margin-bottom: 10px;
+}
+.everwell-oasis-sec .everwell-oasis-inner .sec-head .title-sm {
+  font-size: 38px;
+  color: #01390c;
+}
+.everwell-oasis-sec .everwell-oasis-inner .cms-con {
+  text-align: center;
+  max-width: 768px;
+  margin: auto;
+}
+.everwell-oasis-sec .everwell-oasis-inner .cms-con p {
+  font-size: 20px;
+}
+.everwell-oasis-sec .everwell-oasis-inner .everwell-oasis-box {
+  border-radius: 1.8791rem;
+  border: 0.0625rem solid #cdcdcd;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+  margin: 3.125rem auto 0;
+}
+.everwell-oasis-sec .everwell-oasis-inner .everwell-oasis-box .inputfield {
+  background: none;
+  padding: 0.625rem 1.375rem;
+  font-size: 0.875rem;
+  width: 100%;
+}
+.everwell-oasis-sec .everwell-oasis-inner .everwell-oasis-box .btn {
+  margin: 0.25rem;
+  min-width: 7rem;
+  padding: 0.5rem 1.25rem;
+}
+
+/* Community Page end */
 /* resposive */
 @media only screen and (max-width: 1280px) {
   .title-xxl {
@@ -1149,6 +1301,12 @@ body.help-center-page {
   .help-center-warranty-sec .help-center-warranty-box .sec-Head .title-sm {
     font-size: 2.125rem;
   }
+  .get-in-touch-sec .get-in-touch-wrap {
+    padding: 2.1875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom {
+    margin-top: 3.375rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .title-lg {
@@ -1331,6 +1489,33 @@ body.help-center-page {
   .help-center-warranty-sec .help-center-warranty-box .help-center-warranty-btn span {
     font-size: 1.125rem;
   }
+  .get-in-touch-sec {
+    margin-top: -8.5rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap {
+    padding: 1.25rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .cms-con {
+    max-width: 100%;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom {
+    margin-top: 2.375rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+    margin-bottom: 1.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner {
+    padding-left: 2rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner b {
+    font-size: 1.125rem;
+  }
+  .form-group textarea {
+    height: 6.5625rem;
+  }
+  .contact-us-banner-sec .contact-us-banner-box .contact-us-banner-img {
+    height: 18.75rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   .title-xxl {
@@ -1444,6 +1629,18 @@ body.help-center-page {
   }
   .help-center-warranty-sec .help-center-warranty-box .cms-con p {
     min-height: 16.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100%;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+    width: 50%;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner br {
+    display: none;
   }
 }
 @media only screen and (max-width: 568px) {
@@ -1603,6 +1800,35 @@ body.help-center-page {
   }
   .help-center-warranty-sec .container {
     padding: 0;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .cms-con p {
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box {
+    width: 100%;
+    margin-bottom: 1.5625rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner {
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner .phone {
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner .time {
+    font-size: 0.875rem;
+  }
+  .get-in-touch-sec .get-in-touch-wrap .get-in-touch-bottom .contact-details-main .contact-details-box .contact-details-inner img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+  .form-group .form-control {
+    padding: 10px;
+    min-height: auto;
+    font-size: 14px;
+  }
+  .form-group textarea {
+    height: 4.5625rem;
   }
 }
 @media only screen and (max-width: 350px) {
