@@ -381,7 +381,7 @@
 }
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap {
   width: 25%;
-  height: 100%;
+  height: 383px;
 }
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap:first-child .success-stories-img-main::before {
   border-radius: 20px 0 0 20px;
@@ -407,6 +407,7 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
+  height: 100%;
 }
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main::before {
   content: "";
@@ -419,6 +420,14 @@
   background: rgba(71, 71, 71, 0.5);
   transition: height 0.5s ease-in-out;
   z-index: 1;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .success-stories-img {
+  height: 100%;
+}
+.success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .success-stories-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn {
   position: absolute;
@@ -1192,6 +1201,9 @@ body.community-page {
   .our-mission-sec .our-missio-tab .tab-content .tab-pane .story-tab-desc .tab-desc .sec-Head .title-lg {
     font-size: 2.625rem;
   }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap {
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .title-xxl {
@@ -1248,6 +1260,9 @@ body.community-page {
   .immune-vitality-sec .immune-vitality-wrap .immune-vitality-slider .immune-vitality-slide .immune-vitality-box .immune-vitality-row .immune-vitality-con {
     padding-left: 0;
     padding-right: 15px;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap {
+    height: 320px;
   }
   .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main:before {
     display: none;
@@ -1440,6 +1455,9 @@ body.community-page {
   }
   .success-stories-sec .success-stories-wrap .success-stories-con .cms-con p {
     font-size: 1rem;
+  }
+  .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap {
+    height: 235px;
   }
   .success-stories-sec .success-stories-wrap .success-stories-box .success-stories-box-wrap .success-stories-img-main .read-more-btn .btn {
     min-width: 100px;
