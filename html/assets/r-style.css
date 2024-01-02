@@ -20,6 +20,21 @@
   width: 100%;
   object-fit: cover;
 }
+.review-banner .play-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateY(-10%);
+  margin: auto;
+  z-index: 5;
+}
+.review-banner .play-icon i {
+  color: #fff;
+  font-size: 5rem;
+}
 .review-banner .content-box {
   position: absolute;
   display: flex;
@@ -30,6 +45,90 @@
   right: 0;
   bottom: 0;
   z-index: 2;
+}
+.review-banner .review-banner-col {
+  width: 40%;
+}
+.review-banner .review-banner-col .sec-head {
+  max-width: 67%;
+}
+.review-banner .review-banner-col .sec-head img {
+  position: absolute;
+  right: 0;
+  bottom: 1.625rem;
+}
+.review-banner .review-banner-col .cms-con {
+  padding: 0.625rem 0;
+}
+.review-banner .review-banner-col .cms-con p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.success-stories-con .title, .our-collection-sec .title {
+  display: inline-block;
+}
+.success-stories-con .title img, .our-collection-sec .title img {
+  position: absolute;
+  right: -33px;
+  top: -13px;
+}
+
+@media (max-width: 1199px) {
+  .review-banner {
+    height: auto;
+  }
+  .review-banner .play-icon {
+    transform: translateY(-16%);
+  }
+  .review-banner .play-icon i {
+    font-size: 4rem;
+  }
+  .review-banner .review-banner-col .sec-head {
+    max-width: 79%;
+  }
+  .review-banner .review-banner-col .cms-con p {
+    font-size: 1rem;
+  }
+  .review-banner .review-banner-col .cms-con p br {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .review-banner .play-icon i {
+    font-size: 3rem;
+  }
+  .review-banner .review-banner-col .sec-head {
+    max-width: 97%;
+  }
+}
+@media (max-width: 568px) {
+  .review-banner .img-box img {
+    height: 25rem;
+  }
+  .review-banner .content-box {
+    position: unset;
+    padding-top: 2.8125rem;
+  }
+  .review-banner .play-icon {
+    top: 38%;
+    left: 47%;
+  }
+  .review-banner .play-icon i {
+    font-size: 3rem;
+  }
+  .review-banner .review-banner-col {
+    width: 100%;
+  }
+  .review-banner .review-banner-col .sec-head {
+    max-width: 100%;
+  }
+  .review-banner .review-banner-col .sec-head img {
+    right: -0.625rem;
+  }
+  .review-banner .review-banner-col .cms-con {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=r-style.css.map */
