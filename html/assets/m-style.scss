@@ -899,8 +899,11 @@ body.blog-page {
 /* Shipping & returning page end */
 
 
-/* member-banefit-sec start */
+/* Community-page start */
 .member-banefit-sec {
+  .sec-head {
+    margin-bottom: 3.625rem;
+  }
   .member-banefit-wrap {    
     background: #F9F9F9;    
     overflow: hidden;
@@ -919,13 +922,7 @@ body.blog-page {
       .member-banefit-con {
         width: 50%;
         max-width: 560px;
-        margin: 0 auto;
-        .sec-head {
-          .title-sm {
-            font-size: 2.375rem;
-            line-height: 1;
-          }
-        }
+        margin: 0 auto;        
         .cms-con {
           p {
             font-size: 1.25rem;
@@ -942,7 +939,7 @@ body.blog-page {
   }
 }
 
-/* member-banefit-sec end */
+/* Community-page end */
 
 
 @media only screen and (max-width:1660px) {}
@@ -1134,6 +1131,27 @@ body.blog-page {
 }
 /* Shipping & returning page end */
 
+/* Community-page start */
+.member-banefit-sec{
+  .member-banefit-wrap{
+    .member-banefit-row{
+      .member-banefit-con{
+        max-width: 440px;
+        .cms-con{
+          p{
+            margin-bottom: 10px;
+            font-size: 1.125rem;
+            b{
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Community-page end */
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -1315,6 +1333,27 @@ body.blog-page {
   }
 }
 /* Shipping & returning page end */
+
+/* Community-page start */
+.member-banefit-sec{
+  .sec-head{
+    margin-bottom: 1.625rem;
+  }
+  .member-banefit-wrap{
+    .member-banefit-row{
+      display: block;
+      .member-banefit-img{
+        width: 100%;
+      }
+      .member-banefit-con{
+        width: 100%;
+        max-width: 100%;
+        padding: 1.875rem 1.25rem 3.125rem;
+      }
+    }
+  }
+}
+/* Community-page end */
 
 }
 
@@ -1732,6 +1771,25 @@ body.blog-page {
   }
 }
 /* Shipping & returning page end */
+
+/* Community-page start */
+.everwell-oasis-sec{
+  .everwell-oasis-inner{
+    padding: 2.125rem 0.9375rem;
+    .sec-head{
+      margin-bottom: 1.25rem;
+      .title-sm{
+        font-size: 1.75rem;
+      }
+    }
+    .cms-con{
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+/* Community-page end */
 
 }
 

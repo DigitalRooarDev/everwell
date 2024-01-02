@@ -979,6 +979,17 @@
     margin-bottom: 0;
   }
   /* shop page end */
+  .myaccount {
+    font-size: 0;
+    position: relative;
+  }
+  .myaccount i {
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    display: block;
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 489px) {
   /* dropper sec start */
