@@ -858,6 +858,44 @@ body.blog-page {
 }
 
 /* Shipping & returning page end */
+/* member-banefit-sec start */
+.member-banefit-sec .member-banefit-wrap {
+  background: #F9F9F9;
+  overflow: hidden;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row {
+  display: flex;
+  align-items: center;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row:nth-child(odd) {
+  flex-direction: row-reverse !important;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-img {
+  width: 50%;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-img img {
+  width: 100%;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con {
+  width: 50%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .sec-head .title-sm {
+  font-size: 2.375rem;
+  line-height: 1;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .cms-con p {
+  font-size: 1.25rem;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .cms-con p b {
+  font-family: "Reckless Neue";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #01390C;
+}
+
+/* member-banefit-sec end */
 @media only screen and (max-width: 1366px) {
   /* Product Detail page start */
   .prodetail-sec .product-row .product-detail .product-bottom-btn .addtocart-btn {

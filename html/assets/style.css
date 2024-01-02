@@ -573,6 +573,8 @@ body.home {
 
 .homeBanner {
   position: relative;
+  height: calc(100svh - 40px);
+  max-height: 950px;
 }
 .homeBanner:after {
   content: "";

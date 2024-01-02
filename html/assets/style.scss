@@ -623,7 +623,8 @@ body.home {
 
 .homeBanner {
   position: relative;
-
+  height: calc(100svh - 40px);
+  max-height: 950px;
   &:after {
     content: '';
     position: absolute;
