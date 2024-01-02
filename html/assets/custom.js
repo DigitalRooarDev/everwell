@@ -537,12 +537,12 @@ if ($(".favorites-pro-slider").length > 0) {
       perSlideOffset: 77,
       perSlideRotate: 2,
     },
-    // autoplay: {
-    //   delay: 500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
-      568: {
+      530: {
         pagination: {
           el: ".slider-pagination",
           clickable: true,
