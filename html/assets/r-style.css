@@ -65,10 +65,12 @@
   font-size: 1.125rem;
 }
 
-.success-stories-con .title, .our-collection-sec .title {
+.success-stories-con .title,
+.our-collection-sec .title {
   display: inline-block;
 }
-.success-stories-con .title img, .our-collection-sec .title img {
+.success-stories-con .title img,
+.our-collection-sec .title img {
   position: absolute;
   right: -33px;
   top: -13px;
