@@ -512,7 +512,7 @@ $(".all-category span").click(function () {
       {
         breakpoint: 479,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           dots: true,
           arrows: false,
         },

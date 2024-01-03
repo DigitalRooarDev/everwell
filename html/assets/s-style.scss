@@ -139,14 +139,49 @@
       outline: none;
       box-shadow: none;
     }
-    ::placeholder {
-      color: #bdbdbd;
-      font-size: 1rem;
+    &::-webkit-input-placeholder{
+      color: #BDBDBD;
       font-weight: 400;
     }
+    &::-moz-placeholder{color: #BDBDBD;
+      font-weight: 400;}
+    &:-ms-input-placeholder{color: #BDBDBD;
+      font-weight: 400;}
+    &:-moz-placeholder{color: #BDBDBD;
+      font-weight: 400;}
   }
   textarea {
-    height: 7.5625rem;
+    height: 8.75rem;
+  }
+  &.radio-main{
+    .form-label{margin-bottom: 20px;}
+  }
+  .form-check{
+    &.form-check-inline{padding-left: 30px;margin-right: 25px;}
+    .form-check-input{border-radius: 0.125rem;width: 1.25rem;height: 1.25rem;display: inline-block;vertical-align: middle;margin-left: -30px;border: 1px solid #BEBEBE;
+      &:focus{border-color: $green-color;box-shadow: none;}
+      &:checked{background-color: $white-color;border-color: $green-color;}
+      &:checked[type=radio]{background-image: url(../assets/radio-circle.svg);}
+    }
+    .form-check-label{font-size: 1rem;color: $primary-color;font-weight: 500;display: inline-block;vertical-align: bottom;line-height: 1;}
+  }
+  .photos-upload{
+    &.form-control{
+      min-height: 140px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .uploadmain{
+        text-align: center;
+        color: $primary-color;
+        width: 100%;
+        .icon{width: 24px;margin: auto;margin-bottom: 10px;}
+        .upload-title{display: block;font-size: 18px;font-weight: 500;margin-bottom: 10px;}
+        .upload-note{display: block;font-size: 12px;font-weight: 400;}
+        .browse-btn{position: absolute;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;font-size: 0;padding: 0;border: none;background: transparent;opacity: 0;
+        cursor: pointer;}
+      }
+    }
   }
 }
 
@@ -435,7 +470,7 @@
       }
 
       .btn.btn-white:hover {
-        background-color: #000;
+        border-color: $white-color;
       }
     }
   }
@@ -997,10 +1032,6 @@
   .latestblog-slider {
     margin: 0 -0.9375rem;
   }
-
-  &.common-sec {
-    padding: 80px 0;
-  }
 }
 
 .about-us-feed {
@@ -1221,12 +1252,13 @@ body.warranty-page {
   .warranty-banner-box {
     .warranty-banner-img {
       width: 100%;
-      height: 557px;
+      height: 26.6875rem;
       position: relative;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: top;
       }
     }
   }
@@ -1236,15 +1268,13 @@ body.warranty-page {
   position: relative;
   margin-top: -13.75rem;
   .warranty-con-inner {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: 0.0625rem solid #eaeaea;
     background: #fff;
-    padding: 3.4375rem 2.5rem 7.5rem;
+    padding: 4.4375rem 2.5rem 94px;
     .sec-head {
       .title-sm {
-        font-size: 2.375rem;
         text-align: center;
-        color: #01390c;
       }
     }
     .cms-con {
@@ -1253,6 +1283,8 @@ body.warranty-page {
       text-align: center;
       p {
         font-size: 1.25rem;
+        line-height: 1.3;
+        &:last-child{margin-bottom: 0;}
       }
     }
   }
@@ -1261,30 +1293,31 @@ body.warranty-page {
 .warranty-return-form-sec {
   .warranty-return-form-inner {
     .warranty-return-left {
+      padding-right: 1rem;
       .sec-head {
         .warranty-return-title {
-          font-size: 28px;
+          font-size: 1.75rem;
           font-weight: 700;
           color: #000;
           line-height: 1.2;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          padding-bottom: 5px;
+          border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
+          padding-bottom: 0.3125rem;
           font-family: Manrope;
         }
       }
       .wrranty-return-form{
         .sec-head{
-          margin-top: 2.625rem;
+          margin-top: 3.3125rem;
         }
+        .btn{margin-top: 2.5rem;}
       }
     }
     .warranty-return-right {
-      padding-left: 4.5rem;
-      margin-top: 4.0625rem;
+      margin-top: 5.8125rem;
       .warranty-return-img-box {
-        width: 28.5rem;
-        height: auto;
         margin-bottom: 2.25rem;
+        max-width: 28.5rem;
+        margin-left: auto;
         img {
           width: 100%;
           height: 100%;
@@ -1396,6 +1429,7 @@ body.community-page {
 }
 
 @media only screen and (max-width: 1280px) {
+
   .title-xxl {
     font-size: 3.5rem;
   }
@@ -1785,6 +1819,40 @@ body.community-page {
   /* Community Page end */
 
 
+  /* warranty-page-start */
+
+  .warranty-banner-sec{
+    .warranty-banner-box{
+      .warranty-banner-img{height: 18.75rem;}
+    }
+  }
+  .warranty-con-sec {
+    margin-top: -9.75rem;
+    .warranty-con-inner{padding: 3.4375rem 1.5rem 4rem;
+      .cms-con{
+        p{font-size: 1.125rem;}
+      }
+    }
+  }
+
+  .warranty-return-form-sec{
+    .warranty-return-form-inner{
+      .warranty-return-left{
+        .sec-head{
+          .warranty-return-title{font-size: 1.5rem;}
+        }
+        .wrranty-return-form{
+          .sec-head{margin-top: 2.5rem;}
+          .btn{margin-top: 1.25rem;}
+        }
+      }
+      .warranty-return-right{margin-top: 5.5rem;}
+    }
+  }
+
+  /* warranty-page-end */
+
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -2140,8 +2208,20 @@ body.community-page {
     }
   }
 
-  .form-group textarea {
-    height: 6.5625rem;
+  .form-group{
+    .photos-upload{
+      &.form-control{
+        min-height: 105px;
+        .uploadmain{
+          .icon{margin-bottom: 5px;}
+          .upload-title{font-size: 16px;margin-bottom: 5px;}
+        }
+      }
+    }
+    textarea{height: 6.5625rem;}
+    &.radio-main{
+      .form-label{margin-bottom: 15px;}
+    }
   }
 
   .contact-us-banner-sec {
@@ -2152,6 +2232,29 @@ body.community-page {
     }
   }
 
+  /* warranty-page-start */
+  .warranty-con-sec{
+    .warranty-con-inner{padding: 2.4375rem 1.5rem 3rem;
+      .cms-con{
+        p{font-size: 1rem;}
+      }
+    }
+  }
+  .warranty-return-form-sec{
+    .warranty-return-form-inner{
+      .warranty-return-left{
+      padding-right: 0;
+        .sec-head{
+          .warranty-return-title{font-size: 1.25rem;}
+        }
+      }
+      .warranty-return-right{
+        .warranty-return-img-box{margin-bottom: 1.5625rem;}
+      }
+    }
+  }
+
+  /* warranty-page-end */
 
 
 }
@@ -2429,6 +2532,33 @@ body.community-page {
     margin-top: -6.75rem;
   }
   /* Community Page end */
+
+  /* warranty-page-start */
+  .warranty-con-sec{
+    .warranty-con-inner{padding: 2.5rem 1.5rem;}
+  }
+  .warranty-return-form-sec{
+    .warranty-return-form-inner{
+      .warranty-return-left{
+        margin-bottom: 1.875rem;
+        .sec-head{
+          .warranty-return-title{font-size: 1.125rem;}
+        }
+        .wrranty-return-form{
+          .sec-head{margin-top: 1.25rem;}
+          .btn{margin-top: 0.625rem;}
+        }
+      }
+      .warranty-return-right{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -0.4375rem;
+        .warranty-return-img-box{margin-bottom: 0;max-width: 50%;padding: 0 0.4375rem;}
+      }
+    }
+  }
+
+  /* warranty-page-end */
 
 }
 
@@ -2763,6 +2893,22 @@ body.community-page {
       height: 4.5625rem;
     }
   }
+
+  /* warranty-page-start */
+  .warranty-banner-sec{
+     .warranty-banner-box{
+      .warranty-banner-img{height: 10.75rem;}
+     }
+  }
+  .warranty-con-sec{
+    margin-top: 0;
+    border-bottom: 0.0625rem solid #eaeaea;
+    .container-md{padding: 0;}
+    .warranty-con-inner{border: none;border-radius: 0;padding: 1.875rem 0.9375rem;}
+  }
+
+  /* warranty-page-end */
+
 }
 
 @media only screen and (max-width: 489px) {
