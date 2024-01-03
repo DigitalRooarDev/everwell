@@ -339,7 +339,7 @@ body.home {
 
 body.review {
   background: url(reviews-bg.jpg) no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   background-size: cover;
 }
 
@@ -550,6 +550,9 @@ body.review {
   font-size: 1rem;
   color: #01390C;
 }
+.myaccount i {
+  display: none;
+}
 .myaccount:hover {
   color: #000000;
 }
@@ -579,6 +582,8 @@ body.review {
 
 .homeBanner {
   position: relative;
+  height: calc(100svh - 40px);
+  max-height: 950px;
 }
 .homeBanner:after {
   content: "";
@@ -774,7 +779,7 @@ body.review {
   margin-top: 1px;
 }
 .footerMain .footersec .footBox .social-icon-box .social-icon:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgb(255, 255, 255);
 }
 .footerMain .footersec .footBox .social-icon-box .social-icon:hover i {
   color: #000000;

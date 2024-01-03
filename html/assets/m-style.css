@@ -858,6 +858,43 @@ body.blog-page {
 }
 
 /* Shipping & returning page end */
+/* Community-page start */
+.member-banefit-sec .sec-head {
+  margin-bottom: 3.625rem;
+}
+.member-banefit-sec .member-banefit-wrap {
+  background: #F9F9F9;
+  overflow: hidden;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row {
+  display: flex;
+  align-items: center;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row:nth-child(odd) {
+  flex-direction: row-reverse !important;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-img {
+  width: 50%;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-img img {
+  width: 100%;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con {
+  width: 50%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .cms-con p {
+  font-size: 1.25rem;
+}
+.member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .cms-con p b {
+  font-family: "Reckless Neue";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #01390C;
+}
+
+/* Community-page end */
 @media only screen and (max-width: 1366px) {
   /* Product Detail page start */
   .prodetail-sec .product-row .product-detail .product-bottom-btn .addtocart-btn {
@@ -957,6 +994,18 @@ body.blog-page {
     margin-top: -9.5rem;
   }
   /* Shipping & returning page end */
+  /* Community-page start */
+  .member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con {
+    max-width: 440px;
+  }
+  .member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .cms-con p {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+  }
+  .member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con .cms-con p b {
+    font-size: 1.25rem;
+  }
+  /* Community-page end */
 }
 @media only screen and (max-width: 991px) {
   /* Product Detail page start */
@@ -1075,6 +1124,22 @@ body.blog-page {
     line-height: 1.4;
   }
   /* Shipping & returning page end */
+  /* Community-page start */
+  .member-banefit-sec .sec-head {
+    margin-bottom: 1.625rem;
+  }
+  .member-banefit-sec .member-banefit-wrap .member-banefit-row {
+    display: block;
+  }
+  .member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-img {
+    width: 100%;
+  }
+  .member-banefit-sec .member-banefit-wrap .member-banefit-row .member-banefit-con {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.875rem 1.25rem 3.125rem;
+  }
+  /* Community-page end */
 }
 @media only screen and (max-width: 767px) {
   /* Product Detail page start */
@@ -1441,6 +1506,20 @@ body.blog-page {
     line-height: 1.4;
   }
   /* Shipping & returning page end */
+  /* Community-page start */
+  .everwell-oasis-sec .everwell-oasis-inner {
+    padding: 2.125rem 0.9375rem;
+  }
+  .everwell-oasis-sec .everwell-oasis-inner .sec-head {
+    margin-bottom: 1.25rem;
+  }
+  .everwell-oasis-sec .everwell-oasis-inner .sec-head .title-sm {
+    font-size: 1.75rem;
+  }
+  .everwell-oasis-sec .everwell-oasis-inner .cms-con p {
+    font-size: 1rem;
+  }
+  /* Community-page end */
 }
 @media only screen and (max-width: 568px) {
   /* Product Detail page start */

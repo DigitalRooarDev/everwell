@@ -30,7 +30,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     speed: 500,
     fade: true,
@@ -276,7 +276,7 @@ $(document).ready(function () {
     ],
   });
 
-$(".blog-slider").slick({
+  $(".blog-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -284,21 +284,21 @@ $(".blog-slider").slick({
     autoplay: true,
     autoplaySpeed: 7000,
     speed: 800,
-    fade: true, 
-    responsive: [   
-        {
-            breakpoint: 991,
-            settings: {
-             slidesToShow:1,
-             arrows: false,
-             dots: true,
-            }
-        }
-    ]   
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
 
-$('.story-slider').slick({
-    slidesToShow:1,
+  $(".story-slider").slick({
+    slidesToShow: 1,
     infinite: false,
     slidesToScroll: 1,
     focusOnSelect: true,
@@ -306,37 +306,128 @@ $('.story-slider').slick({
     autoplaySpeed: 5000,
     speed: 800,
     arrows: true,
-    responsive: [        
-        {
-            breakpoint: 569,
-            settings: {
-             slidesToShow:1,
-             arrows: false,
-             dots: true,
-            }
-        }
-    ]    
-});
+    responsive: [
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
 
-$(".blog-category span").click(function () {
+  $(".blog-category span").click(function () {
     $(".menu-dropdown-con").slideToggle();
     $("span").toggleClass("show");
-});
+  });
+
+  if ($(window).width() < 767) {
+      $('.related-slide').slick({
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          dots: true,
+          responsive: [
+              {
+                  breakpoint: 767,
+                  settings: {
+                      infinite: true,
+                      speed: 500,
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      fade: false
+                  }
+              },
+              {
+                  breakpoint: 568,
+                  settings: {
+                      infinite: true,
+                      speed: 500,
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      fade: false
+                  }
+              }
+          ]
+      });
+  }
+
+  $(".more-enjoy-main").slick({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  });
 
 $(".all-category span").click(function () {
     $(".menu-dropdown-con").slideToggle();
     $("span").toggleClass("show");
-});
+  });
 
-// Quantity
-    $(document).on("click", ".qtyplus", function (e) {
-        e.preventDefault();
-        var currentVal = parseInt($(".qv-quantity").val());
-        isNaN(currentVal) ? $(".qv-quantity").val(1) : $(".qv-quantity").val(currentVal + 1)
-    }), $(document).on("click", ".qtyminus", function (e) {
-        e.preventDefault();
-        var currentVal = parseInt($(".qv-quantity").val());
-        !isNaN(currentVal) && currentVal > 1 ? $(".qv-quantity").val(currentVal - 1) : $(".qv-quantity").val(1)
+  $(".phonenumber").keypress(function (event) {
+    if (event.which != 8 && isNaN(String.fromCharCode(event.which))) {
+      event.preventDefault();
+    }
+  });
+
+  // Quantity
+  $(document).on("click", ".qtyplus", function (e) {
+    e.preventDefault();
+    var currentVal = parseInt($(".qv-quantity").val());
+    isNaN(currentVal)
+      ? $(".qv-quantity").val(1)
+      : $(".qv-quantity").val(currentVal + 1);
+  }),
+    $(document).on("click", ".qtyminus", function (e) {
+      e.preventDefault();
+      var currentVal = parseInt($(".qv-quantity").val());
+      !isNaN(currentVal) && currentVal > 1
+        ? $(".qv-quantity").val(currentVal - 1)
+        : $(".qv-quantity").val(1);
     });
 
   $(".marquee-main").each(function () {
@@ -383,25 +474,25 @@ $(".all-category span").click(function () {
     infinite: true,
     slidesToScroll: 1,
     focusOnSelect: true,
-    autoplay: true,   
-    arrows: false,    
+    autoplay: true,
+    arrows: false,
     responsive: [
-        {
-            breakpoint: 991,
-            settings: {
-             slidesToShow:3,              
-              dots:true,
-              arrows: false,
-            }
-        },  
-        {
-            breakpoint: 767,
-            settings: {
-             slidesToShow:2,              
-              dots:true,
-              arrows: false,
-            }
-        },        
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
       {
         breakpoint: 991,
         settings: {
@@ -443,7 +534,7 @@ if ($(".favorites-pro-slider").length > 0) {
     effect: "cards",
     grabCursor: true,
     cardsEffect: {
-      perSlideOffset: 73,
+      perSlideOffset: 77,
       perSlideRotate: 2,
     },
     autoplay: {
@@ -451,7 +542,7 @@ if ($(".favorites-pro-slider").length > 0) {
       disableOnInteraction: false,
     },
     breakpoints: {
-      568: {
+      530: {
         pagination: {
           el: ".slider-pagination",
           clickable: true,

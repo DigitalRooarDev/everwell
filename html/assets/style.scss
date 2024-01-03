@@ -601,7 +601,9 @@ body.review {
   display: inline-block;
   font-size: 1rem;
   color: #01390C;
-
+  i{
+    display: none;
+  }
   &:hover {
     color: #000000;
   }
@@ -635,7 +637,8 @@ body.review {
 
 .homeBanner {
   position: relative;
-
+  height: calc(100svh - 40px);
+  max-height: 950px;
   &:after {
     content: '';
     position: absolute;
@@ -886,7 +889,7 @@ body.review {
           }
 
           &:hover {
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255);
 
             i {
               color: #000000;
