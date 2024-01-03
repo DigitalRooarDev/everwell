@@ -310,6 +310,11 @@ body {
   padding: 0 0.9375rem;
 }
 
+.container-md{
+  max-width: 76.3125rem;
+  padding: 0 0.9375rem;
+}
+
 .common-sec {
   padding: 8.4375rem 0;
 }
@@ -624,6 +629,15 @@ body.review {
   }
 }
 
+.head-search{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.3125rem;
+  color: #01390C;
+  margin-right: 0.9375rem;
+  margin-top: 0.25rem;
+}
+
 /* Header end */
 
 /* Home slider start */
@@ -633,6 +647,35 @@ body.review {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+}
+@-webkit-keyframes movebounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes movebounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .homeBanner {
@@ -650,6 +693,9 @@ body.review {
     width: 14.875rem;
     height: 15.8125rem;
     z-index: -1;
+    -webkit-animation: movebounce 2s linear infinite;
+    animation: movebounce 2s linear infinite;
+    
   }
 
   .slide {
@@ -697,9 +743,9 @@ body.review {
       text-align: center;
       max-width: 507px;
       width: 100%;
-
       .big-product-img {
         display: inline-block;
+        height: 510px;
       }
 
       .product-title {
@@ -1038,12 +1084,12 @@ body.review {
     background: #FFF;
     display: flex;
     justify-content: space-between;
-
+    transition: all 0.4s ease-in-out;
     .inputfield {
       background: none;
       padding: 0.625rem 1.375rem;
       font-size: 0.875rem;
-
+      width: 80%;
       &::placeholder {
         color: #000000;
       }
@@ -1053,6 +1099,9 @@ body.review {
       margin: 0.25rem;
       min-width: 7rem;
       padding: 0.5rem 1.25rem;
+    }
+    &:hover{
+      border-color: #01390c;
     }
   }
 }
@@ -1088,6 +1137,14 @@ body.review {
 .latest-blog-sec {
   .slick-list {
     padding-bottom: 5rem;
+  }
+}
+
+.home {
+  .latest-blog-sec{
+    .container{
+      max-width: 1200px;
+    }
   }
 }
 
@@ -1293,7 +1350,7 @@ body.review {
         width: 50%;
         max-width: 400px;
         margin: 0 auto;
-
+        padding: 20px 0;
         .sec-head {
           .title-sm {
             font-size: 2.375rem;
@@ -1304,6 +1361,10 @@ body.review {
         .cms-con {
           p {
             font-size: 1.0625rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
           }
         }
 
@@ -1780,8 +1841,7 @@ body.shop-page {
     margin: auto;
     display: block;
     font-size: 0.75rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.875rem;
+    margin-top: 1.25rem;  
     border: 0.0625rem solid rgba(234, 234, 234, 0.92);
   }
 }
