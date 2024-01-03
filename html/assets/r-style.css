@@ -24,12 +24,13 @@
   display: block;
   position: absolute;
   top: 50%;
-  right: 0;
   left: 50%;
-  bottom: 0;
-  transform: translateY(-10%);
-  margin: auto;
   z-index: 5;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .review-banner .play-icon i {
   color: #fff;
@@ -48,17 +49,18 @@
 }
 .review-banner .review-banner-col {
   width: 40%;
+  padding: 30px 0;
 }
 .review-banner .review-banner-col .sec-head {
-  max-width: 67%;
+  max-width: 70%;
+  margin-bottom: 15px;
+}
+.review-banner .review-banner-col .sec-head .title {
+  color: #01390C;
+  letter-spacing: -0.88px;
 }
 .review-banner .review-banner-col .sec-head img {
-  position: absolute;
-  right: 0;
-  bottom: 1.625rem;
-}
-.review-banner .review-banner-col .cms-con {
-  padding: 0.625rem 0;
+  display: inline-block;
 }
 .review-banner .review-banner-col .cms-con p {
   font-weight: 400;
@@ -76,18 +78,20 @@
   top: -13px;
 }
 
+@media (max-width: 1399px) {
+  .review-banner .review-banner-col .sec-head {
+    max-width: 72%;
+  }
+}
 @media (max-width: 1199px) {
   .review-banner {
     height: auto;
-  }
-  .review-banner .play-icon {
-    transform: translateY(-16%);
   }
   .review-banner .play-icon i {
     font-size: 4rem;
   }
   .review-banner .review-banner-col .sec-head {
-    max-width: 79%;
+    max-width: 85%;
   }
   .review-banner .review-banner-col .cms-con p {
     font-size: 1rem;
@@ -98,10 +102,18 @@
 }
 @media (max-width: 991px) {
   .review-banner .play-icon i {
-    font-size: 3rem;
+    font-size: 3r em;
+  }
+  .review-banner .review-banner-col {
+    width: 45%;
   }
   .review-banner .review-banner-col .sec-head {
     max-width: 97%;
+  }
+  .review-banner .review-banner-col .sec-head img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
   }
 }
 @media (max-width: 568px) {
@@ -110,17 +122,14 @@
   }
   .review-banner .content-box {
     position: unset;
-    padding-top: 2.8125rem;
-  }
-  .review-banner .play-icon {
-    top: 38%;
-    left: 47%;
+    padding-top: 2.1875rem;
   }
   .review-banner .play-icon i {
     font-size: 3rem;
   }
   .review-banner .review-banner-col {
     width: 100%;
+    padding: 0;
   }
   .review-banner .review-banner-col .sec-head {
     max-width: 100%;
