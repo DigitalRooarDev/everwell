@@ -13,31 +13,52 @@
 		max-width: 98%;
 	}
 
+	.container-md{
+		max-width: 95%;
+	  }
+
 	/* Home slider start */
 	.homeBanner {
+		max-height: 900px;
 		.slide {
 			min-height: 50.25rem;
-			padding-top: 9.3125rem;
+			padding-top: 8.3125rem;
 
 			.banner-caption {
-				padding-left: 1.25rem;
+				padding-left: 2.25rem;
+				.sec-head{
+					.banner-title{
+						font-size: 3rem;
+					}
+				}
 			}
 
 			.big-product {
 				max-width: 450px;
-
+				.big-product-img{
+					height: 24.125rem;
+				}
 				.product-title {
 					font-size: 1.75rem;
-				}
-				
+				}				
 			}
-
 			.side-product {
 				margin-top: 6.25rem;
 			}
 		}
 		&:after{width: 10.875rem;height: 10.8125rem;}
 	}
+
+	.home  {
+		.latest-blog-sec{
+			.container{
+				max-width: 95%;
+			}
+		}
+		
+	}
+
+	
 
 
 	/* Home slider end */
@@ -69,8 +90,7 @@
 	/* Home slider start */
 	.homeBanner {
 		.slide {			
-			.banner-caption {
-				padding-left: 0.9375rem;
+			.banner-caption {				
 				.sec-head {
 					.banner-title {
 					  font-size: 2.90rem;					  
@@ -142,6 +162,8 @@
 
 	/* Home slider start */
 	.homeBanner {
+		height: auto;
+		max-height: inherit;
 		&:after {			
 			width: 10.875rem;
 			height: 10.875rem;
@@ -149,9 +171,7 @@
 		  }
 		.slide {	
 			min-height: 40.25rem;		
-			.banner-caption {
-				padding-left: 0.9375rem;
-				padding-right:0.9375rem;
+			.banner-caption {				
 				.sec-head {
 					margin-bottom: 1.25rem;
 					.banner-title {
@@ -163,6 +183,9 @@
 				  }			  
 			}
 			.big-product {
+				.big-product-img{
+					height: 19.125rem;
+				}
 				max-width: 285px;
 				.product-title {
 					font-size: 1.65rem;
@@ -259,6 +282,21 @@
 	
 	  /* shop page end */
 
+	/* revolution-sec start */
+	.revolution-sec {
+		.revolution-wrap {
+			.revolution-row {
+				.revolution-con {
+					.btn {
+						margin-top:0;
+					}
+				}
+			}
+		}
+	}
+
+	/* revolution-sec end */
+
 }
 
 /* common css for below screen 991 */
@@ -341,11 +379,12 @@
 					.cms-con {
 						p {
 							font-size: 1.0625rem;
+							-webkit-line-clamp: inherit;
 						}
 					}
 
 					.btn {
-						margin-top: 1.875rem;
+						margin-top:0;
 					}
 				}
 			}
@@ -554,6 +593,10 @@
 		max-width: 100%;
 	}
 
+	.container-md{
+		max-width: 100%;
+	  }
+
 	.title-sm {
 		font-size: 1.75rem;
 	}
@@ -711,6 +754,11 @@
 				border-radius: 50%; 
 				line-height: 22px;
 			}
+		}
+
+		.head-search {
+			font-size: 1.625rem;
+			margin-right: 0.5rem;
 		}
 		
 	}
@@ -1259,12 +1307,15 @@
 	  .myaccount{
 		font-size: 0;
 		position: relative;
+		vertical-align: middle;
+		width: 34px;
+		height: 40px;
 		i{
 			position: absolute;
-			left: 9px;
-			top: 8px;
+			left: 4px;
+			top: 3px;
 			display: block;
-			font-size: 22px;			
+			font-size: 32px;
 		}
 	  }
 
