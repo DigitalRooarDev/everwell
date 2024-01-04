@@ -324,34 +324,34 @@ $(document).ready(function () {
   });
 
   if ($(window).width() < 767) {
-      $('.related-slide').slick({
-          autoplay: true,
-          autoplaySpeed: 5000,
-          arrows: false,
-          dots: true,
-          responsive: [
-              {
-                  breakpoint: 767,
-                  settings: {
-                      infinite: true,
-                      speed: 500,
-                      slidesToShow: 2,
-                      slidesToScroll: 1,
-                      fade: false
-                  }
-              },
-              {
-                  breakpoint: 568,
-                  settings: {
-                      infinite: true,
-                      speed: 500,
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      fade: false
-                  }
-              }
-          ]
-      });
+    $(".related-slide").slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            fade: false,
+          },
+        },
+        {
+          breakpoint: 568,
+          settings: {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: false,
+          },
+        },
+      ],
+    });
   }
 
   $(".more-enjoy-main").slick({
@@ -403,7 +403,7 @@ $(document).ready(function () {
     ],
   });
 
-$(".all-category span").click(function () {
+  $(".all-category span").click(function () {
     $(".menu-dropdown-con").slideToggle();
     $("span").toggleClass("show");
   });
@@ -469,6 +469,36 @@ $(".all-category span").click(function () {
     $("body").removeClass("body-fixed");
   });
 
+  //step quiz
+  var counter = 1;
+  $(".quiz-question-sec").on("click", ".next2", function () {
+    $(".content").hide();
+
+    counter++;
+    $("#content-" + counter + "").show();
+
+    if (counter > 1) {
+      $(".back").show();
+    }
+    if (counter > 3) {
+      $(".quiz-question-step").hide();
+      $(".end").show();
+    }
+  });
+
+  $(".quiz-question-sec").on("click", ".previous2", function () {
+    //alert(counter);
+    counter--;
+    $(".content").hide();
+    var id = counter;
+    $("#content-" + id).show();
+    if (counter < 2) {
+      $(".back").hide();
+    }
+  });
+
+  $("body").on("click", ".edit-previous", function () {});
+
   $(".related-product-slider").slick({
     slidesToShow: 4,
     infinite: true,
@@ -520,7 +550,6 @@ $(".all-category span").click(function () {
     ],
   });
 });
-
 
 if ($(".favorites-pro-slider").length > 0) {
   const swiper = new Swiper(".favorites-pro-slider", {
