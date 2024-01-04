@@ -941,6 +941,67 @@ body.blog-page {
 
 /* Community-page end */
 
+/* search-page start */
+body.search-page {
+  background: url(search-bg.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.search-sl {
+  padding: 0 20px;
+  height: calc(100vh - 138px);
+  .search-inner{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 786px;
+    margin: auto;
+    text-align: center;
+    .sec-head {
+      margin-bottom: 1.25rem;
+      .title-md{
+        letter-spacing: -0.88px;
+      }
+    }
+    .search-form {
+      max-width: 670px;
+      margin: auto;
+      margin-top: 4.0625rem;
+      .form-group{
+        margin-bottom: 3.625rem;
+        .form-control {
+          background:#ffffff url(search.svg) no-repeat 13px 13px;
+          padding-left: 3.125rem;
+          transition: all 0.4s ease-in-out;
+          &:focus{
+            border-color: #01390C;
+          }
+          &::-webkit-input-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+          &::-moz-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+          &:-ms-input-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+          &:-moz-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+        }
+      }      
+    }
+  }
+}
+
+/* search-page end */
+
+
 
 @media only screen and (max-width:1660px) {}
 
@@ -1152,6 +1213,19 @@ body.blog-page {
 }
 /* Community-page end */
 
+/* search-page start */
+.search-sl{
+  .search-inner{
+    .search-form{
+      margin-top: 2.5rem;
+      .form-group{
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+/* search-page end */
+
 }
 
 @media only screen and (max-width: 991px) {
@@ -1354,6 +1428,22 @@ body.blog-page {
   }
 }
 /* Community-page end */
+
+/* search-page start */
+.search-sl{
+  height: auto;
+  padding: 50px 15px;
+  .search-inner{
+    .search-form{
+      margin-top: 0;
+      .form-group{
+        margin-bottom:20px;
+      }
+    }
+  }
+}  
+
+/* search-page end */
 
 }
 
@@ -1790,6 +1880,8 @@ body.blog-page {
   }
 }
 /* Community-page end */
+
+
 
 }
 

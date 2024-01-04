@@ -895,6 +895,66 @@ body.blog-page {
 }
 
 /* Community-page end */
+/* search-page start */
+body.search-page {
+  background: url(search-bg.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.search-sl {
+  padding: 0 20px;
+  height: calc(100vh - 138px);
+}
+.search-sl .search-inner {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  max-width: 786px;
+  margin: auto;
+  text-align: center;
+}
+.search-sl .search-inner .sec-head {
+  margin-bottom: 1.25rem;
+}
+.search-sl .search-inner .sec-head .title-md {
+  letter-spacing: -0.88px;
+}
+.search-sl .search-inner .search-form {
+  max-width: 670px;
+  margin: auto;
+  margin-top: 4.0625rem;
+}
+.search-sl .search-inner .search-form .form-group {
+  margin-bottom: 3.625rem;
+}
+.search-sl .search-inner .search-form .form-group .form-control {
+  background: #ffffff url(search.svg) no-repeat 13px 13px;
+  padding-left: 3.125rem;
+  transition: all 0.4s ease-in-out;
+}
+.search-sl .search-inner .search-form .form-group .form-control:focus {
+  border-color: #01390C;
+}
+.search-sl .search-inner .search-form .form-group .form-control::-webkit-input-placeholder {
+  color: #000000;
+  font-weight: 400;
+}
+.search-sl .search-inner .search-form .form-group .form-control::-moz-placeholder {
+  color: #000000;
+  font-weight: 400;
+}
+.search-sl .search-inner .search-form .form-group .form-control:-ms-input-placeholder {
+  color: #000000;
+  font-weight: 400;
+}
+.search-sl .search-inner .search-form .form-group .form-control:-moz-placeholder {
+  color: #000000;
+  font-weight: 400;
+}
+
+/* search-page end */
 @media only screen and (max-width: 1366px) {
   /* Product Detail page start */
   .prodetail-sec .product-row .product-detail .product-bottom-btn .addtocart-btn {
@@ -1006,6 +1066,14 @@ body.blog-page {
     font-size: 1.25rem;
   }
   /* Community-page end */
+  /* search-page start */
+  .search-sl .search-inner .search-form {
+    margin-top: 2.5rem;
+  }
+  .search-sl .search-inner .search-form .form-group {
+    margin-bottom: 2.5rem;
+  }
+  /* search-page end */
 }
 @media only screen and (max-width: 991px) {
   /* Product Detail page start */
@@ -1140,6 +1208,18 @@ body.blog-page {
     padding: 1.875rem 1.25rem 3.125rem;
   }
   /* Community-page end */
+  /* search-page start */
+  .search-sl {
+    height: auto;
+    padding: 50px 15px;
+  }
+  .search-sl .search-inner .search-form {
+    margin-top: 0;
+  }
+  .search-sl .search-inner .search-form .form-group {
+    margin-bottom: 20px;
+  }
+  /* search-page end */
 }
 @media only screen and (max-width: 767px) {
   /* Product Detail page start */
