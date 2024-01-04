@@ -549,6 +549,7 @@
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item .product-box .product-text .product-price-btn .product-price {
   width: 100%;
+  margin-bottom: 0;
 }
 .our-collection-sec.customer-favor-sec .product-list-main .product-item .product-box .product-text .product-price-btn .product-price .price-discount {
   font-size: 0.625rem;
@@ -1360,6 +1361,12 @@
   /* Article-End */
 }
 @media only screen and (max-width: 767px) {
+  .btn {
+    min-width: 140px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
   /* Our-Collection-Start */
   .our-collection-sec {
     padding: 2.5rem 0;
@@ -1522,18 +1529,52 @@
 }
 @media only screen and (max-width: 500px) {
   /* Our-Collection-Start */
+  .product-list-main {
+    margin: 0 -0.25rem;
+  }
   .product-list-main .product-item {
+    padding: 0 0.25rem;
+  }
+  .product-list-main .product-box {
+    height: 100%;
+  }
+  .product-list-main .product-box .product-text {
+    padding: 0.9375rem 0.75rem;
+  }
+  .product-list-main .product-box .product-text .product-title {
+    font-size: 0.875rem;
+  }
+  .product-list-main .product-box .product-text .product-price-btn .product-price {
     width: 100%;
+    margin-bottom: 0.625rem;
+  }
+  .product-box .product-new {
+    font-size: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    left: 0.75rem;
+    top: 0.75rem;
   }
   /* Our-Collection-End */
   /* Customer-Favorites-Start */
   .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide {
     width: 100% !important;
+    margin-bottom: 0;
   }
   .our-collection-sec.customer-favor-sec .product-list-main .product-item.swiper-slide-active {
     width: 100% !important;
   }
   /* Customer-Favorites-End */
+}
+@media only screen and (max-width: 350px) {
+  .product-list-main .product-item {
+    width: 100%;
+  }
+  .product-list-main .product-box .product-text .product-price-btn .product-price {
+    width: calc(100% - 6.25rem);
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=newstyle.css.map */

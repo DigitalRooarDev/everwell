@@ -521,6 +521,7 @@ $(".all-category span").click(function () {
   });
 });
 
+
 if ($(".favorites-pro-slider").length > 0) {
   const swiper = new Swiper(".favorites-pro-slider", {
     pagination: {
@@ -542,6 +543,17 @@ if ($(".favorites-pro-slider").length > 0) {
       disableOnInteraction: false,
     },
     breakpoints: {
+      // 320: {
+      //   fadeEffect: {crossFade: true},
+      //   virtualTranslate: true,
+      //   autoplay: {
+      //       delay: 2500,
+      //       disableOnInteraction: false,
+      //   },
+      //   speed: 1000,
+      //   slidersPerView: 1,
+      //   effect: "fade",
+      // },
       530: {
         pagination: {
           el: ".slider-pagination",
