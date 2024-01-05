@@ -76,6 +76,9 @@
     margin-top: 6.25rem;
   }
   /* Home slider end */
+  .product-list-item .products .product-text .product-title {
+    -webkit-line-clamp: 2;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .title-sm {
@@ -177,8 +180,17 @@
   }
   /* meet-sec end */
   /* shop page start */
+  .shop-main .product-left-col {
+    width: 25%;
+  }
+  .shop-main .product-right-col {
+    width: 75%;
+  }
   .shop-main .product-sidebar {
     padding: 1.25rem 0.9375rem 1.625rem 0.9375rem;
+  }
+  .shop-main .product-top .all-pro-title {
+    font-size: 1.5625rem;
   }
   .benefits-sec {
     padding: 4.375rem 0;
@@ -235,9 +247,17 @@
     max-width: 306px;
     left: 0px;
   }
+  .dropper-sec .dropper-inner .drop-text.third span {
+    display: inline-block;
+    max-width: 80%;
+  }
   .dropper-sec .dropper-inner .drop-text.forth {
     max-width: 239px;
     right: 0px;
+  }
+  .dropper-sec .dropper-inner .drop-text.forth span {
+    display: inline-block;
+    max-width: 80%;
   }
   .dropper-sec:after {
     display: none;
@@ -342,7 +362,8 @@
   }
   /* meet-sec end */
   .join-our-sec .join-our-con {
-    padding: 30px 15px;
+    padding: 1.875rem 1.25rem;
+    margin-top: 1.25rem;
   }
   .join-our-sec .join-our-con .sec-head {
     margin-bottom: 1rem;
@@ -642,13 +663,6 @@
   .join-our-sec .join-our-con .join-box {
     margin-top: 2rem;
   }
-  .join-our-sec .join-our-con .join-box .inputfield {
-    width: 80%;
-    padding-right: 0.5rem;
-  }
-  .join-our-sec .join-our-con .join-box .btn {
-    min-width: inherit;
-  }
   /* Join our sec end */
   /* latest bloc sec start */
   .latest-blog-sec .slick-dots {
@@ -803,6 +817,7 @@
   .product-list-item .products .product-text .product-title {
     font-size: 0.9375rem;
     margin-bottom: 0.75rem;
+    -webkit-line-clamp: 2;
   }
   .benefits-sec {
     padding: 2.375rem 0;
@@ -1090,6 +1105,19 @@
     margin-top: 15px;
   }
   /* shop page end */
+}
+@media only screen and (max-width: 350px) {
+  .header-main .head-search {
+    margin-right: 0;
+  }
+  .header-main .my-cart {
+    margin-right: 0;
+    width: 36px;
+    height: 36px;
+  }
+  .header-main .my-cart i {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

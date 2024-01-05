@@ -118,6 +118,16 @@
 	}
 	/* Home slider end */
 
+	.product-list-item{
+		.products{
+			.product-text{
+				.product-title{
+					-webkit-line-clamp: 2;
+				}
+			}
+		}
+	}
+
 }
 
 @media only screen and (max-width:1199px) {
@@ -248,11 +258,22 @@
 
 	/* shop page start */
 
-	.shop-main {    
+	.shop-main {
+		.product-left-col{
+			width: 25%;
+		}
+		.product-right-col {
+			width: 75%;
+		}    
 		.product-sidebar {      
 		  padding: 1.25rem 0.9375rem 1.625rem 0.9375rem;
 		}
-	  }
+		.product-top{
+			.all-pro-title{
+				font-size: 1.5625rem;
+			}
+		}
+	  }	  
 	
 	  .benefits-sec {
 		padding: 4.375rem 0;
@@ -333,11 +354,19 @@
 				&.third {
 					max-width: 306px;
 					left: 0px;
+					span{
+						display: inline-block;
+						max-width: 80%;
+					}
 				}
 
 				&.forth {
 					max-width: 239px;
 					right: 0px;
+					span{
+						display: inline-block;
+						max-width: 80%;
+					}
 				}
 			}
 		}
@@ -468,7 +497,7 @@
 	/* meet-sec end */
 
 	.join-our-sec{
-		.join-our-con{padding: 30px 15px;
+		.join-our-con{padding: 1.875rem 1.25rem; margin-top: 1.25rem;
 			.sec-head{
 				margin-bottom: 1rem;
 				.title-xxl{font-size: 3rem;}
@@ -816,24 +845,13 @@
 		.join-our-con {
 			padding: 25px 15px;
 			display: block;
-
 			.sec-head {
 				.title-xxl {
 					font-size: 2.7rem;
 				}
 			}
-
 			.join-box {
 				margin-top: 2rem;
-
-				.inputfield {
-					width: 80%;
-					padding-right: 0.5rem;
-				}
-
-				.btn {
-					min-width: inherit;
-				}
 			}
 		}
 	}
@@ -1044,6 +1062,7 @@
 			.product-title{
 			  font-size: 0.9375rem;
 			  margin-bottom: 0.75rem;
+			  -webkit-line-clamp: 2;
 			}
 		  }
 		}
@@ -1415,4 +1434,21 @@
 
 @media only screen and (max-width: 395px) {}
 
-@media only screen and (max-width: 350px) {}
+@media only screen and (max-width: 350px) {
+
+	.header-main{
+		.head-search{
+			margin-right: 0;
+		}
+		.my-cart{
+			margin-right: 0;
+			width: 36px;
+			height: 36px;
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+
+}
+

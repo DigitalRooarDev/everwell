@@ -998,8 +998,66 @@ body.search-page {
     }
   }
 }
-
 /* search-page end */
+
+/* affiliate-program-page start */
+body.affiliate-program-page {
+  background: url(search-bg.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.affiliate-sl {
+  padding: 0 20px;
+  height: calc(100vh - 138px);
+  .affiliate-inner{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 786px;
+    margin: auto;
+    text-align: center;
+    .sec-head {
+      margin-bottom: 1.25rem;
+      .title-md{
+        letter-spacing: -0.88px;
+      }
+    }
+    .affiliate-form {
+      max-width: 670px;
+      margin: auto;
+      margin-top: 2.8125rem;
+      .form-group{
+        margin-bottom: 2.75rem;
+        .form-control {
+          background:#ffffff;          
+          transition: all 0.4s ease-in-out;
+          &:focus{
+            border-color: #01390C;
+          }
+          &::-webkit-input-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+          &::-moz-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+          &:-ms-input-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+          &:-moz-placeholder {
+            color: #000000;
+            font-weight: 400;
+          }
+        }
+      }      
+    }
+  }
+}
+
+/* affiliate-program-page end */
 
 
 
@@ -1442,8 +1500,22 @@ body.search-page {
     }
   }
 }  
-
 /* search-page end */
+
+/* affiliate-program-page start */
+.affiliate-sl{
+  height: auto;
+  padding: 80px 15px;
+  .affiliate-inner{
+    .affiliate-form{
+      margin-top: 0;
+      .form-group{
+        margin-bottom:20px;
+      }
+    }
+  }
+}  
+/* affiliate-program-page end */
 
 }
 
@@ -1880,6 +1952,21 @@ body.search-page {
   }
 }
 /* Community-page end */
+
+/* affiliate-program-page start */
+.affiliate-sl{
+  height: auto;
+  padding: 40px 15px;
+  .affiliate-inner{
+    .affiliate-form{
+      margin-top: 0;
+      .form-group{
+        margin-bottom:20px;
+      }
+    }
+  }
+}  
+/* affiliate-program-page end */
 
 
 
