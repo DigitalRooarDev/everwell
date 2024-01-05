@@ -787,10 +787,14 @@ body.review {
   display: block;
   margin-bottom: 1.875rem;
 }
+.footerMain .footersec .footBox .footLogo a {
+  display: inline-block;
+}
 .footerMain .footersec .footBox .footLogo img {
   display: inline-block;
   filter: brightness(0) invert(1);
   width: 16.5rem;
+  height: 4.1875rem;
 }
 .footerMain .footersec .footBox .footer-desc {
   padding-right: 5rem;
@@ -937,18 +941,23 @@ body.review {
 }
 .join-our-sec .join-box {
   margin-top: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.join-our-sec .join-box .inputfield {
   border-radius: 1.8791rem;
   border: 0.0625rem solid #CDCDCD;
   background: #FFF;
-  display: flex;
-  justify-content: space-between;
+  padding: 0.625rem 1.375rem;
+  padding-right: 8.125rem;
+  font-size: 0.875rem;
+  width: 100%;
+  height: 52px;
   transition: all 0.4s ease-in-out;
 }
-.join-our-sec .join-box .inputfield {
-  background: none;
-  padding: 0.625rem 1.375rem;
-  font-size: 0.875rem;
-  width: 80%;
+.join-our-sec .join-box .inputfield:focus {
+  border-color: #01390c;
 }
 .join-our-sec .join-box .inputfield::placeholder {
   color: #000000;
@@ -956,10 +965,11 @@ body.review {
 .join-our-sec .join-box .btn {
   margin: 0.25rem;
   min-width: 7rem;
-  padding: 0.5rem 1.25rem;
-}
-.join-our-sec .join-box:hover {
-  border-color: #01390c;
+  padding: 0 1.25rem;
+  position: absolute;
+  height: 2.5rem;
+  right: 2px;
+  top: 2px;
 }
 
 /* Join our sec end */
@@ -1296,7 +1306,7 @@ body.shop-page {
 .shop-main .product-sidebar .filter-sl {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0.9375rem;
+  padding-bottom: 1.375rem;
 }
 .shop-main .product-sidebar .filter-sl .filter-icon {
   opacity: 0.4;
@@ -1311,10 +1321,10 @@ body.shop-page {
 .shop-main .product-sidebar .product-categories {
   border-top: 0.0625rem solid #ededed;
   border-bottom: 0.0625rem solid #ededed;
-  padding: 10px 0;
+  padding: 1.25rem 0 0.3125rem;
 }
 .shop-main .product-sidebar .product-categories ul li {
-  padding: 0.625rem 0;
+  padding: 0 0 0.9375rem 0;
 }
 .shop-main .product-sidebar .product-categories ul li a {
   font-size: 1rem;
@@ -1347,10 +1357,10 @@ body.shop-page {
   border-right: 0.125rem solid rgb(0, 0, 0);
 }
 .shop-main .product-sidebar .price-filter {
-  padding-top: 1.5625rem;
+  padding-top: 25px;
 }
 .shop-main .product-sidebar .price-filter .range-filter {
-  padding-top: 1.375rem;
+  padding-top: 0.9375rem;
 }
 .shop-main .product-sidebar .price-filter .price-filter-btn {
   padding-top: 1.375rem;
@@ -1394,7 +1404,7 @@ body.shop-page {
 }
 .shop-main .product-top .shorting-sl .filter-sorting .custom-select-drop {
   height: 1.5625rem;
-  padding: 0 1.5rem 0 0;
+  padding: 0 1.5rem 0 0.3125rem;
   font-size: 1rem;
   font-weight: 500;
   color: #000;
@@ -1471,6 +1481,10 @@ body.shop-page {
   color: #000;
   line-height: 1.2;
   margin-bottom: 0.625rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .product-list-item .products .product-text .product-rating {
   line-height: 0;
