@@ -352,6 +352,36 @@ $(document).ready(function () {
         },
       ],
     });
+
+    $(".swiper-wrapper").slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            fade: false,
+          },
+        },
+        {
+          breakpoint: 568,
+          settings: {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: false,
+          },
+        },
+      ],
+    });
+    
   }
 
   $(".more-enjoy-main").slick({
@@ -551,7 +581,9 @@ $(document).ready(function () {
   });
 });
 
+
 if ($(".favorites-pro-slider").length > 0) {
+  if ($(window).width() > 767) {
   const swiper = new Swiper(".favorites-pro-slider", {
     pagination: {
       el: ".slider-pagination",
@@ -610,4 +642,5 @@ if ($(".favorites-pro-slider").length > 0) {
       },
     },
   });
+}
 }
